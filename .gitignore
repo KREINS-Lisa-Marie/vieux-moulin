@@ -8,3 +8,4 @@ wp-content/themes/*
 !wp-content/themes/vm/*
 !wp-content/themes/vm/*/*
 !wp-content/themes/vm/**/*
+!liens_externes.docx
