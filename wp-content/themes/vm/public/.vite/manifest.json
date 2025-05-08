@@ -1,0 +1,29 @@
+{
+  "wp-content/themes/vm/resources/css/styles.scss": {
+    "file": "assets/css-BUXNnUEh.css",
+    "src": "wp-content/themes/vm/resources/css/styles.scss",
+    "isEntry": true
+  },
+  "wp-content/themes/vm/resources/fonts/AvenirLTStd-Roman.otf": {
+    "file": "assets/AvenirLTStd-Roman-D-SuJsdh.otf",
+    "src": "wp-content/themes/vm/resources/fonts/AvenirLTStd-Roman.otf"
+  },
+  "wp-content/themes/vm/resources/fonts/SulphurPoint-Bold.ttf": {
+    "file": "assets/SulphurPoint-Bold-utlPuRzj.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/SulphurPoint-Bold.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/SulphurPoint-Light.ttf": {
+    "file": "assets/SulphurPoint-Light-T7-dP9RT.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/SulphurPoint-Light.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/SulphurPoint-Regular.ttf": {
+    "file": "assets/SulphurPoint-Regular-BZDzFO0h.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/SulphurPoint-Regular.ttf"
+  },
+  "wp-content/themes/vm/resources/js/main.js": {
+    "file": "assets/js-Bzsld0tX.js",
+    "name": "js",
+    "src": "wp-content/themes/vm/resources/js/main.js",
+    "isEntry": true
+  }
+}
