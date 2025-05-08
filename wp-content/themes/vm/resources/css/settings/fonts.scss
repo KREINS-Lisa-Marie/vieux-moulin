@@ -1,0 +1,89 @@
+/* Defined weights:
+  * 100: -
+  * 200: -
+  * 300: light
+  * 400: regular
+  * 500: medium
+  * 600: semi-bold
+  * 700: bold
+  * 800: -
+  * 900: -
+ */
+
+:root {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+
+/* Avenir */
+@font-face {
+  src: url('/wp-content/themes/vm/resources/fonts/AvenirLTStd-Roman.otf') format('TrueType');
+  font-family: 'Avenir';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* SulphurPoint Bold */
+@font-face {
+  src: url('/wp-content/themes/vm/resources/fonts/SulphurPoint-Bold.ttf') format('TrueType');
+  font-family: 'SulphurPoint';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* SulphurPoint Light */
+@font-face {
+  src: url('/wp-content/themes/vm/resources/fonts/SulphurPoint-Light.ttf') format('TrueType');
+  font-family: 'SulphurPoint';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* SulphurPoint Regular */
+@font-face {
+  src: url('/wp-content/themes/vm/resources/fonts/SulphurPoint-Regular.ttf') format('TrueType');
+  font-family: 'SulphurPoint';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+/*
+
+!* Montserrat Light *!
+@font-face {
+  src: url('/wp-content/themes/vm/resources/fonts/Comfortaa-Regular.ttf') format('TrueType');
+  font-family: 'Comfortaa';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
+
+!* Montserrat *!
+@font-face {
+  src: url('/wp-content/themes/vm/resources/fonts/Comfortaa.ttf') format('TrueType');
+  font-family: 'Comfortaa';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+
+!* Montserrat *!
+@font-face {
+  src: url('/wp-content/themes/vm/resources/fonts/Comfortaa-Regular.ttf') format('TrueType');
+  font-family: 'Comfortaa';
+  font-display: swap;
+  font-style: italic;
+  font-weight: 400;
+}
+
+!* Montserrat *!
+@font-face {
+  src: url('/wp-content/themes/vm/resources/fonts/Comfortaa-Regular.ttf') format('TrueType');
+  font-family: 'Comfortaa';
+  font-display: swap;
+  font-style: italic;
+  font-weight: 300;
+}
+*/
