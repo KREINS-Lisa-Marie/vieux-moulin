@@ -7,8 +7,10 @@
 if(have_posts()): while(have_posts()): the_post(); ?>
 
     <section class="contact">
-        <h2 class="form_title">
-            Contactez-nous
+        <h2 class="form_title section_title">
+            <span class="underline back">
+                Contactez-nous
+            </span>
         </h2>
 
         <?php
@@ -93,6 +95,11 @@ endwhile; else: ?>
         Le Vieux Moulin
     </h2>
 
+    <p><?= get_field('street'); ?></p>
+    <p><?= get_field('town'); ?></p>
+    <p><?= get_field('postal_code_municipality'); ?></p>
+    <p><?= get_field('phone_number'); ?></p>
+
     <?php
 $map_image = get_field('map_image');
 $size = 'large'; // (thumbnail, medium, large, full or custom size)
@@ -101,10 +108,7 @@ if( $map_image ) {
 }
  ?>
 
-<?= get_field('street'); ?>
-<?= get_field('town'); ?>
-<?= get_field('postal_code_municipality'); ?>
-<?= get_field('phone_number'); ?>
+
 </div>
 
 <?php get_footer(); ?>
