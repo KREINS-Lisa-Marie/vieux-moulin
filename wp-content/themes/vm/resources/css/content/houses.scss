@@ -1,0 +1,107 @@
+.houses_vm_gallery, .houses_e_gallery {
+  margin-bottom: 48px;
+}
+
+.houses_vm_team_container, .houses_vm_introduction_container, .houses_e_introduction_container, .houses_e_team_container {
+  h3 {
+    margin-bottom: 32px;
+    margin-left: 24px;
+  }
+}
+
+.image_e img, .image_vm img, .project_image img {
+  width: 100%;
+  height: auto;
+}
+
+.houses_project_container .project_image img {
+  border-radius: 8px;
+  margin-bottom: 0;
+}
+
+.project_title {
+  margin-left: 24px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.houses_project_container {
+  margin-bottom: 0;
+
+  p {
+    margin-bottom: 90px;
+  }
+}
+
+.donations_container {
+  margin-top: 0;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.houses_links {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 56px;
+
+  .link {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .img_title_text {
+    display: flex;
+    flex-direction: column;
+
+    .qr_code img, .qr_code {
+      margin-bottom: 0;
+    }
+    p {
+      order: 4;
+    }
+    img {
+      order: 1;
+      margin-bottom: 48px;
+    }
+    h2 {
+      order: 2;
+    }
+    h3 {
+      order: 3;
+    }
+    a {
+      order: 5;
+    }
+    .donations_title{
+      order: 1;
+    }
+    .qr_image{
+      order: 2;
+    }
+  }
+}
+
+.image_vm img, .image_e img {
+  border-radius: 8px;
+}
+
+.houses_e_gallery_container .section_title:last-of-type, .houses_vm_gallery_container .section_title:last-of-type {
+  margin-bottom: 32px;
+}
+
+.vm_adress p {
+  margin-bottom: 16px;
+}
+
+.vm_adress p:last-of-type {
+  margin-bottom: 0;
+}

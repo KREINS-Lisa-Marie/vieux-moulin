@@ -1,0 +1,99 @@
+.introduction_donations {
+  margin-top: 155px;
+
+  h2 {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  a {
+    text-align: center;
+    display: block;
+    margin-top: 40px;
+  }
+}
+
+.image_donations img {
+  width: 100%;
+  height: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  border-radius: 8px;
+}
+
+.dontation_types_text ul {
+  list-style-type: disc;
+  margin-left: 40px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.partners_container {
+  text-align: center;
+}
+
+.partners_gallery_container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.donations_partner_gallery__img {
+  width: 150px;
+  height: auto;
+}
+
+.donations_subline {
+  margin-left: 24px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+
+@media (max-width: 1199px) {
+  .types_of_donations_container{
+/*    .activities_container, .family_container {*/
+      display: flex;
+      flex-direction: column;
+
+    h2 {
+      order: 1;
+    }
+    .types_of_donations_img {
+      order: 2;
+      margin-bottom: 48px;
+    }
+    h3{
+      order: 3;
+    }
+      .donations_text {
+        order: 4;
+      }
+
+    .types_of_donations_img img{
+      width: 100%;
+      height: auto;
+    }
+    ul li{
+      list-style-type: disc;
+      margin-left: 36px;
+      line-height: 28px;
+    }
+    .donations_text{
+      margin-top: 32px;
+    }
+    .section_title{
+      margin-bottom: 32px;
+    }
+  }
+  .link_to_page, .donations_subline{
+    font-size: 18px;
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 600;
+  }
+/*}*/
+}
