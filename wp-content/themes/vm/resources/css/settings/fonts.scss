@@ -23,6 +23,15 @@
   font-weight: 400;
 }
 
+/* Avenir */
+@font-face {
+  src: url('/wp-content/themes/vm/resources/fonts/AvenirLTStd-Heavy.otf') format('TrueType');
+  font-family: 'Avenir';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
 /* SulphurPoint Bold */
 @font-face {
   src: url('/wp-content/themes/vm/resources/fonts/SulphurPoint-Bold.ttf') format('TrueType');
@@ -49,16 +58,16 @@
   font-style: normal;
   font-weight: 400;
 }
-/*
 
-!* Montserrat Light *!
+/* HappyMonkey-Regular */
 @font-face {
-  src: url('/wp-content/themes/vm/resources/fonts/Comfortaa-Regular.ttf') format('TrueType');
-  font-family: 'Comfortaa';
+  src: url('/wp-content/themes/vm/resources/fonts/HappyMonkey-Regular.ttf') format('TrueType');
+  font-family: 'HappyMonkey-Regular';
   font-display: swap;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
 }
+/*
 
 !* Montserrat *!
 @font-face {
