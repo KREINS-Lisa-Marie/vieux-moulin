@@ -2,10 +2,14 @@
 <footer>
     <div class="main_footer_content">
         <div class="footer_adress">
-            <h2 class="footer_adress_title">
-                Le Vieux moulin
-            </h2>
-            <img src="" alt="Logo du Vieux Moulin">
+            <div class="name_logo_footer">
+                <h2 class="footer_adress_title">
+                    Le Vieux moulin
+                </h2>
+                <img src="/wp-content/themes/vm/resources/img/Logo.webp" alt="Logo Vieux Moulin" width="30" height="24"
+                     class="logo_image">
+            </div>
+
             <p>
                 Rue des Vennes 1
             </p>
