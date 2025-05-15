@@ -1,0 +1,65 @@
+.what_is_life_like_container {
+  margin-top: 155px;
+}
+
+.title_text {
+  p {
+    margin-top: 32px;
+  }
+
+  .link_to_page {
+    margin-top: 40px;
+  }
+}
+
+.activities_container {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.title_gallery.houses_e_gallery_container, .title_gallery.houses_vm_gallery_container{
+  padding-top: 90px;
+}
+.title_gallery {
+  padding-top: 144px;
+  padding-bottom: 90px;
+  background-color: var(--light-blue);
+
+
+
+  .section_title {
+    margin-bottom: 48px;
+  }
+
+  .foyer_gallery_container, .houses_e_gallery, .houses_vm_gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  img {
+    border-radius: 120px;
+    height: 240px;
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    object-fit: cover;
+    box-shadow: 9px 16px 0 var(--pink);
+  }
+}
+
+.faq_life_container .link{
+  text-align: center;
+  margin-top: 56px;
+}
+.single_textimonial{
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimonials_container {
+  margin-right: 16px;
+  margin-left: 16px;
+}

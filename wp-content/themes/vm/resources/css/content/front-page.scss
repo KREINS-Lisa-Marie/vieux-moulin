@@ -1,0 +1,222 @@
+.image_accueil img{
+  margin-top: 60px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 85px;
+}
+.family_container.title_middle, .title_middle{
+  text-align: center;
+}
+.what_is_it .link{
+  margin-top: 48px;
+
+}
+.family_container .link{
+  margin-top: 32px;
+}
+.what_is_it{
+  margin-top: 0;
+}
+
+.testimonials_container{
+  margin-top: 90px;
+  .section_title{
+    margin-bottom: 55px;
+  }
+}
+.donations_container{
+  background-color: var(--light-blue);
+  padding: 90px 0 ;
+}
+section{
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.link{
+  font-size: 18px;
+  font-weight: 600;
+}
+.link_to_projects{
+  margin-top: 24px;
+}
+.link_to_donations{
+  margin-top: 32px;
+}
+.donations_container h2{
+  margin-bottom: 32px;
+  text-align: center;
+}
+.subtitle{
+  margin: 32px 24px 16px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Sulphur Point, sans-serif;
+}
+.qr_image img{
+  display: block;
+  width: 151px;
+  height: 151px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.single_textimonial{
+  margin-bottom: 32px;
+  border: 1px solid var(--pink);
+  border-radius: 8px;
+  padding: 40px 16px;
+  min-height: 297px;
+}
+.single_textimonial p{
+  margin-left: 0;
+  margin-right: 0;
+}
+.single_textimonial span{
+  color: var(--pink);
+  font-size: 48px;
+font-family: "Happy Monkey", sans-serif;
+}
+.end_quote{
+  display: block;
+  text-align: end;
+}
+.single_textimonial:last-of-type{
+  margin-bottom: 0;
+}
+.name_age{
+  font-family: Avenir, sans-serif;
+  margin-top: 24px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+
+.image_f_accueil img{
+  width: 100%;
+  height: 282px;
+  object-fit: cover;
+  object-position: center 80%;
+}
+.image_f_accueil h3{
+    display: inline;
+    text-align: start ;
+  }
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 749px) {
+  body {
+    background-image: url("/wp-content/themes/vm/resources/img/background_image.webp");
+    /*    background-position-x: -487px;*/
+        background-position-y: 686px;
+      background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+}
+
+
+@media (min-width: 750px) and (max-width: 1199px) {
+  body {
+    background-image: url("/wp-content/themes/vm/resources/img/background_image.webp");
+    /*    background-position-x: -487px;*/
+    background-position-y: 1050px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+}
+
+
+@media (min-width: 1200px){
+  body {
+    background-image: url("/wp-content/themes/vm/resources/img/background_image.webp");
+    /*    background-position-x: -487px;*/
+    background-position-y: 1350px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+!*  TITLES  *!
+.main_title {
+  font-size: 40px;
+  color: var(--dark-violet);
+  font-weight: 600;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+
+}
+
+.main_subtitle {
+  font-size: 32px;
+  font-family: "STIXGeneral", serif;
+  text-align: center;
+}
+
+!*SECTION DISCOVER ME *!
+
+.discover-me-container h2 {
+  color: var(--dark-violet);
+  margin-top: 88px;
+  margin-bottom: 20px;
+}
+
+.discover-me-container h2, .link_discover_me {
+  margin-left: 24px;
+}
+
+.link_discover_me {
+  display: block;
+  font-size: 20px; !*    AJOUTER flèche -->      *!
+  font-weight: 600;
+  color: var(--dark-violet);
+  margin-top: 40px;
+  margin-bottom: 56px;
+}
+
+
+!*SECTION Projets récents *!
+
+
+.project_section h2 {
+  display: block;
+  color: var(--main-lavender);
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "STIXGeneral", serif;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.project_section{
+  padding-bottom: 56px;
+}
+
+
+
+!*.project__card{
+  min-width: calc(100% - 48px);
+  background-color: var(--main-lavender);
+}*!
+*/
