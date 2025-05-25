@@ -91,14 +91,15 @@ endwhile; else: ?>
 <?php endif; ?>
 
 <div class="location_section">
-    <h2 class="location_title">
-        Le Vieux Moulin
-    </h2>
+    <div class="adress_container">
+        <h2 class="location_title">
+            Le Vieux Moulin
+        </h2>
 
-    <p><?= get_field('street'); ?></p>
-    <p><?= get_field('town'); ?></p>
-    <p><?= get_field('postal_code_municipality'); ?></p>
-    <p><?= get_field('phone_number'); ?></p>
+        <p><?= get_field('street'); ?></p>
+        <p><?= get_field('town'); ?></p>
+        <p><?= get_field('postal_code_municipality'); ?></p>
+        <p><?= get_field('phone_number'); ?></p></div>
 
     <?php
 $map_image = get_field('map_image');

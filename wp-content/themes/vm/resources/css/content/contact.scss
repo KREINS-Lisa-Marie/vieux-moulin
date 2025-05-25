@@ -1,25 +1,28 @@
 /*MESSAGES DE VALIDATION */
-textarea>.field__error{
+textarea > .field__error {
   color: var(--white);
   margin-top: -40px;
   margin-bottom: 24px;
 }
-.field__error{
+
+.field__error {
   color: var(--white);
   margin-top: -16px;
   margin-bottom: 24px;
 }
-.contact__success{
+
+.contact__success {
   color: var(--white);
   font-size: 18px;
   font-weight: 400;
   text-align: center;
 }
-.contact__success p{
+
+.contact__success p {
   margin-left: 16px;
 }
 
-.field__input::placeholder, #message::placeholder{
+.field__input::placeholder, #message::placeholder {
   color: var(--placeholder);
   font-weight: 400;
   font-family: Avenir, sans-serif;
@@ -28,18 +31,17 @@ textarea>.field__error{
 
 
 
-.contact{
+
+//GENERAL
+
+.contact {
   background-color: var(--light-blue);
- /* z-index: -2;*/        /*COMMENT faire pour remettre rose en avant*/
-  margin-left: 16px;
-  margin-right: 16px;
   border-radius: 8px;
   padding: 32px 16px;
-  margin-top: 159px;
-  margin-bottom: 90px;
-  box-shadow: 0 1px 7px var(--black);     /*25% opacity*/
+  box-shadow: 0 1px 7px var(--black); /*25% opacity*/
 }
-.btn{
+
+.btn {
   min-width: 100%;
   border: 1px solid var(--yellow-border);
   background-color: var(--light-yellow);
@@ -49,22 +51,21 @@ textarea>.field__error{
   font-size: 16px;
   font-weight: 600;
   font-family: Sulphur Point, sans-serif;
-margin-top: 50px;
+  margin-top: 50px;
 }
 
-                                    /*HOW TO CENTER*/
-h2.form_title.section_title{
+h2.form_title.section_title {
   text-align: center;
-  margin-bottom: 45px;
 }
 
-.field__label{
+.field__label {
   display: block;
   margin-bottom: 12px;
   font-size: 18px;
   font-weight: 400;
 }
-.field__input{
+
+.field__input {
   padding: 14px 16px;
   background-color: var(--white);
   border: 1px solid var(--grey);
@@ -73,123 +74,108 @@ h2.form_title.section_title{
   min-width: calc(100% - 32px);
 }
 
-#message{
+#message {
   min-height: 100px;
   min-width: calc(100% - 32px);
   margin-bottom: 0;
 }
-.location_title{
+
+.location_title {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 12px;
   text-align: center;
   font-family: "Sulphur Point", sans-serif;
 }
-.location_section p{
+
+.location_section p {
   font-size: 14px;
   margin-bottom: 8px;
   display: block;
   text-align: center;
 }
-.location_section p:last-of-type{
-  margin-bottom: 32px;
-}
-.location_section img{
-  margin-bottom: 90px;
-  max-width: 100%;
-  height: auto;
+
+.location_section {
+  display: flex;
+  align-items: center;
 }
 
+// MOBILE
 
-
-/*
-textarea>.field__error{
-  color: var(--white);
-  margin-top: -40px;
-  margin-bottom: 24px;
-}
-
-.field__error{
-  color: var(--white);
-  margin-top: -16px;
-  margin-bottom: 24px;
-}
-
-.contact__success{
-  color: var(--white);
-}
-.contact__success p{
-  margin-left: 16px;
-}
-
-
-.contact {
-  background-color: var(--dark-violet);
-  border-radius: 16px;
-  padding: 64px 24px;
-  margin-bottom: 56px;
-  font-size: 14px;
-  background-image: image("../../img/background-rose.webp");
-
-
-  .form_title{
-    margin-bottom: 21px;
+@media (max-width: 749px) {
+  .contact {
     margin-left: 16px;
-  }
-
-  h3 {
-    font-size: 24px;
-  }
-
-  .field__label {
-    display: block;
-    font-size: 18px;
-    margin-bottom: 16px;
-  }
-
-  h3, .field__label {
-    font-weight: 600;
-    color: var(--main-lavender);
-    margin-left: 24px;
-  }
-
-  .field__input {
-    color: var(--black);
-    border: none;
-    border-radius: 8px;
-    padding: 19px 16px;
-    display: block;
-    margin-bottom: 24px;
-  }
-  #message{
-    margin-bottom: 48px;
-    border: none;
-    min-height: 200px;
-  }
-
-  .field__input, #message{
-    font-family: "Gotham", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    min-width: calc(100% - 32px);
-  }
-
-  .field__input::placeholder, #message::placeholder{
-  color: var(--placeholder);
-    font-weight: 500;
-  }
-
-  .btn {
-    padding: 19px;
-    background-color: var(--main-lavender);
-    color: var(--dark-violet);
-    border-radius: 8px;
-    border: none;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    min-width: 100%;
-    font-family: "Gotham", sans-serif;
+    margin-right: 16px;
   }
 }
-*/
+
+// TABLET
+
+@media (min-width: 750px) {
+  .contact {
+    max-width: 624px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
+// MOBILE & TABLET
+
+@media (max-width: 1199px) {
+  .contact {
+
+    background-color: var(--light-blue);
+    margin-top: 159px;
+    margin-bottom: 90px;
+  }
+  h2.form_title.section_title {
+    margin-bottom: 45px;
+  }
+  .location_section p:last-of-type {
+    margin-bottom: 32px;
+  }
+  .location_section {
+    flex-direction: column;
+
+    img {
+      margin-bottom: 90px;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+
+// DESKTOP
+
+@media (min-width: 1200px) {
+  .location_section {
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 120px;
+
+    img {
+      margin-bottom: 0;
+      max-width: 680px;
+      height: auto;
+      text-align: center;
+
+    }
+  }
+  .contact {
+    margin-bottom: 120px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-top: 206px;
+  }
+  h2.form_title {
+    margin-bottom: 32px;
+    font-size: 48px;
+  }
+}
