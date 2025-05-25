@@ -1,21 +1,124 @@
-.resources_list{
+// GENERAL
+.resources_list {
   margin-left: 24px;
   margin-right: 24px;
-  li{
+
+  li {
     margin-top: 12px;
     line-height: 28px;
   }
-  li:first-of-type{
+
+  li:first-of-type {
     margin-top: 32px;
   }
 }
-.introduction_resources h2{
+
+.introduction_resources h2 {
   margin-bottom: 32px;
 }
 
-
-.image_resources img{
+.image_resources img {
   margin-top: 150px;
   width: 100%;
   height: auto;
+}
+
+.file_project_link {
+  margin-top: 32px;
+}
+
+.flex_container_first_section {
+  display: flex;
+}
+
+.download_resources_container {
+  text-align: center;
+
+  .resources_list {
+    display: inline-block;
+    text-align: left;
+    li:first-of-type{
+      margin-top: 0;
+    }
+  }
+}
+
+.single_file {
+  display: block;
+  margin-top: 32px;
+}
+
+@media (max-width: 749px) {
+  .download_resources_container .section_title {
+      margin-bottom: 32px;
+    }
+}
+
+// TABLET
+@media (min-width: 750px) {
+  .introduction_resources p {
+    line-height: 28px;
+  }
+}
+
+//MOBILE & TABLET
+@media (max-width: 1199px) {
+  .flex_container_first_section {
+    flex-direction: column;
+  }
+  .image_resources img {
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+  }
+  .image_resources {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .introduction_resources p, .single_file {
+    max-width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .single_file {
+    text-align: center;
+  }
+  .download_resources_container{
+    margin-top: 0;
+  }
+}
+
+
+//DESKTOP
+@media (min-width: 1200px) {
+  .flex_container_first_section {
+    margin-top: 206px;
+    justify-content: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    flex-direction: row;
+    gap: 48px;
+    align-items: center;
+  }
+  .image_resources img {
+    width: 550px;
+    height: auto;
+    margin-top: 0;
+  }
+  .introduction_resources {
+    max-width: 785px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .section_title {
+      margin-left: 0;
+      text-align: start;
+    }
+  }
+  .download_resources_container {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
 }
