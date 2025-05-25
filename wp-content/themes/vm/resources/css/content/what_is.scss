@@ -1,58 +1,281 @@
-.history_container{
+.history_container {
+  display: flex;
+  flex-direction: column;
   background-color: var(--light-blue);
   padding-top: 65px;
   padding-bottom: 90px;
+  align-content: center;
 
-  .section_title{
+  .section_title {
     margin-bottom: 32px;
   }
-  .history_gallery__img:first-of-type{
+
+  .history_gallery__img:first-of-type {
     margin-bottom: 16px;
   }
-  p{
-    margin-top: 16px ;
-  }
-  .link_to_page{
 
+  p {
+    margin-top: 16px;
+  }
+
+  .link_to_page {
     margin-top: 32px;
+  }
+
+  .history_images_container {
+    text-align: center;
   }
 }
 
-.what_introduction_image img, .what_mission_image img, .what_values_image img{
+.what_introduction_image img, .what_mission_image img, .what_values_image img {
   width: 100%;
   height: auto;
 }
-.what_introduction_container img{
-  margin-top: 150px;
-}
-.what_introduction_container{
-  margin-top: 0;
 
+
+
+.what_introduction_container {
+  margin-top: 0;
+  img {
+    margin-top: 150px;
+  }
 }
-.what_introduction_container, .missions_container, .values_container{
-  .section_title{
+
+.what_introduction_container, .missions_container, .values_container {
+  .section_title, .activities_container.section_title {
     margin-bottom: 32px;
   }
 }
-.missions_container, .values_container{
+
+.missions_container, .values_container {
   background-color: var(--light-blue);
   padding-top: 90px;
   padding-bottom: 90px;
-  img{
+  img {
     border-radius: 8px;
   }
 }
-.partners_container{
-  .section_title{
+
+.partners_container {
+  .section_title {
     margin-bottom: 48px;
   }
 }
-.values_container{
-  margin-top: 0;
 
+.values_container {
+  margin-top: 0;
   padding-bottom: 90px;
 }
-.missions_container{
+
+.missions_container {
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.history_gallery__img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  object-fit: cover;
+}
+
+
+.partners_images_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  gap: 48px;
+
+  .partners_gallery__img {
+    max-width: 241px;
+  }
+}
+
+.what_introduction_image img {
+  max-width: 500px;
+  height: auto;
+}
+
+
+@media (max-width: 1199px) {
+  .what_introduction_image {
+    text-align: center;
+  }
+  .missions_container.img_title_text, .values_container.img_title_text, .activities_container.img_title_text {
+    img {
+      max-width: 480px;
+    }
+    .what_mission_image, .what_values_image {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p {
+      padding-right: 24px;
+      padding-left: 24px;
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 50em;
+    }
+    .text_content {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 50em;
+    }
+  }
+  .title_text {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 50em;
+  }
+  .partners_images_container {
+    max-width: calc(100% - 48px);
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1199px) {
+  .history_gallery__img {
+    max-height: 310px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .what_introduction_container {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  h2.section_title{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 750px) {
+  .what_activities_container p {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .history_container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .history_container .link_to_page {
+    margin-top: 56px;
+  }
+  .history_container p {
+    max-width: 1234px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+  }
+  .history_gallery__img {
+    max-width: 500px;
+    height: 360px;
+    width: 500px;
+    object-fit: cover;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .history_images_container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .history_images_container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  .what_activities_container, .text_content {
+    max-width: 1234px;
+    margin-left: auto;
+    margin-right: auto;
+
+    p {
+      font-size: 18px;
+    }
+  }
+  .partners_images_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    max-width: 1234px;
+  }
+  .what_introduction_container {
+    margin-top: 206px;
+    max-width: 1234px;
+    margin-right: auto;
+    margin-left: auto;
+
+    p {
+      padding-left: 24px;
+      padding-right: 24px;
+      font-size: 18px;
+    }
+  }
+  .what_introduction_container {
+    margin-bottom: 120px;
+
+    .img_title_text {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1234px;
+    }
+  }
+  .missions_container.img_title_text, .values_container.img_title_text , .activities_container.img_title_text{
+    .text_content {
+      margin-right: auto;
+      margin-left: 0;
+    }
+
+    .what_mission_image, .what_values_image {
+      margin-left: auto;
+    }
+
+    .what_mission_image img, .what_values_image img {
+      max-width: 480px;
+    }
+
+  }
+  .values_container {
+    margin-bottom: 120px;
+  }
+  .history_container {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .partners_container {
+    margin-bottom: 120px;
+    margin-top: 0;
+  }
+  .img_title_text {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    gap: 56px;
+
+    .text_content {
+      max-width: 678px;
+    }
+    img {
+      margin-top: 0;
+    }
+    h2 {
+      margin-left: 0;
+    }
+    .text_content p {
+      padding-left: 0;
+    }
+  }
 }
