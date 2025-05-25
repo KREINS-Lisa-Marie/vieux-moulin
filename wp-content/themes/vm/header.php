@@ -63,6 +63,11 @@
         </ul>
 
         <ul class="nav__container__header__top">
+            <li class="nav__item__header_top">
+                <a href="http://vieux-moulin-site.test/nos-actualites/" class="nav__link__header_top" title="Aller vers la page 'Actualités'">
+                    Actualités
+                </a>
+            </li>
             <?php foreach (dw_get_navigation_links('header_top') as $link): ?>
                 <li class="nav__item__header_top">
                     <a href="<?= $link->href; ?>" class="nav__link__header_top"><?= $link->label;?></a>
