@@ -5,6 +5,7 @@
 @use 'settings/fonts';
 
 
+
 @use 'content/what_is';
 @use 'content/faq';
 @use 'content/houses';
@@ -13,11 +14,13 @@
 @use 'content/donations';
 @use 'content/life_at_vm';
 @use 'content/single-project';
-@use 'content/about';
 @use 'content/contact';
 @use 'content/front-page';
 @use 'content/news-cards';
+@use 'content/new_news_file';
+@use 'content/donation_section';
 
+@use 'general/privacy';
 @use 'general/media_queries';
 @use 'general/footer';
 @use 'general/general';

@@ -1,19 +1,41 @@
-.houses_vm_gallery, .houses_e_gallery {
-  margin-bottom: 48px;
+/* galeries du vm et edelweiss */
+.houses_vm_gallery_container, .houses_e_gallery_container {
+  .section_title {
+    margin-bottom: 32px;
+  }
+  .houses_vm_gallery, .houses_e_gallery {
+    margin-bottom: 56px;
+  }
+}
+.houses_e_gallery_container .section_title:last-of-type, .houses_vm_gallery_container .section_title:last-of-type {
+  margin-bottom: 32px;
 }
 
+.vm_adress p {
+  margin-bottom: 8px;
+}
+
+.vm_adress p:last-of-type {
+  margin-bottom: 0;
+}
+
+
+
+/* Team et introduction */
 .houses_vm_team_container, .houses_vm_introduction_container, .houses_e_introduction_container, .houses_e_team_container {
   h3 {
     margin-bottom: 32px;
     margin-left: 24px;
   }
 }
-
-.image_e img, .image_vm img, .project_image img {
-  width: 100%;
-  height: auto;
+.image_vm img, .image_e img, .project_image img {
+  border-radius: 8px;
+  max-width: 594px;
 }
 
+
+
+/* projets */
 .houses_project_container .project_image img {
   border-radius: 8px;
   margin-bottom: 0;
@@ -29,7 +51,6 @@
 
 .houses_project_container {
   margin-bottom: 0;
-
   p {
     margin-bottom: 90px;
   }
@@ -43,6 +64,9 @@ strong {
   font-weight: 700;
 }
 
+
+
+/* liens des 2 maisons */
 .houses_links {
   margin-top: 150px;
   display: flex;
@@ -57,51 +81,233 @@ strong {
 }
 
 
-@media (max-width: 1199px) {
-  .img_title_text {
-    display: flex;
-    flex-direction: column;
 
-    .qr_code img, .qr_code {
-      margin-bottom: 0;
-    }
-    p {
-      order: 4;
-    }
-    img {
-      order: 1;
-      margin-bottom: 48px;
-    }
-    h2 {
-      order: 2;
-    }
-    h3 {
-      order: 3;
-    }
-    a {
-      order: 5;
-    }
-    .donations_title{
-      order: 1;
-    }
-    .qr_image{
-      order: 2;
+
+/*    MOBILE & TABLET    */
+@media (max-width: 1199px) {
+  .image_e img, .image_vm img, .project_image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+/*    TABLET    */
+@media (min-width: 750px) and (max-width: 1199px) {
+  /*section de dons*/
+  .img_title_text {
+    .text_content {
+      margin-left: 24px;
+      margin-right: 24px;
+      max-width: 50em;
+
+      .section_title {
+        margin-left: 0;
+      }
     }
   }
 }
 
-.image_vm img, .image_e img {
-  border-radius: 8px;
+//    verwirrt???
+/*    MOBILE & TABLET    */
+@media (max-width: 1199px) {
+  /*section de dons*/
+  .img_title_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .qr_code img, .qr_code {
+      margin-bottom: 0;
+    }
+
+    .text_content {
+      order: 2;
+    }
+
+    p {
+      order: 4;
+    }
+
+    img {
+      order: 1;
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      order: 2;
+    }
+
+    h3 {
+      order: 3;
+    }
+
+    a {
+      order: 5;
+    }
+
+    .donations_title {
+      order: 1;
+    }
+
+    .qr_image {
+      order: 2;
+    }
+  }
+}
+//    verwirrt bis???
+
+
+
+
+/*    DESKTOP    */
+@media (min-width: 1200px) {
+  .vm_adress {
+    font-size: 18px;
+  }
+  .houses_vm_introduction_container, .houses_vm_team_container, .houses_e_introduction_container, .houses_e_team_container, .single_project {
+    gap: 48px;
+    max-width: 1234px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+
+    p {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+
+    .image_vm {
+      width: 594px;
+      height: auto;
+    }
+
+    .section_title, .project_title {
+      margin-left: 0;
+    }
+
+    .project_title {
+      margin-top: 0;
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .projects_container {
+    margin-bottom: 120px;
+    margin-top: 120px;
+
+    .single_project {
+      margin-bottom: 90px;
+    }
+
+    .single_project:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .houses_project_container {
+      margin-top: 0;
+    }
+  }
+  .houses_e_team_container, .houses_vm_team_container {
+    margin-bottom: 120px;
+    margin-top: 0;
+  }
+  .houses_e_introduction_container, .houses_vm_introduction_container {
+    margin-bottom: 150px;
+    margin-top: 120px;
+  }
+  .houses_links {
+    margin-top: 166px;
+  }
+
+/*  section.donations_container {
+    margin-bottom: 0;
+  }
+  .donations_container {
+    display: grid;
+    grid-template-areas: ". title"
+                          "qr subtitle"
+                          "qr text"
+                          ". info"
+                          ". link";
+    !*max-width: 1000px;*!
+    width: 100%;
+    justify-content: center;
+    grid-gap: 16px;
+    align-items: center;
+
+    .section_title {
+      grid-area: title;
+    }
+
+    .donations_subtitle {
+      grid-area: subtitle;
+    }
+
+    .donations_text {
+      grid-area: text;
+      max-width: 794px;
+      font-size: 18px;
+    }
+
+    .donations_subline {
+      grid-area: info;
+    }
+
+    .link_to_page {
+      grid-area: link;
+    }
+
+    .qr_code {
+      grid-area: qr;
+    }
+
+    .donations_text, .donations_subline, .link_to_page, .donations_subtitle, .section_title, .link_to_donation_contact.link_to_page.link {
+      max-width: 794px;
+      margin-left: 16px;
+      text-align: start;
+    }
+
+    .donations_subtitle {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .donations_subline {
+      margin-bottom: 8px;
+      margin-top: 16px;
+      font-size: 24px;
+    }
+  }*/
+}
+/*
+
+!*    TABLET    *!
+@media (min-width: 750px) and (max-width: 1199px) {
+  .donations_container {
+    align-items: center;
+  }
+  .link_to_donation_contact.link {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
-.houses_e_gallery_container .section_title:last-of-type, .houses_vm_gallery_container .section_title:last-of-type {
-  margin-bottom: 32px;
-}
+!*    MOBILE    *!
+@media (max-width: 749px) {
+  .donations_container {
+    align-items: start;
 
-.vm_adress p {
-  margin-bottom: 16px;
-}
+    .qr_code {
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-.vm_adress p:last-of-type {
-  margin-bottom: 0;
-}
+    .section_title {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}*/

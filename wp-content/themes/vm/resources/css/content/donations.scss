@@ -1,4 +1,8 @@
+
+/*  introduction bénévolat et autres formes de don*/
 .introduction_donations {
+  display: flex;
+  flex-direction: column;
   margin-top: 155px;
 
   h2 {
@@ -12,7 +16,15 @@
     margin-top: 40px;
   }
 }
+.types_of_donations_img img {
+  width: 100%;
+  height: auto;
+  max-width: 495px;
+  border-radius: 8px;
+}
 
+
+//  von ??
 .image_donations img {
   width: 100%;
   height: auto;
@@ -28,6 +40,13 @@
   line-height: 28px;
 }
 
+  //   bis ??
+
+
+
+
+/*    Partenaires galerie */
+
 .partners_container {
   text-align: center;
 }
@@ -35,30 +54,74 @@
 .partners_gallery_container {
   display: flex;
   flex-wrap: wrap;
-  max-width: calc(100% - 48px);
-  margin-left: auto;
+  flex-direction: row;
+  justify-content: center;
   margin-right: auto;
-  gap: 24px;
+  margin-left: auto;
+  align-items: center;
+  max-width: 1234px;
   margin-top: 32px;
 }
 
 .donations_partner_gallery__img {
-  width: 150px;
+  width: auto;
   height: auto;
+  max-width: 241px;
+}
+
+/*    section de demande de dons    */
+
+.link_to_page, .donations_subline {
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 600;
 }
 
 .donations_subline {
-  margin-left: 24px;
   margin-top: 32px;
   margin-bottom: 24px;
+  font-family: "Sulphur Point", sans-serif;
 }
 
 
+
+
+
+
+/*    MOBILE    */
+@media (max-width: 749px) {
+  .donations_subline {
+    margin-left: 24px;
+  }
+}
+/*    TABLET & DESKTOP    */
+@media (min-width: 750px) {
+  .introduction_donations {
+    max-width: 1234px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/*    TABLET    */
+@media (min-width: 750px) and (max-width: 1199px) {
+  .donations_text, .donations_title {
+    max-width: 50em;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+
+/*    MOBILE & TABLET   */
 @media (max-width: 1199px) {
-  .types_of_donations_container{
-/*    .activities_container, .family_container {*/
-      display: flex;
-      flex-direction: column;
+  .types_of_donations_container {
+    /*    .activities_container, .family_container {*/
+    display: flex;
+    flex-direction: column-reverse;
 
     h2 {
       order: 1;
@@ -66,34 +129,78 @@
     .types_of_donations_img {
       order: 2;
       margin-bottom: 48px;
+      text-align: center;
     }
-    h3{
-      order: 3;
-    }
-      .donations_text {
-        order: 4;
-      }
 
-    .types_of_donations_img img{
-      width: 100%;
-      height: auto;
-    }
-    ul li{
-      list-style-type: disc;
-      margin-left: 36px;
-      line-height: 28px;
-    }
-    .donations_text{
+   /*   TEST
+   h3 {
+      order: 3;
+    }*/
+
+    .donations_text {
+      order: 4;
       margin-top: 32px;
+      ul li {
+        line-height: 28px;
+      }
     }
-    .section_title{
+    .section_title {
       margin-bottom: 32px;
     }
+    li {
+      list-style-type: disc;
+      margin-left: 36px;
+    }
   }
-  .link_to_page, .donations_subline{
+
+
+  .link_to_page, .donations_subline {
     font-size: 18px;
-    font-family: "Sulphur Point", sans-serif;
-    font-weight: 600;
   }
-/*}*/
+  .partners_gallery_container {
+    gap: 24px;
+  }
+  .donations_container {
+    flex-direction: column-reverse;
+  }
+}
+
+/*    DESKTOP   */
+@media (min-width: 1200px) {
+  .introduction_donations {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .donations_flex_container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    max-width: 1234px;
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+
+    .donations_text {
+      max-width: 592px;
+      font-size: 18px;
+      line-height: 28px;
+
+      li {
+        list-style-type: disc;
+        margin-left: 36px;
+      }
+    }
+  }
+  .types_of_donations_container {
+    margin-bottom: 120px;
+  }
+  .partners_gallery_container {
+    gap: 48px;
+  }
+
+  .donations_container~.partners_container{
+  margin-top: 120px;
+  }
 }
