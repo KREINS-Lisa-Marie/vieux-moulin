@@ -147,7 +147,7 @@
 
 
             if ($news->have_posts()): while ($news->have_posts()): $news->the_post(); ?>
-                <article class="single_news news__card">
+                <article class="single_news news__card" itemprop="event">
                     <h3 class="news__title">
                         <?= get_the_title(); ?>
                     </h3>

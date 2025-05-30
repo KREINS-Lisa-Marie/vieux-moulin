@@ -32,14 +32,37 @@
             </h3>
             <?= get_field('text_vieux_moulin'); ?></div>
 
-        <div class="image_vm">
+        <div class="image_vm" itemprop="image">
             <?php
             $vm_image = get_field('image_vm');
-            $size = 'full'; // (thumbnail, medium, large, full or custom size)
-            if ($vm_image) {
-                echo wp_get_attachment_image($vm_image, $size);
-            }
-            ?>
+            $size = 'section_image'; // (thumbnail, medium, large, full or custom size)
+            if ($vm_image):?>
+                <figure>
+                    <?= wp_get_attachment_image($vm_image, $size);;?>
+                    <?= responsive_image(get_field('image_vm'), ['lazy' => 'lazy', 'classes' => 'stage__image']) ?>
+                    </article>
+                </figure>
+<?php endif;?>
+            
+            <?php
+/* /*                      $vm_image = get_field('image_vm');
+                        $size = 'full'; // (thumbnail, medium, large, full or custom size)
+                        if ($vm_image) {
+                            echo
+                            responsive_image($vm_image, ['classes' => 'gallery__img']);
+                        }
+            var_dump(wp_get_attachment_image_srcset($vm_image, 'large'));*/
+            $vm_image = get_field('image_vm');
+   /*         echo wp_get_attachment_image($vm_image, 'large', false, [
+                'class' => 'responsive-img',
+                'sizes' => '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 594px'
+            ]);*/
+            /*wp_get_attachment_image(get_field('image_vm'), 'news', attr: ['class' => 'actu__img']);
+            */?><!--
+            <figure class="actu__fig-one">
+                <?php /*= wp_get_attachment_image(get_field('image_vm'), 'news', attr: ['class' => 'actu__img']); */?>
+            </figure>
+-->
         </div>
     </section>
 
@@ -67,7 +90,7 @@
             <span class="underline back">Galerie</span> Vieux Moulin
         </h3>
 
-        <div class="houses_vm_gallery">
+        <div class="houses_vm_gallery" itemprop="image">
             <?php $images = get_field('vieux_moulin_gallery'); ?>
             <?php if (!empty($images)): foreach ($images as $image): ?>
                 <?= responsive_image($image, ['classes' => 'houses_vm_gallery__img']) ?>

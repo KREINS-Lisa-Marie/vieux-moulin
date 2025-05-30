@@ -35,7 +35,7 @@
         $news->the_post(); ?>
 
 
-            <article class="news__card">
+            <article class="news__card" itemprop="event">
                 <h3 class="news__title">
                     <?= get_the_title(); ?>
                 </h3>

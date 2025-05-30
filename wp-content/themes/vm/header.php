@@ -39,8 +39,8 @@
     <nav class="nav__header">
         <h2 class="sro">Navigation pricinpale</h2>
         <a href="http://vieux-moulin-site.test/" title="Aller vers la page d'accueil" class="logo_link">
-            <img src="/wp-content/themes/vm/resources/img/Logo.webp" alt="Logo Vieux Moulin" width="30" height="24" class="logo_image">
-            <span class="le_vieux_moulin_logo_title">Le Vieux Moulin</span>
+            <img src="/wp-content/themes/vm/resources/img/Logo.webp" alt="Logo Vieux Moulin" width="30" height="24" class="logo_image" itemprop="logo">
+            <span class="le_vieux_moulin_logo_title" itemprop="legalName">Le Vieux Moulin</span>
         </a>
         <a href="#content" class="sro skip" title="Aller au contenu principal">Aller au contenu principal</a>
 
@@ -85,21 +85,7 @@
     </nav>
 </header>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<main id="content">
+<main id="content" itemscope itemtype="https://schema.org/Organization">
 
 
 

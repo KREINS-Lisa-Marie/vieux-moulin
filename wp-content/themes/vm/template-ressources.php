@@ -9,7 +9,7 @@
 if(have_posts()): while(have_posts()): the_post(); */ ?>
 
 <div class="flex_container_first_section">
-    <div class="image_resources">
+    <div class="image_resources" itemprop="image">
         <?php
         $resources_image = get_field('image_resources');
         $size = 'full'; // (thumbnail, medium, large, full or custom size)

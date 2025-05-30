@@ -4,7 +4,7 @@
 
 
 <section class="what_introduction_container img_title_text">
-    <div class="text_content">
+    <div class="text_content" itemprop="description">
         <h2 class="section_title">
             <?php $what_title = get_field('title_dintroduction_what_is_it'); ?>
             <?php $what_title = str_replace(['<p>', '</p>'], '', $what_title);
@@ -12,7 +12,7 @@
             <?= $what_title ?>
         </h2>
         <?= get_field('text_introduction_what_is_it'); ?></div>
-    <div class="what_introduction_image">
+    <div class="what_introduction_image" itemprop="image">
         <?php
         $what_introduction_image = get_field('introduction_image');
         $size = 'full'; // (thumbnail, medium, large, full or custom size)
@@ -86,7 +86,7 @@
         <span class="underline back">et </span>
         <span class="underline back">évolution</span> du Vieux Moulin
     </h2>
-    <div class="history_images_container">
+    <div class="history_images_container" itemprop="image">
         <?php $images = get_field('gallery_lhistory_vm'); ?>
 
         <?php if (!empty($images)): foreach ($images as $image): ?>
@@ -110,7 +110,7 @@
     <h2 class="section_title">
         <span class="underline"><?= get_field('partners_title'); ?></span>
     </h2>
-    <div class="partners_images_container">
+    <div class="partners_images_container" itemprop="sponsor">
         <?php $images = get_field('partners_gallery'); ?>
 
         <?php if (!empty($images)): foreach ($images as $image): ?>
