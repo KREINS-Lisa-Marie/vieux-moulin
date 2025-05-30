@@ -91,7 +91,7 @@ endwhile; else: ?>
 <?php endif; ?>
 
 <div class="location_section">
-    <div class="adress_container">
+    <div class="adress_container" itemprop="address">
         <h2 class="location_title">
             Le Vieux Moulin
         </h2>

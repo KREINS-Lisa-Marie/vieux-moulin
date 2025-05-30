@@ -3,7 +3,7 @@
 
     <h2 class="sro">Le Vieux Moulin page d'accueil</h2>
 
-    <div class="image_accueil">
+    <div class="image_accueil" itemprop="image">
         <?php
         $image_accueil = get_field('head_image');
         $e_size = 'full'; // (thumbnail, medium, large, full or custom size)
@@ -15,12 +15,14 @@
 
     <!--        Contenu Principal       -->
     <section class="what_is_it title_text ">
-        <h2 class="section_title title_middle">
+        <h2 class="section_title title_middle" itemprop="legalName">
             Le <span class="underline">Vieux </span>
             <span class="underline">Moulin</span>
             c'est quoi?
         </h2>
-        <?= get_field('first_text'); ?>
+        <div itemprop="description">
+            <?= get_field('first_text'); ?>
+        </div>
 
         <a href="<?php the_field('link_homepage_to_discover '); ?>" title="Aller vers la page du Vieux Moulin"
            class="link title_middle">Découvrir le Vieux Moulin
@@ -64,7 +66,7 @@
 
 
             if ($news->have_posts()): while ($news->have_posts()): $news->the_post(); ?>
-                <article class="single_news news__card">
+                <article class="single_news news__card" itemprop="event">
                     <h3 class="news__title">
                         <?= get_the_title(); ?>
                     </h3>

@@ -133,7 +133,7 @@ if (have_posts()): while (have_posts()): the_post(); ?>
             <span class="underline"><?= get_field('title_partners'); ?></span>
         </h2>
 
-        <div class="partners_gallery_container">
+        <div class="partners_gallery_container" itemprop="sponsor">
             <?php $images = get_field('gallery_partners'); ?>
             <?php if (!empty($images)): foreach ($images as $image): ?>
                 <?= responsive_image($image, ['classes' => 'donations_partner_gallery__img']) ?>

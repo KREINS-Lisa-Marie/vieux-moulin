@@ -4,7 +4,7 @@
 // On ouvre "la boucle" (The Loop), la structure de contrôle de contenu propre à Wordpress:
 if (have_posts()): while (have_posts()): the_post(); ?>
 
-    <article class="single_news_article">
+    <article class="single_news_article" itemprop="event">
         <h2 class="single_news__title title_middle">
             <?= get_the_title(); ?>
         </h2>
@@ -70,7 +70,7 @@ else: ?>
 
 
             if ($news->have_posts()): while ($news->have_posts()): $news->the_post(); ?>
-                <article class="single_news news__card">
+                <article class="single_news news__card" itemprop="event">
                     <h3 class="news__title">
                         <?= get_the_title(); ?>
                     </h3>

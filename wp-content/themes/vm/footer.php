@@ -1,30 +1,30 @@
 </main>
-<footer>
+<footer id="footer" itemscope itemtype="https://schema.org/Organization">
     <div class="main_footer_content">
         <div class="footer_adress">
             <div class="name_logo_footer">
-                <h2 class="footer_adress_title">
+                <h2 class="footer_adress_title" itemprop="legalName">
                     Le Vieux moulin
                 </h2>
                 <img src="/wp-content/themes/vm/resources/img/Logo.webp" alt="Logo Vieux Moulin" width="30" height="24"
-                     class="logo_image">
+                     class="logo_image" itemprop="logo">
             </div>
 
-            <p>
+            <p itemprop="address">
                 Rue des Vennes 1
             </p>
-            <p>
+            <p itemprop="address">
                 Strainchamps
             </p>
-            <p>
+            <p itemprop="address">
                 6637 Fauvillers
             </p>
-            <p>
+            <p itemprop="telephone">
                 +32 (0) 63 60 22 37
             </p>
         </div>
 
-        <div class="footer_partners">
+        <div class="footer_partners" itemprop="sponsor">
             <p>
                 Avec le soutien de :
             </p>
@@ -105,9 +105,9 @@
 
 
 
-    <div class="legal_infos">
+    <div class="legal_infos" itemscope itemtype="https://schema.org/Person">
         <p>
-            © 2025 Le Vieux Moulin. Tous droits réservés. Crée par Kreins Lisa-Marie.
+            © 2025 Le Vieux Moulin. Tous droits réservés. Crée par <span itemprop="familyName">Kreins</span> <span itemprop="givenName">Lisa-Marie</span>.
         </p>
         <p>
             <a href="http://vieux-moulin-site.test/?page_id=3&preview=true">Mentions légales</a>
