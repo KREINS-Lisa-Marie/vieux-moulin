@@ -9,11 +9,9 @@
 @use 'content/what_is';
 @use 'content/faq';
 @use 'content/houses';
-@use 'content/news';
 @use 'content/resources';
 @use 'content/donations';
 @use 'content/life_at_vm';
-@use 'content/single-project';
 @use 'content/contact';
 @use 'content/front-page';
 @use 'content/news-cards';
@@ -21,10 +19,7 @@
 @use 'content/donation_section';
 
 @use 'general/privacy';
-@use 'general/media_queries';
 @use 'general/footer';
 @use 'general/general';
 @use 'general/header';
-@use 'general/navigation';
-@use 'general/languages';
 

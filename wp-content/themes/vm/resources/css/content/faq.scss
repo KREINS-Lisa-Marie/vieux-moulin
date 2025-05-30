@@ -23,6 +23,7 @@
 
 }
 
+
 .faq_family_list, .faq_general_list{
   max-width: 50em;
   margin-left: auto;
@@ -40,5 +41,8 @@
 @media (min-width: 1200px) {
   .family_section_container {
     margin-top: 206px;
+    .section_title{
+      margin-bottom: 8px;
+    }
   }
 }
