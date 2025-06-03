@@ -5,11 +5,14 @@
 
 <section class="what_is_life_like_container title_text">    <!--TITRE du de la section d'introduction-->
     <h2 class="section_title">
-        Comment se passe <span class="underline">la</span><span class="underline"> vie</span><span class="underline"> sur</span><span class="underline"> place</span>
+        <?php $life_introduction_title = get_field('introduction_title'); ?>
+        <?php $life_introduction_title = str_replace(['<p>', '</p>'], '', $life_introduction_title);          // enlever les p car je veux avoir un h2
+        $life_introduction_title = str_replace('<strong>', '<strong class="underline">', $life_introduction_title) //ajoute la classe "underline à la balise ?>
+        <?= $life_introduction_title ?>
     </h2>
     <?= get_field('introduction_texte'); ?>
-    <a href="<?php the_field('link_lif_to_houses '); ?>" title="Aller vers la page 'Nos maisons'" class="link_to_page link">Découvrez nos maisons
-        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <a href="<?= get_field('link_lif_to_houses'); ?>" title="Aller vers la page 'Nos maisons'" class="link_to_page link">Découvrez nos maisons
+        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
             <path d="M12.1638 4.35355C12.3591 4.15829 12.3591 3.84171 12.1638 3.64645L8.98185 0.464467C8.78659 0.269204 8.47001 0.269204 8.27475 0.464467C8.07948 0.659729 8.07948 0.976311 8.27475 1.17157L11.1032 4L8.27475 6.82843C8.07948 7.02369 8.07948 7.34027 8.27475 7.53553C8.47001 7.7308 8.78659 7.7308 8.98185 7.53553L12.1638 4.35355ZM0.853516 4L0.853516 4.5L11.8103 4.5L11.8103 4L11.8103 3.5L0.853516 3.5L0.853516 4Z" fill="#F19595"/>
         </svg>
     </a>
@@ -19,7 +22,10 @@
 <section class="activities_container img_title_text">
     <div class="text_content">
         <h2 class="section_title">
-            <span class="underline">Activités</span> des enfants
+            <?php $life_activity_title = get_field('activities_title'); ?>
+            <?php $life_activity_title = str_replace(['<p>', '</p>'], '', $life_activity_title);          // enlever les p car je veux avoir un h2
+            $life_activity_title = str_replace('<strong>', '<strong class="underline">', $life_activity_title) //ajoute la classe "underline à la balise ?>
+            <?= $life_activity_title ?>
         </h2>
         <?= get_field('activities_text'); ?>
     </div>
@@ -110,12 +116,16 @@
     </section>-->
     <section class="news_section">
         <div class="news_header">
-            <h2 class="section_title back">Nos <span class="underline back">actualités</span>
+            <h2 class="section_title back">
+                <?php $life_news_title = get_field('title_news'); ?>
+                <?php $life_news_title = str_replace(['<p>', '</p>'], '', $life_news_title);          // enlever les p car je veux avoir un h2
+                $life_news_title = str_replace('<strong>', '<strong class="underline">', $life_news_title) //ajoute la classe "underline à la balise ?>
+                <?= $life_news_title ?>
             </h2>
             <a href="<?= get_field('link_homepage_to_news'); ?>" title="Aller vers la page 'Actualités'"
                class="link show_all_news">Voir
                 toutes les actualités
-                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
                     <path
                             d="M12.1638 4.35355C12.3591 4.15829 12.3591 3.84171 12.1638 3.64645L8.98185 0.464467C8.78659 0.269204 8.47001 0.269204 8.27475 0.464467C8.07948 0.659729 8.07948 0.976311 8.27475 1.17157L11.1032 4L8.27475 6.82843C8.07948 7.02369 8.07948 7.34027 8.27475 7.53553C8.47001 7.7308 8.78659 7.7308 8.98185 7.53553L12.1638 4.35355ZM0.853516 4L0.853516 4.5L11.8103 4.5L11.8103 4L11.8103 3.5L0.853516 3.5L0.853516 4Z"
                             fill="#F19595"/>
@@ -202,7 +212,10 @@
 
     <section class="testimonials_container ">
         <h2 class="section_title title_middle">
-            <span class="underline">Témoignages</span> de nos enfants
+            <?php $life_testimonials_title = get_field('third_title'); ?>
+            <?php $life_testimonials_title = str_replace(['<p>', '</p>'], '', $life_testimonials_title);          // enlever les p car je veux avoir un h2
+            $life_testimonials_title = str_replace('<strong>', '<strong class="underline">', $life_testimonials_title) //ajoute la classe "underline à la balise ?>
+            <?= $life_testimonials_title ?>
         </h2>
         <div class="testimonials_flex_container">
             <div class="single_textimonial">
@@ -247,7 +260,10 @@
 
 <section class="life_gallery_container title_gallery">
 <h2 class="section_title title_middle">
-    <span class="underline back">Galerie</span>
+    <?php $life_gallery_title = get_field('gallery_title'); ?>
+    <?php $life_gallery_title = str_replace(['<p>', '</p>'], '', $life_gallery_title);          // enlever les p car je veux avoir un h2
+    $life_gallery_title = str_replace('<strong>', '<strong class="underline back">', $life_gallery_title) //ajoute la classe "underline à la balise ?>
+    <?= $life_gallery_title ?>
 </h2>
 
     <div class="foyer_gallery_container">
@@ -273,7 +289,10 @@
 
 <section class="faq_life_container">
     <h2 class="section_title title_middle">
-        <span class="underline">FAQ</span>
+        <?php $life_faq_title = get_field('title_faq_life'); ?>
+        <?php $life_faq_title = str_replace(['<p>', '</p>'], '', $life_faq_title);          // enlever les p car je veux avoir un h2
+        $life_faq_title = str_replace('<strong>', '<strong class="underline back">', $life_faq_title) //ajoute la classe "underline à la balise ?>
+        <?= $life_faq_title ?>
     </h2>
 
     <!--RECUPERER LES QUESTIONS CLONE-->
@@ -303,23 +322,12 @@
     <?php endif; ?>
 
     <a href="<?php the_field('link_guide '); ?>" title="Aller vers la page 'Ressources'" class="link_to_page link">Guide pratique
-        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
             <path d="M12.1638 4.35355C12.3591 4.15829 12.3591 3.84171 12.1638 3.64645L8.98185 0.464467C8.78659 0.269204 8.47001 0.269204 8.27475 0.464467C8.07948 0.659729 8.07948 0.976311 8.27475 1.17157L11.1032 4L8.27475 6.82843C8.07948 7.02369 8.07948 7.34027 8.27475 7.53553C8.47001 7.7308 8.78659 7.7308 8.98185 7.53553L12.1638 4.35355ZM0.853516 4L0.853516 4.5L11.8103 4.5L11.8103 4L11.8103 3.5L0.853516 3.5L0.853516 4Z" fill="#F19595"/>
         </svg>
     </a>
 
 
 </section>
-
-
-
-
-
-
-
-
-
-
-
 
 <?php get_footer(); ?>

@@ -8,9 +8,10 @@ if(have_posts()): while(have_posts()): the_post(); ?>
 
     <section class="contact">
         <h2 class="form_title section_title">
-            <span class="underline back">
-                Contactez-nous
-            </span>
+            <?php $form_title = get_field('title_form'); ?>
+            <?php $form_title = str_replace(['<p>', '</p>'], '', $form_title);          // enlever les p car je veux avoir un h2
+            $form_title = str_replace('<strong>', '<strong class="underline back">', $form_title) //ajoute la classe "underline à la balise ?>
+            <?= $form_title ?>
         </h2>
 
         <?php

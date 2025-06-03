@@ -16,9 +16,10 @@
     <!--        Contenu Principal       -->
     <section class="what_is_it title_text ">
         <h2 class="section_title title_middle" itemprop="legalName">
-            Le <span class="underline">Vieux </span>
-            <span class="underline">Moulin</span>
-            c'est quoi?
+            <?php $home_first_title = get_field('first_title'); ?>
+            <?php $home_first_title = str_replace(['<p>', '</p>'], '', $home_first_title);          // enlever les p car je veux avoir un h2
+            $home_first_title = str_replace('<strong>', '<strong class="underline">', $home_first_title) //ajoute la classe "underline à la balise ?>
+            <?= $home_first_title ?>
         </h2>
         <div itemprop="description">
             <?= get_field('first_text'); ?>
@@ -40,7 +41,11 @@
 
     <section class="news_section">
         <div class="news_header">
-            <h2 class="section_title back">Nos <span class="underline back">actualités</span>
+            <h2 class="section_title back">
+                <?php $home_news_title = get_field('second_title'); ?>
+                <?php $home_news_title = str_replace(['<p>', '</p>'], '', $home_news_title);          // enlever les p car je veux avoir un h2
+                $home_news_title = str_replace('<strong>', '<strong class="underline">', $home_news_title) //ajoute la classe "underline à la balise ?>
+                <?= $home_news_title ?>
             </h2>
             <a href="<?= get_field('link_homepage_to_news'); ?>" title="Aller vers la page 'Actualités'"
                class="link show_all_news">Voir
@@ -119,7 +124,10 @@
 
     <section class="testimonials_container ">
         <h2 class="section_title title_middle">
-            <span class="underline">Témoignages</span> de nos enfants
+            <?php $home_testimonials_title = get_field('third_title'); ?>
+            <?php $home_testimonials_title = str_replace(['<p>', '</p>'], '', $home_testimonials_title);          // enlever les p car je veux avoir un h2
+            $home_testimonials_title = str_replace('<strong>', '<strong class="underline">', $home_testimonials_title) //ajoute la classe "underline à la balise ?>
+            <?= $home_testimonials_title ?>
         </h2>
         <div class="testimonials_flex_container">
             <div class="single_textimonial">
@@ -193,7 +201,13 @@
 
     <section class="donations_container img_title_text">
         <h2 class=" donations_title section_title">
-            <span class="underline back">  <?= get_field('fourth_title'); ?></span>
+
+            <?php $home_donations_title = get_field('fourth_title'); ?>
+            <?php $home_donations_title = str_replace(['<p>', '</p>'], '', $home_donations_title);          // enlever les p car je veux avoir un h2
+            $home_donations_title = str_replace('<strong>', '<strong class="underline back">', $home_donations_title) //ajoute la classe "underline à la balise ?>
+            <?= $home_donations_title ?>
+
+
         </h2>
         <h3 class="donations_subtitle subtitle">
             <?= get_field('secondary_title'); ?>
@@ -241,8 +255,10 @@
     <section class="family_container img_title_text">
         <div class="text_content">
             <h2 class="section_title title_middle">
-                <span class="underline">Autre façon</span>
-                de soutenir
+                <?php $home_families_title = get_field('fifth_title'); ?>
+                <?php $home_families_title = str_replace(['<p>', '</p>'], '', $home_families_title);          // enlever les p car je veux avoir un h2
+                $home_families_title = str_replace('<strong>', '<strong class="underline">', $home_families_title) //ajoute la classe "underline à la balise ?>
+                <?= $home_families_title ?>
             </h2>
             <h3 class="subtitle">
                 <?= get_field('fifth_subtitle'); ?>

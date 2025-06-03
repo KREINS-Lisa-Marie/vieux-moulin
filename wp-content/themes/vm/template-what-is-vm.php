@@ -7,8 +7,8 @@
     <div class="text_content" itemprop="description">
         <h2 class="section_title">
             <?php $what_title = get_field('title_dintroduction_what_is_it'); ?>
-            <?php $what_title = str_replace(['<p>', '</p>'], '', $what_title);
-            $what_title = str_replace('<strong>', '<strong class="underline">', $what_title) ?>
+            <?php $what_title = str_replace(['<p>', '</p>'], '', $what_title);          // enlever les p car je veux avoir un h2
+            $what_title = str_replace('<strong>', '<strong class="underline">', $what_title) //ajoute la classe "underline à la balise ?>
             <?= $what_title ?>
         </h2>
         <?= get_field('text_introduction_what_is_it'); ?></div>
@@ -30,7 +30,10 @@
     <section class="missions_container img_title_text">
         <div class="text_content">
         <h2 class="section_title" >
-            Nos <span class="underline back">missions </span>
+            <?php $missions_title = get_field('missions_title'); ?>
+            <?php $missions_title = str_replace(['<p>', '</p>'], '', $missions_title);          // enlever les p car je veux avoir un h2
+            $missions_title = str_replace('<strong>', '<strong class="underline back">', $missions_title) //ajoute la classe "underline à la balise ?>
+            <?= $missions_title ?>
         </h2>
         <?= get_field('text_missions'); ?>
         </div>
@@ -49,7 +52,10 @@
 
         <div class="text_content">
             <h2 class="section_title">
-                Nos <span class="underline back">valeurs </span>
+                <?php $values_title = get_field('title_values'); ?>
+                <?php $values_title = str_replace(['<p>', '</p>'], '', $values_title);          // enlever les p car je veux avoir un h2
+                $values_title = str_replace('<strong>', '<strong class="underline back">', $values_title) //ajoute la classe "underline à la balise ?>
+                <?= $values_title ?>
             </h2>
             <?= get_field('text_values'); ?>
         </div>
@@ -70,10 +76,10 @@
 
 <section class="what_activities_container title_text">
     <h2 class="section_title title_middle">
-        <span class="underline back">Activités </span>
-        <span class="underline back">des </span>
-        <span class="underline back">enfants</span>
-        <?php /*= get_field('title_activities'); */ ?>
+        <?php $what_activities_title = get_field('title_activities'); ?>
+        <?php $what_activities_title = str_replace(['<p>', '</p>'], '', $what_activities_title);          // enlever les p car je veux avoir un h2
+        $what_activities_title = str_replace('<strong>', '<strong class="underline">', $what_activities_title) //ajoute la classe "underline à la balise ?>
+        <?= $what_activities_title ?>
     </h2>
     <?= get_field('text_activities'); ?>
 
@@ -82,9 +88,10 @@
 
 <section class="history_container title_images_text_link">
     <h2 class="section_title title_middle">
-        <span class="underline back">Histoire </span>
-        <span class="underline back">et </span>
-        <span class="underline back">évolution</span> du Vieux Moulin
+        <?php $what_history_title = get_field('title_history'); ?>
+        <?php $what_history_title = str_replace(['<p>', '</p>'], '', $what_history_title);          // enlever les p car je veux avoir un h2
+        $what_history_title = str_replace('<strong>', '<strong class="underline back">', $what_history_title) //ajoute la classe "underline à la balise ?>
+        <?= $what_history_title ?>
     </h2>
     <div class="history_images_container" itemprop="image">
         <?php $images = get_field('gallery_lhistory_vm'); ?>
@@ -108,7 +115,10 @@
 
 <section class="partners_container what_title_gallery">
     <h2 class="section_title">
-        <span class="underline"><?= get_field('partners_title'); ?></span>
+        <?php $what_partners_title = get_field('partners_title'); ?>
+        <?php $what_partners_title = str_replace(['<p>', '</p>'], '', $what_partners_title);          // enlever les p car je veux avoir un h2
+        $what_partners_title = str_replace('<strong>', '<strong class="underline back">', $what_partners_title) //ajoute la classe "underline à la balise ?>
+        <?= $what_partners_title ?>
     </h2>
     <div class="partners_images_container" itemprop="sponsor">
         <?php $images = get_field('partners_gallery'); ?>
