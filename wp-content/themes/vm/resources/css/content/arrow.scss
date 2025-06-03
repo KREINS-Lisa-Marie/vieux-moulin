@@ -1,0 +1,10 @@
+
+.arrow{
+  transition: transform 0.3s ease;
+}
+.arrow{
+  transition: transform 0.3s ease;
+}
+a:hover .arrow{
+  transform: translateX(3px); /* Pfeil bewegt sich beim Hover nach rechts */
+}
