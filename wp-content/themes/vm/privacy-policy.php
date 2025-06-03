@@ -12,7 +12,7 @@
     ?>
 </p>
 
-<div class="identity">
+<div class="identity" >
     <h3 class="identity__title">
         Informations générales
     </h3>
@@ -24,7 +24,7 @@
         Hosting
     </h3>
     <div class="hosting_text">
-        <?= get_field('hosting');?><a href="https://www.infomaniak.com/" title="Aller voir la page d’Infomaniak">Infomaniak</a>
+        <?= get_field('hosting');?><a href="https://www.infomaniak.com/" title="Aller voir la page d’Infomaniak" class="big">Infomaniak</a>
     </div>
 
 </div>
