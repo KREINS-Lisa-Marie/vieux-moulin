@@ -21,7 +21,11 @@ if(have_posts()): while(have_posts()): the_post(); */ ?>
 
     <section class="introduction_resources">
         <h2 class="section_title title_middle">
-            Le <span class="underline">projet </span><span class="underline">éducatif</span> en quelques mots
+            <?php $introduction_resources_title = get_field('title_description_resources'); ?>
+            <?php $introduction_resources_title = str_replace(['<p>', '</p>'], '', $introduction_resources_title);          // enlever les p car je veux avoir un h2
+            $introduction_resources_title = str_replace('<strong>', '<strong class="underline">', $introduction_resources_title) //ajoute la classe "underline à la balise ?>
+            <?= $introduction_resources_title ?>
+
         </h2>
 
         <?= get_field('resources_description_text');?>
@@ -47,7 +51,11 @@ if(have_posts()): while(have_posts()): the_post(); */ ?>
 
 <section class="download_resources_container">
     <h2 class="section_title title_middle">
-        <span class="underline">Ressources</span> téléchargables
+        <?php $download_title = get_field('title_resources_collection'); ?>
+        <?php $download_title = str_replace(['<p>', '</p>'], '', $download_title);          // enlever les p car je veux avoir un h2
+        $download_title = str_replace('<strong>', '<strong class="underline">', $download_title) //ajoute la classe "underline à la balise ?>
+        <?= $download_title ?>
+
     </h2>
 
     <!--Boucle sur le repeater "Fichiers de ressources" pour afficher les fichiers-->

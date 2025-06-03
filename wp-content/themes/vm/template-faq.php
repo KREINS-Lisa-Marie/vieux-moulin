@@ -11,8 +11,10 @@ if(have_posts()): while(have_posts()): the_post(); ?>
     <section class="family_section_container">
         <!--TITRE du FAQ FAMILLE-->
         <h2 class="section_title title_middle">
-            <span class="underline">FAQ </span>
-            <span class="underline">famille</span>
+            <?php $faq_family_title = get_field('faq_family_title'); ?>
+            <?php $faq_family_title = str_replace(['<p>', '</p>'], '', $faq_family_title);          // enlever les p car je veux avoir un h2
+            $faq_family_title = str_replace('<strong>', '<strong class="underline">', $faq_family_title) //ajoute la classe "underline à la balise ?>
+            <?= $faq_family_title ?>
         </h2>
 
 
@@ -51,8 +53,10 @@ if(have_posts()): while(have_posts()): the_post(); ?>
     <section class="general_section_container">
         <!--TITRE du FAQ GENERAl-->
         <h2 class="section_title title_middle">
-            <span class="underline">FAQ </span>
-            <span class="underline">général</span>
+            <?php $faq_general_title = get_field('faq_general_title'); ?>
+            <?php $faq_general_title = str_replace(['<p>', '</p>'], '', $faq_general_title);          // enlever les p car je veux avoir un h2
+            $faq_general_title = str_replace('<strong>', '<strong class="underline">', $faq_general_title) //ajoute la classe "underline à la balise ?>
+            <?= $faq_general_title ?>
         </h2>
 
 

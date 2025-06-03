@@ -26,9 +26,10 @@
     <section class="houses_vm_introduction_container img_title_text">
         <div class="text_content">
             <h3 class="section_title">
-                <span class="underline">Le </span>
-                <span class="underline">Vieux </span>
-                <span class="underline">Moulin</span>
+                <?php $houses_vm_title = get_field('title_vieux_moulin'); ?>
+                <?php $houses_vm_title = str_replace(['<p>', '</p>'], '', $houses_vm_title);          // enlever les p car je veux avoir un h2
+                $houses_vm_title = str_replace('<strong>', '<strong class="underline">', $houses_vm_title) //ajoute la classe "underline à la balise ?>
+                <?= $houses_vm_title ?>
             </h3>
             <?= get_field('text_vieux_moulin'); ?></div>
 
@@ -69,7 +70,10 @@
     <section class="houses_vm_team_container img_title_text">
         <div class="text_content">
             <h3 class="section_title">
-                <span class="underline">L'équipe</span>
+                <?php $houses_vm_team_title = get_field('team_title_vm'); ?>
+                <?php $houses_vm_team_title = str_replace(['<p>', '</p>'], '', $houses_vm_team_title);          // enlever les p car je veux avoir un h2
+                $houses_vm_team_title = str_replace('<strong>', '<strong class="underline">', $houses_vm_team_title) //ajoute la classe "underline à la balise ?>
+                <?= $houses_vm_team_title ?>
             </h3>
             <?= get_field('text_team_vieux_moulin'); ?></div>
 
@@ -87,7 +91,11 @@
 
     <section class="houses_vm_gallery_container title_gallery">
         <h3 class="section_title title_middle">
-            <span class="underline back">Galerie</span> Vieux Moulin
+            <?php $houses_vm_gallery_title = get_field('title_gallery_vm'); ?>
+            <?php $houses_vm_gallery_title = str_replace(['<p>', '</p>'], '', $houses_vm_gallery_title);          // enlever les p car je veux avoir un h2
+            $houses_vm_gallery_title = str_replace('<strong>', '<strong class="underline back">', $houses_vm_gallery_title) //ajoute la classe "underline à la balise ?>
+            <?= $houses_vm_gallery_title ?>
+
         </h3>
 
         <div class="houses_vm_gallery" itemprop="image">
@@ -99,7 +107,10 @@
         </div>
 
         <h3 class="section_title title_middle">
-            <span class="underline back">Coordonnés</span> du Vieux Moulin
+            <?php $houses_vm_adress_title = get_field('title_adress_vm'); ?>
+            <?php $houses_vm_adress_title = str_replace(['<p>', '</p>'], '', $houses_vm_adress_title);          // enlever les p car je veux avoir un h2
+            $houses_vm_adress_title = str_replace('<strong>', '<strong class="underline back">', $houses_vm_adress_title) //ajoute la classe "underline à la balise ?>
+            <?= $houses_vm_adress_title ?>
         </h3>
         <div class="vm_adress title_middle">
             <p><?= get_field('street_vm'); ?></p>
@@ -119,7 +130,10 @@
     <section class="houses_e_introduction_container img_title_text">
         <div class="text_content">
             <h3 class="section_title">
-                <span class="underline">Edelweiss</span>
+                <?php $houses_e_title = get_field('title_edelweiss'); ?>
+                <?php $houses_e_title = str_replace(['<p>', '</p>'], '', $houses_e_title);          // enlever les p car je veux avoir un h2
+                $houses_e_title = str_replace('<strong>', '<strong class="underline">', $houses_e_title) //ajoute la classe "underline à la balise ?>
+                <?= $houses_e_title ?>
             </h3>
             <?= get_field('text_edelweiss'); ?></div>
 
@@ -137,7 +151,10 @@
     <section class="houses_e_team_container img_title_text">
         <div class="text_content">
             <h3 class="section_title">
-                <span class="underline">L'équipe</span>
+                <?php $houses_e_team_title = get_field('team_title_e'); ?>
+                <?php $houses_e_team_title = str_replace(['<p>', '</p>'], '', $houses_e_team_title);          // enlever les p car je veux avoir un h2
+                $houses_e_team_title = str_replace('<strong>', '<strong class="underline">', $houses_e_team_title) //ajoute la classe "underline à la balise ?>
+                <?= $houses_e_team_title ?>
             </h3>
             <?= get_field('text_team_edelweiss'); ?></div>
 
@@ -155,7 +172,10 @@
 
     <section class="houses_e_gallery_container title_gallery">
         <h3 class="section_title title_middle">
-            <span class="underline back">Galerie</span> Edelweiss
+            <?php $houses_e_gallery_title = get_field('title_gallery_e'); ?>
+            <?php $houses_e_gallery_title = str_replace(['<p>', '</p>'], '', $houses_e_gallery_title);          // enlever les p car je veux avoir un h2
+            $houses_e_gallery_title = str_replace('<strong>', '<strong class="underline back">', $houses_e_gallery_title) //ajoute la classe "underline à la balise ?>
+            <?= $houses_e_gallery_title ?>
         </h3>
 
         <div class="houses_e_gallery">
@@ -167,7 +187,10 @@
         </div>
 
         <h3 class="section_title title_middle">
-            <span class="underline back">Coordonnés</span> Edelweiss
+            <?php $houses_e_adress_title = get_field('title_adress_e'); ?>
+            <?php $houses_e_adress_title = str_replace(['<p>', '</p>'], '', $houses_e_adress_title);          // enlever les p car je veux avoir un h2
+            $houses_e_adress_title = str_replace('<strong>', '<strong class="underline back">', $houses_e_adress_title) //ajoute la classe "underline à la balise ?>
+            <?= $houses_e_adress_title ?>
         </h3>
         <div class="vm_adress title_middle">
             <p><?= get_field('street_e'); ?></p>
@@ -179,9 +202,11 @@
 </div>
 <div class="projects_container">
     <h2 class="section_title title_middle">
-        Nos
-        <span class="underline">futurs </span>
-        <span class="underline">projets</span>
+
+        <?php $houses_projects_title = get_field('title_projects'); ?>
+        <?php $houses_projects_title = str_replace(['<p>', '</p>'], '', $houses_projects_title);          // enlever les p car je veux avoir un h2
+        $houses_projects_title = str_replace('<strong>', '<strong class="underline">', $houses_projects_title) //ajoute la classe "underline à la balise ?>
+        <?= $houses_projects_title ?>
     </h2>
 
 
@@ -233,7 +258,11 @@
 
 <section class="donations_container img_title_text">
     <h2 class="section_title">
-        <span class="underline back"> <?= get_field('donations_title'); ?></span>
+
+        <?php $houses_donations_title = get_field('donations_title'); ?>
+        <?php $houses_donations_title = str_replace(['<p>', '</p>'], '', $houses_donations_title);          // enlever les p car je veux avoir un h2
+        $houses_donations_title = str_replace('<strong>', '<strong class="underline back">', $houses_donations_title) //ajoute la classe "underline à la balise ?>
+        <?= $houses_donations_title ?>
     </h2>
     <h3 class="donations_subtitle subtitle">
         <?= get_field('subtitle_donations'); ?>

@@ -8,7 +8,10 @@
 
 <section class="news_section news_page">
     <h2 class="section_title title_middle">
-        Nos dernières <span class="underline">actualités</span>
+        <?php $newspage_title = get_field('newspage_news_title'); ?>
+        <?php $newspage_title = str_replace(['<p>', '</p>'], '', $newspage_title);          // enlever les p car je veux avoir un h2
+        $newspage_title = str_replace('<strong>', '<strong class="underline back">', $newspage_title) //ajoute la classe "underline à la balise ?>
+        <?= $newspage_title ?>
     </h2>
 
 
@@ -146,7 +149,10 @@
 
 <section class="donations_container img_title_text">
     <h2 class="section_title">
-        <span class="underline back"> <?= get_field('donations_title'); ?></span>
+        <?php $newspage_donations_title = get_field('donations_title'); ?>
+        <?php $newspage_donations_title = str_replace(['<p>', '</p>'], '', $newspage_donations_title);          // enlever les p car je veux avoir un h2
+        $newspage_donations_title = str_replace('<strong>', '<strong class="underline back">', $newspage_donations_title) //ajoute la classe "underline à la balise ?>
+        <?= $newspage_donations_title ?>
     </h2>
     <h3 class="donations_subtitle subtitle">
         <?= get_field('subline'); ?>
