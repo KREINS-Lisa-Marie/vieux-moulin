@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 <div class="not-found">
-    <h1 class="not-found__title">Page non trouvée</h1>
+    <h2 class="not-found__title">Page non trouvée</h2>
     <p class="not-found__message">Désolé, la page que vous recherchez n'existe pas ou a été déplacée.</p>
     <p class="not-found__message">
       Retour à la

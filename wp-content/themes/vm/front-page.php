@@ -1,8 +1,6 @@
 <?php /* include ('templates/content/stage/stage.php') */ ?>
 <?php get_header(); ?>
 
-    <h2 class="sro">Le Vieux Moulin page d'accueil</h2>
-
     <div class="image_accueil" itemprop="image">
         <?php
         $image_accueil = get_field('head_image');

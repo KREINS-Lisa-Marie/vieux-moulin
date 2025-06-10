@@ -94,7 +94,7 @@ endwhile; else: ?>
 <div class="location_section">
     <div class="adress_container" itemprop="address">
         <h2 class="location_title">
-            Le Vieux Moulin
+            Le Vieux Moulin <span class="sro">coordonnées</span>
         </h2>
 
         <p><?= get_field('street'); ?></p>

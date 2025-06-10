@@ -1,11 +1,12 @@
 </main>
 <footer id="footer" itemscope itemtype="https://schema.org/Organization">
+    <h2 class="sro">Footer</h2>
     <div class="main_footer_content">
         <div class="footer_adress">
             <div class="name_logo_footer">
-                <h2 class="footer_adress_title" itemprop="legalName">
+                <h3 class="footer_adress_title" itemprop="legalName">
                     Le Vieux moulin
-                </h2>
+                </h3>
                 <img src="/wp-content/themes/vm/resources/img/Logo.webp" alt="Logo Vieux Moulin" width="30" height="24"
                      class="logo_image" itemprop="logo">
             </div>
