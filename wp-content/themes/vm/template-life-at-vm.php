@@ -4,7 +4,7 @@
 
 
 <section class="what_is_life_like_container title_text">    <!--TITRE du de la section d'introduction-->
-    <h2 class="section_title">
+    <h2 class="section_title" aria-level="2" role="heading">
         <?php $life_introduction_title = get_field('introduction_title'); ?>
         <?php $life_introduction_title = str_replace(['<p>', '</p>'], '', $life_introduction_title);          // enlever les p car je veux avoir un h2
         $life_introduction_title = str_replace('<strong>', '<strong class="underline">', $life_introduction_title) //ajoute la classe "underline à la balise ?>
@@ -21,7 +21,7 @@
 
 <section class="activities_container img_title_text">
     <div class="text_content">
-        <h2 class="section_title">
+        <h2 class="section_title" aria-level="2" role="heading">
             <?php $life_activity_title = get_field('activities_title'); ?>
             <?php $life_activity_title = str_replace(['<p>', '</p>'], '', $life_activity_title);          // enlever les p car je veux avoir un h2
             $life_activity_title = str_replace('<strong>', '<strong class="underline">', $life_activity_title) //ajoute la classe "underline à la balise ?>
@@ -116,7 +116,7 @@
     </section>-->
     <section class="news_section">
         <div class="news_header">
-            <h2 class="section_title back">
+            <h2 class="section_title back" aria-level="2" role="heading">
                 <?php $life_news_title = get_field('title_news'); ?>
                 <?php $life_news_title = str_replace(['<p>', '</p>'], '', $life_news_title);          // enlever les p car je veux avoir un h2
                 $life_news_title = str_replace('<strong>', '<strong class="underline">', $life_news_title) //ajoute la classe "underline à la balise ?>
@@ -158,7 +158,7 @@
 
             if ($news->have_posts()): while ($news->have_posts()): $news->the_post(); ?>
                 <article class="single_news news__card" itemprop="event">
-                    <h3 class="news__title">
+                    <h3 class="news__title" aria-level="3" role="heading">
                         <?= get_the_title(); ?>
                     </h3>
 
@@ -211,7 +211,7 @@
 
 
     <section class="testimonials_container ">
-        <h2 class="section_title title_middle">
+        <h2 class="section_title title_middle" aria-level="2" role="heading">
             <?php $life_testimonials_title = get_field('third_title'); ?>
             <?php $life_testimonials_title = str_replace(['<p>', '</p>'], '', $life_testimonials_title);          // enlever les p car je veux avoir un h2
             $life_testimonials_title = str_replace('<strong>', '<strong class="underline">', $life_testimonials_title) //ajoute la classe "underline à la balise ?>
@@ -259,7 +259,7 @@
 
 
 <section class="life_gallery_container title_gallery">
-<h2 class="section_title title_middle">
+<h2 class="section_title title_middle" aria-level="2" role="heading">
     <?php $life_gallery_title = get_field('gallery_title'); ?>
     <?php $life_gallery_title = str_replace(['<p>', '</p>'], '', $life_gallery_title);          // enlever les p car je veux avoir un h2
     $life_gallery_title = str_replace('<strong>', '<strong class="underline back">', $life_gallery_title) //ajoute la classe "underline à la balise ?>
@@ -288,7 +288,7 @@
 
 
 <section class="faq_life_container">
-    <h2 class="section_title title_middle">
+    <h2 class="section_title title_middle" aria-level="2" role="heading">
         <?php $life_faq_title = get_field('title_faq_life'); ?>
         <?php $life_faq_title = str_replace(['<p>', '</p>'], '', $life_faq_title);          // enlever les p car je veux avoir un h2
         $life_faq_title = str_replace('<strong>', '<strong class="underline back">', $life_faq_title) //ajoute la classe "underline à la balise ?>

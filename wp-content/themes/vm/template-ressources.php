@@ -20,7 +20,7 @@ if(have_posts()): while(have_posts()): the_post(); */ ?>
     </div>
 
     <section class="introduction_resources">
-        <h2 class="section_title title_middle">
+        <h2 class="section_title title_middle" aria-level="2" role="heading">
             <?php $introduction_resources_title = get_field('title_description_resources'); ?>
             <?php $introduction_resources_title = str_replace(['<p>', '</p>'], '', $introduction_resources_title);          // enlever les p car je veux avoir un h2
             $introduction_resources_title = str_replace('<strong>', '<strong class="underline">', $introduction_resources_title) //ajoute la classe "underline à la balise ?>
@@ -50,7 +50,7 @@ if(have_posts()): while(have_posts()): the_post(); */ ?>
 </div>
 
 <section class="download_resources_container">
-    <h2 class="section_title title_middle">
+    <h2 class="section_title title_middle" aria-level="2" role="heading">
         <?php $download_title = get_field('title_resources_collection'); ?>
         <?php $download_title = str_replace(['<p>', '</p>'], '', $download_title);          // enlever les p car je veux avoir un h2
         $download_title = str_replace('<strong>', '<strong class="underline">', $download_title) //ajoute la classe "underline à la balise ?>

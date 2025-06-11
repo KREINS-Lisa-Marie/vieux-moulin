@@ -10,7 +10,7 @@ if (have_posts()): while (have_posts()): the_post(); ?>
 
 
     <section class="introduction_donations">
-        <h2 class="section_title">
+        <h2 class="section_title" aria-level="2" role="heading">
             <?php $donations_introduction_title = get_field('title_introduction'); ?>
             <?php $donations_introduction_title = str_replace(['<p>', '</p>'], '', $donations_introduction_title);          // enlever les p car je veux avoir un h2
             $donations_introduction_title = str_replace('<strong>', '<strong class="underline">', $donations_introduction_title) //ajoute la classe "underline à la balise ?>
@@ -33,7 +33,7 @@ if (have_posts()): while (have_posts()): the_post(); ?>
     </section>
 
     <section class="types_of_donations_container">
-        <h2 class="donations_title section_title title_middle">
+        <h2 class="donations_title section_title title_middle" aria-level="2" role="heading">
             <?php $donation_types_title = get_field('title_types_of_donations'); ?>
             <?php $donation_types_title = str_replace(['<p>', '</p>'], '', $donation_types_title);          // enlever les p car je veux avoir un h2
             $donation_types_title = str_replace('<strong>', '<strong class="underline">', $donation_types_title) //ajoute la classe "underline à la balise ?>
@@ -97,13 +97,13 @@ if (have_posts()): while (have_posts()): the_post(); ?>
 
 
     <section class="donations_container img_title_text">
-        <h2 class="section_title">
+        <h2 class="section_title" aria-level="2" role="heading">
             <?php $donations_donation_section_title = get_field('donations_title'); ?>
             <?php $donations_donation_section_title = str_replace(['<p>', '</p>'], '', $donations_donation_section_title);          // enlever les p car je veux avoir un h2
             $donations_donation_section_title = str_replace('<strong>', '<strong class="underline back">', $donations_donation_section_title) //ajoute la classe "underline à la balise ?>
             <?= $donations_donation_section_title ?>
         </h2>
-        <h3 class="donations_subtitle subtitle">
+        <h3 class="donations_subtitle subtitle" aria-level="3">
             <?= get_field('subtitle_donations'); ?>
         </h3>
         <div class="donations_text">
@@ -136,7 +136,7 @@ if (have_posts()): while (have_posts()): the_post(); ?>
 
     <section class="partners_container">
 
-        <h2 class="section_title">
+        <h2 class="section_title" aria-level="2" role="heading">
             <?php $donations_partners_title = get_field('title_partners'); ?>
             <?php $donations_partners_title = str_replace(['<p>', '</p>'], '', $donations_partners_title);          // enlever les p car je veux avoir un h2
             $donations_partners_title = str_replace('<strong>', '<strong class="underline">', $donations_partners_title) //ajoute la classe "underline à la balise ?>
