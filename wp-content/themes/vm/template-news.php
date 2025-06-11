@@ -7,7 +7,7 @@
 
 
 <section class="news_section news_page">
-    <h2 class="section_title title_middle">
+    <h2 class="section_title title_middle" aria-level="2" role="heading">
         <?php $newspage_title = get_field('newspage_news_title'); ?>
         <?php $newspage_title = str_replace(['<p>', '</p>'], '', $newspage_title);          // enlever les p car je veux avoir un h2
         $newspage_title = str_replace('<strong>', '<strong class="underline back">', $newspage_title) //ajoute la classe "underline à la balise ?>
@@ -39,7 +39,7 @@
 
 
             <article class="news__card" itemprop="event">
-                <h3 class="news__title">
+                <h3 class="news__title" aria-level="3" role="heading">
                     <?= get_the_title(); ?>
                 </h3>
 
@@ -148,13 +148,13 @@
 
 
 <section class="donations_container img_title_text">
-    <h2 class="section_title">
+    <h2 class="section_title" aria-level="2" role="heading">
         <?php $newspage_donations_title = get_field('donations_title'); ?>
         <?php $newspage_donations_title = str_replace(['<p>', '</p>'], '', $newspage_donations_title);          // enlever les p car je veux avoir un h2
         $newspage_donations_title = str_replace('<strong>', '<strong class="underline back">', $newspage_donations_title) //ajoute la classe "underline à la balise ?>
         <?= $newspage_donations_title ?>
     </h2>
-    <h3 class="donations_subtitle subtitle">
+    <h3 class="donations_subtitle subtitle" aria-level="3">
         <?= get_field('subline'); ?>
     </h3>
     <div class="donations_text">

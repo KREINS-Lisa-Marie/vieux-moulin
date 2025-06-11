@@ -5,7 +5,7 @@
 if (have_posts()): while (have_posts()): the_post(); ?>
 
     <article class="single_news_article" itemprop="event">
-        <h2 class="single_news__title title_middle">
+        <h2 class="single_news__title title_middle" aria-level="2" role="heading">
             <?= get_the_title(); ?>
         </h2>
         <div class="single_news_main_content">
@@ -44,7 +44,7 @@ else: ?>
 
     <section class="news_section">
         <div class="news_header">
-            <h2 class="section_title back">Nos <span class="underline back">actualités</span>
+            <h2 class="section_title back" aria-level="2" role="heading">Nos <span class="underline back">actualités</span>
             </h2>
             <a href="http://vieux-moulin-site.test/nos-actualites/" title="Aller vers la page 'Actualités'" class="link show_all_news">Voir toutes les actualités
                 <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
@@ -69,7 +69,7 @@ else: ?>
 
             if ($news->have_posts()): while ($news->have_posts()): $news->the_post(); ?>
                 <article class="single_news news__card" itemprop="event">
-                    <h3 class="news__title">
+                    <h3 class="news__title" aria-level="3" role="heading">
                         <?= get_the_title(); ?>
                     </h3>
 
