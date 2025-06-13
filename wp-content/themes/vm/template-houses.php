@@ -36,10 +36,10 @@
         <div class="image_vm" itemprop="image">
             <?php
             $vm_image = get_field('image_vm');
-            $size = 'section_image'; // (thumbnail, medium, large, full or custom size)
+            //$size = 'section_image'; // (thumbnail, medium, large, full or custom size)
             if ($vm_image):?>
                 <figure>
-                    <?= wp_get_attachment_image($vm_image, $size);;?>
+                   <!-- --><?php /*= wp_get_attachment_image($vm_image, $size);;*/?>
                     <?= responsive_image(get_field('image_vm'), ['lazy' => 'lazy', 'classes' => 'stage__image']) ?>
                 </figure>
 <?php endif;?>
@@ -79,9 +79,10 @@
         <div class="image_vm">
             <?php
             $team_vm_image = get_field('image_team_vm');
-            $size = 'full'; // (thumbnail, medium, large, full or custom size)
+            //$size = 'full'; // (thumbnail, medium, large, full or custom size)
             if ($team_vm_image) {
-                echo wp_get_attachment_image($team_vm_image, $size);
+                //echo wp_get_attachment_image($team_vm_image, $size);
+                echo responsive_image($team_vm_image, ['classes' => 'attachment-large size-large']);
             }
             ?>
         </div>
@@ -139,9 +140,10 @@
         <div class="image_e">
             <?php
             $e_image = get_field('image_e');
-            $e_size = 'full'; // (thumbnail, medium, large, full or custom size)
+            //$e_size = 'full'; // (thumbnail, medium, large, full or custom size)
             if ($e_image) {
-                echo wp_get_attachment_image($e_image, $e_size);
+                //echo wp_get_attachment_image($e_image, $e_size);
+                echo responsive_image($e_image, ['classes' => 'attachment-large size-large']);
             }
             ?>
         </div>
@@ -160,9 +162,10 @@
         <div class="image_e">
             <?php
             $team_e_image = get_field('image_team_e');
-            $size = 'full'; // (thumbnail, medium, large, full or custom size)
+            //$size = 'full'; // (thumbnail, medium, large, full or custom size)
             if ($team_e_image) {
-                echo wp_get_attachment_image($team_e_image, $size);
+                //echo wp_get_attachment_image($team_e_image, $size);
+                echo responsive_image($team_e_image, ['classes' => 'attachment-large size-large']);
             }
             ?>
         </div>
@@ -233,9 +236,10 @@
                     </div>
                     <div class="project_image">
                         <?php
-                        $size = 'full'; // (thumbnail, medium, large, full or custom size)
+                        //$size = 'full'; // (thumbnail, medium, large, full or custom size)
                         if ($p_image) {
-                            echo wp_get_attachment_image($p_image, $size);
+                            //echo wp_get_attachment_image($p_image, $size);
+                            echo responsive_image($p_image, ['classes' => 'attachment-large size-large']);
                         }
                         ?>
                     </div>
@@ -282,9 +286,10 @@
     <div class="qr_code qr_image">
         <?php
         $qr_code_image = get_field('image_qr_code');
-        $size = 'full'; // (thumbnail, medium, large, full or custom size)
+        //$size = 'full'; // (thumbnail, medium, large, full or custom size)
         if ($qr_code_image) {
-            echo wp_get_attachment_image($qr_code_image, $size);
+            //echo wp_get_attachment_image($qr_code_image, $size);
+            echo responsive_image($qr_code_image, ['classes' => 'attachment-large size-large']);
         }
         ?>
     </div>
