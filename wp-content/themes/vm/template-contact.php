@@ -27,29 +27,31 @@ if(have_posts()): while(have_posts()): the_post(); ?>
         <?php else: ?>
             <form action="<?= admin_url('admin-post.php'); ?>" method="POST" class="form">
                 <fieldset class="form__fields">
+                    <p class="obligations">* Champs obligatoires
+                    </p>
                     <div class="field">
-                        <label for="firstname" class="field__label">Prénom</label>
+                        <label for="firstname" class="field__label">Prénom*</label>
                         <input type="text" name="firstname" id="firstname" class="field__input" placeholder="par exemple: Amandine" aria-required="true">
                         <?php if(isset($errors['firstname'])): ?>
                             <p class="field__error" role="alert"><?= $errors['firstname']; ?></p>
                         <?php endif; ?>
                     </div>
                     <div class="field">
-                        <label for="lastname" class="field__label">Nom</label>
+                        <label for="lastname" class="field__label">Nom*</label>
                         <input type="text" name="lastname" id="lastname" class="field__input" placeholder="par exemple: Briol" aria-required="true">
                         <?php if(isset($errors['lastname'])): ?>
                             <p class="field__error" role="alert"><?= $errors['lastname']; ?></p>
                         <?php endif; ?>
                     </div>
                     <div class="field">
-                        <label for="email" class="field__label">Adresse mail</label>
+                        <label for="email" class="field__label">Adresse mail*</label>
                         <input type="email" name="email" id="email" class="field__input" placeholder="par exemple: amandine@briol.be" aria-required="true">
                         <?php if(isset($errors['email'])): ?>
                             <p class="field__error" role="alert"><?= $errors['email']; ?></p>
                         <?php endif; ?>
                     </div>
                     <div class="field">
-                        <label for="message" class="field__label">Message</label>
+                        <label for="message" class="field__label">Message*</label>
                         <textarea name="message" id="message" class="field__input" placeholder="par exemple:
 Bonjour,
 
@@ -103,9 +105,10 @@ endwhile; else: ?>
 
     <?php
 $map_image = get_field('map_image');
-$size = 'large'; // (thumbnail, medium, large, full or custom size)
+//$size = 'large'; // (thumbnail, medium, large, full or custom size)
 if( $map_image ) {
-    echo wp_get_attachment_image( $map_image, $size );
+    //echo wp_get_attachment_image( $map_image, $size );
+    echo responsive_image($map_image, ['classes' => 'attachment-large size-large']);
 }
  ?>
 

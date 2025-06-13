@@ -32,9 +32,10 @@
     <div class="life_activity_image">
         <?php
         $life_activity_image = get_field('activity_image');
-        $size = 'full'; // (thumbnail, medium, large, full or custom size)
+        //$size = 'full'; // (thumbnail, medium, large, full or custom size)
         if ($life_activity_image) {
-            echo wp_get_attachment_image($life_activity_image, $size);
+            //echo wp_get_attachment_image($life_activity_image, $size);
+            echo responsive_image($life_activity_image, ['classes' => 'attachment-large size-large']);
         }
         ?>
     </div>
@@ -321,7 +322,7 @@
         <p>Aucune question trouvée.</p>
     <?php endif; ?>
 
-    <a href="<?php the_field('link_guide'); ?>" title="Aller vers la page 'Ressources'" class="link_to_page link">Guide pratique
+    <a href="<?php the_field('link_guide'); ?>" title="Aller vers la page 'Ressources'" class="link_to_page link">Carnet d'accueil et autres ressources
         <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
             <path d="M12.1638 4.35355C12.3591 4.15829 12.3591 3.84171 12.1638 3.64645L8.98185 0.464467C8.78659 0.269204 8.47001 0.269204 8.27475 0.464467C8.07948 0.659729 8.07948 0.976311 8.27475 1.17157L11.1032 4L8.27475 6.82843C8.07948 7.02369 8.07948 7.34027 8.27475 7.53553C8.47001 7.7308 8.78659 7.7308 8.98185 7.53553L12.1638 4.35355ZM0.853516 4L0.853516 4.5L11.8103 4.5L11.8103 4L11.8103 3.5L0.853516 3.5L0.853516 4Z" fill="#F19595"/>
         </svg>

@@ -12,9 +12,10 @@ if(have_posts()): while(have_posts()): the_post(); */ ?>
     <div class="image_resources" itemprop="image">
         <?php
         $resources_image = get_field('image_resources');
-        $size = 'full'; // (thumbnail, medium, large, full or custom size)
+        //$size = 'full'; // (thumbnail, medium, large, full or custom size)
         if ($resources_image) {
-            echo wp_get_attachment_image($resources_image, $size);
+           // echo wp_get_attachment_image($resources_image, $size);
+            echo responsive_image($resources_image, ['classes' => 'attachment-large size-large']);
         }
         ?>
     </div>
@@ -49,7 +50,7 @@ if(have_posts()): while(have_posts()): the_post(); */ ?>
     </section>
 </div>
 
-<section class="download_resources_container">
+<section class="download_resources_container" id="downloadresources">
     <h2 class="section_title title_middle" aria-level="2" role="heading">
         <?php $download_title = get_field('title_resources_collection'); ?>
         <?php $download_title = str_replace(['<p>', '</p>'], '', $download_title);          // enlever les p car je veux avoir un h2

@@ -46,9 +46,10 @@ if (have_posts()): while (have_posts()): the_post(); ?>
             <div class="types_of_donations_img">
                 <?php
                 $types_image = get_field('donations_image');
-                $size = 'full'; // (thumbnail, medium, large, full or custom size)
+                //$size = 'full'; // (thumbnail, medium, large, full or custom size)
                 if ($types_image) {
-                    echo wp_get_attachment_image($types_image, $size);
+                    //echo wp_get_attachment_image($types_image, $size);
+                    echo responsive_image($types_image, ['classes' => 'attachment-large size-large']);
                 }
                 ?>
             </div>
@@ -122,9 +123,10 @@ if (have_posts()): while (have_posts()): the_post(); ?>
         <div class="qr_code qr_image">
             <?php
             $qr_code_image = get_field('image_qr_code');
-            $size = 'full'; // (thumbnail, medium, large, full or custom size)
+            //$size = 'full'; // (thumbnail, medium, large, full or custom size)
             if ($qr_code_image) {
-                echo wp_get_attachment_image($qr_code_image, $size);
+                //echo wp_get_attachment_image($qr_code_image, $size);
+                echo responsive_image($qr_code_image, ['classes' => 'attachment-large size-large']);
             }
             ?>
         </div>
