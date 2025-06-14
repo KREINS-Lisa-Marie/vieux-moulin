@@ -92,7 +92,8 @@
 
   .news__fig img {
     box-sizing: border-box;
-    width: 100%;
+    min-width: 343px;
+    max-width: 343px;
     height: 265px;
     object-fit: cover;
     border-radius: 8px;
