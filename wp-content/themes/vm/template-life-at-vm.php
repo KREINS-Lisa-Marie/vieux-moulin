@@ -32,9 +32,7 @@
     <div class="life_activity_image">
         <?php
         $life_activity_image = get_field('activity_image');
-        //$size = 'full'; // (thumbnail, medium, large, full or custom size)
         if ($life_activity_image) {
-            //echo wp_get_attachment_image($life_activity_image, $size);
             echo responsive_image($life_activity_image, ['classes' => 'attachment-large size-large']);
         }
         ?>
@@ -42,79 +40,6 @@
 </section>
 
 
-<!--HEEEELP -->
-<!--    <section class="news_section">
-        <h2 class="section_title title_middle">
-        <span class="underline">
-            <?php /*= get_field('title_news');*/?>
-        </span>
-        </h2>
-        <a href="<?php /*= get_field('link_vie_to_news');*/?>" title="Aller vers la page 'Actualités'"
-           class="link_to_page. link">Voir toutes les actualités
-            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                        d="M12.1638 4.35355C12.3591 4.15829 12.3591 3.84171 12.1638 3.64645L8.98185 0.464467C8.78659 0.269204 8.47001 0.269204 8.27475 0.464467C8.07948 0.659729 8.07948 0.976311 8.27475 1.17157L11.1032 4L8.27475 6.82843C8.07948 7.02369 8.07948 7.34027 8.27475 7.53553C8.47001 7.7308 8.78659 7.7308 8.98185 7.53553L12.1638 4.35355ZM0.853516 4L0.853516 4.5L11.8103 4.5L11.8103 4L11.8103 3.5L0.853516 3.5L0.853516 4Z"
-                        fill="#F19595" />
-            </svg>
-        </a>
-
-        <div class="news">
-            <?php
-/*            $news = new WP_Query([
-                'post_type' => 'news',
-                'order' => 'DESC',
-                'orderby' => 'date',
-                'posts_per_page' => 3,
-            ]);
-
-            if($news->have_posts()): while($news->have_posts()): $news->the_post(); */?>
-                <article class="news__card">
-                    <h3 class="news__title">
-                        <?php /*= get_the_title(); */?>
-                    </h3>
-                    <a href="<?php /*= get_the_permalink(); */?>" class="news__link link">
-                <span class="sro">Découvrir l'actualité
-                    <?php /*= get_the_title(); */?>
-                </span>
-                    </a>
-                    <div class="news__dates">
-                        <?php
-/*                        $date = get_field('news_date');
-                        if ($date):
-                            */?>
-                            <p class="single_news_date">
-                                <time datetime="<?php /*= $date; */?>">
-                                    <?php /*= $date; */?>
-                                </time>
-                            </p>
-                        <?php /*else: */?>
-                            <p> Sans date </p>
-                        <?php /*endif; */?>
-                    </div>
-                    <div class="news_button">
-                <span>
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
-                         class="news_button_circle">
-                        <rect width="48" height="48" rx="24" fill="#F19595" />
-                    </svg>
-                    <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg"
-                         class="news_button_arrow">
-                        <path d="M1.5 1.5L11 11L1.5 20.5" stroke="white" stroke-width="3" stroke-linecap="round" />
-                    </svg>
-                </span>
-                    </div>
-                    <figure class="news__fig">
-                        <?php /*= responsive_image(get_field('news_image'), ['classes' => 'news__img']);*/?>
-                    </figure>
-                    <a href="<?php /*= the_permalink() */?>">Lien</a>
-                </article>
-                <?php
-/*                wp_reset_postdata();
-            endwhile; else: */?>
-                <p>Je n'ai pas d'actualités récentes à montrer...</p>
-            <?php /*endif; */?>
-        </div>
-    </section>-->
     <section class="news_section">
         <div class="news_header">
             <h2 class="section_title back" aria-level="2" role="heading">
@@ -132,17 +57,7 @@
                             fill="#F19595"/>
                 </svg>
             </a></div>
-<!--        <h2 class="section_title title_middle back">
-            Nos <span class="underline">actualités</span>
-        </h2>
-        <a href="<?php /*= get_field('link_homepage_to_news'); */?>" title="Aller vers la page 'Actualités'" class="link show_all_news">Voir
-            toutes les actualités
-            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                        d="M12.1638 4.35355C12.3591 4.15829 12.3591 3.84171 12.1638 3.64645L8.98185 0.464467C8.78659 0.269204 8.47001 0.269204 8.27475 0.464467C8.07948 0.659729 8.07948 0.976311 8.27475 1.17157L11.1032 4L8.27475 6.82843C8.07948 7.02369 8.07948 7.34027 8.27475 7.53553C8.47001 7.7308 8.78659 7.7308 8.98185 7.53553L12.1638 4.35355ZM0.853516 4L0.853516 4.5L11.8103 4.5L11.8103 4L11.8103 3.5L0.853516 3.5L0.853516 4Z"
-                        fill="#F19595" />
-            </svg>
-        </a>-->
+
         <div class="news">
             <?php
             $news = new WP_Query([
@@ -247,18 +162,6 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
 <section class="life_gallery_container title_gallery">
 <h2 class="section_title title_middle" aria-level="2" role="heading">
     <?php $life_gallery_title = get_field('gallery_title'); ?>
@@ -276,16 +179,6 @@
     </div>
 
 </section>
-
-
-
-
-
-
-
-
-
-
 
 
 <section class="faq_life_container">

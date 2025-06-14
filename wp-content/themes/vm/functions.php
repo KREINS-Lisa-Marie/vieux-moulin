@@ -48,44 +48,23 @@ register_post_type('news', [
     'supports' => ['title','excerpt','editor','thumbnail'],
 ]);
 
-// Ajouter des "catégories" (taxonomies) sur ces post_types :
-
-/*register_taxonomy('course', ['recipe'], [
-    'labels' => [
-        'name' => 'Services',
-        'singular_name' => 'Service'
-    ],
-    'description' => 'À quel moment du repas ce plat intervient-il ?',
-    'public' => true,
-    'hierarchical' => true,
-    'show_tagcloud' => false,
-]);
-
-register_taxonomy('diet', ['recipe'], [
-    'labels' => [
-        'name' => 'Régimes alimentaires',
-        'singular_name' => 'Régime'
-    ],
-    'description' => 'À quel type de régime appartient cette recette ?',
-    'public' => true,
-    'hierarchical' => true,
-    'show_tagcloud' => false,
-]);*/
 
 // Paramétrer des tailles d'images pour le générateur de thumbnails de Wordpress :
+
+/*          Prévu, si jamais il y a du besoin
 
 // Sans recadrage :
 add_image_size('travel-side', 420, 420);
 // Avec recadrage :
 add_image_size('travel-header', 1920, 400, true);
-
+*/
 
 
 
 // Enregistrer les menus de navigation en fonction de l'endroit où ils sont exploités :
 
 register_nav_menu('header_top', 'Premier menu de navigation en haut de la page.');
-register_nav_menu('header_bottom', 'Deuxième menu de navigation en haut de la page.');
+register_nav_menu('header_bottom', 'Deuxième menu de navigation en haut de la page.');  /*          Prévu, si jamais il y a du besoin*/
 
 
 
@@ -165,9 +144,6 @@ function dw_handle_contact_form()
 
 
 
-
-// ???
-
 function dw_asset(string $file)
 {
     $manifestPath = get_theme_file_path('public/.vite/manifest.json');
@@ -184,18 +160,6 @@ function dw_asset(string $file)
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

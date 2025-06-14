@@ -4,12 +4,8 @@
     <div class="image_accueil" itemprop="image">
         <?php
         $image_accueil = get_field('head_image');
-        //$e_size = 'full'; // (thumbnail, medium, large, full or custom size)
         if ($image_accueil) {
-            //echo wp_get_attachment_image($image_accueil, $e_size);
             echo responsive_image($image_accueil, ['classes' => 'attachment-large size-large']);
-
-
         }
         ?>
     </div>
@@ -158,46 +154,6 @@
         </div>
     </section>
 
-<!--
-    <section class="donations_container img_title_text">
-        <h2 class="donations_title section_title">
-            <span class="underline back">
-            <?php /*= get_field('fourth_title'); */?>
-                </span>
-        </h2>
-
-        <div class="qr_image">
-            <?php
-/*            $qr_code_img = get_field('qr_code');
-            $size = 'full'; // (thumbnail, medium, large, full or custom size)
-            if ($qr_code_img) {
-                echo wp_get_attachment_image($qr_code_img, $size);
-            }
-            */?>
-        </div>
-
-        <h3 class="subtitle">
-            <?php /*= get_field('secondary_title'); */?>
-        </h3>
-        <?php /*= get_field('fourth_text'); */?>
-
-        <a href="<?php /*the_field('subline'); */?>" title="Aller vers la page du Vieux Moulin"
-           class="link link_to_donations">Découvrir comment nous soutenir
-            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.1638 4.35355C12.3591 4.15829 12.3591 3.84171 12.1638 3.64645L8.98185 0.464467C8.78659 0.269204 8.47001 0.269204 8.27475 0.464467C8.07948 0.659729 8.07948 0.976311 8.27475 1.17157L11.1032 4L8.27475 6.82843C8.07948 7.02369 8.07948 7.34027 8.27475 7.53553C8.47001 7.7308 8.78659 7.7308 8.98185 7.53553L12.1638 4.35355ZM0.853516 4L0.853516 4.5L11.8103 4.5L11.8103 4L11.8103 3.5L0.853516 3.5L0.853516 4Z"
-                      fill="#F19595"/>
-            </svg>
-        </a>
-        <a href="<?php /*the_field('link_to_page'); */?>" title="Aller vers la page du Vieux Moulin"
-           class="link link_to_projects">Découvrir nos projets
-            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.1638 4.35355C12.3591 4.15829 12.3591 3.84171 12.1638 3.64645L8.98185 0.464467C8.78659 0.269204 8.47001 0.269204 8.27475 0.464467C8.07948 0.659729 8.07948 0.976311 8.27475 1.17157L11.1032 4L8.27475 6.82843C8.07948 7.02369 8.07948 7.34027 8.27475 7.53553C8.47001 7.7308 8.78659 7.7308 8.98185 7.53553L12.1638 4.35355ZM0.853516 4L0.853516 4.5L11.8103 4.5L11.8103 4L11.8103 3.5L0.853516 3.5L0.853516 4Z"
-                      fill="#F19595"/>
-            </svg>
-        </a>
-
-    </section>
--->
 
     <section class="donations_container img_title_text">
         <h2 class=" donations_title section_title" aria-level="2" role="heading">
@@ -234,22 +190,12 @@
         <div class="qr_code qr_image">
             <?php
             $qr_code_image = get_field('qr_code');
-            //$size = 'full'; // (thumbnail, medium, large, full or custom size)
             if ($qr_code_image) {
-                //echo wp_get_attachment_image($qr_code_image, $size);
                 echo responsive_image($qr_code_image, ['classes' => 'attachment-large size-large']);
             }
             ?>
         </div>
     </section>
-
-
-
-
-
-
-
-
 
 
     <section class="family_container img_title_text">
@@ -283,17 +229,11 @@
         <div class="image_f_accueil">
             <?php
             $image_f_accueil = get_field('fifth_image');
-            //$e_size = 'full'; // (thumbnail, medium, large, full or custom size)
             if ($image_f_accueil) {
-                //echo wp_get_attachment_image($image_f_accueil, $e_size);
                 echo responsive_image($image_f_accueil, ['classes' => 'attachment-large size-large']);
             }
             ?>
         </div>
     </section>
-
-
-    <!--mettre au début de nouveau!-->
-
 
 <?php get_footer(); ?>

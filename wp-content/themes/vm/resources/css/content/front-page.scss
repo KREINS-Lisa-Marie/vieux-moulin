@@ -1,73 +1,5 @@
 //    GENERAL
-.image_accueil img {
-  margin-top: 3.75em;  //60px
-  width: 100%;
-  height: auto;
-  margin-bottom: 5.3125em;  //85px
-}
 
-.family_container.title_middle, .title_middle {
-  text-align: center;
-}
-
-.what_is_it .link {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2.666666666666667em;  //48px
-  text-align: center;
-}
-
-.family_container .link {
-  margin-top: 1.777777777777778em;  //32px
-}
-
-.what_is_it {
-  display: flex;
-  flex-direction: column;
-  margin-top: 0;
-}
-
-.testimonials_container {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1275px;
-}
-
-//    MOBILE
-@media (max-width: 749px) {
-  .single_textimonial {
-    margin-bottom: 0;
-  }
-}
-
-//    MOBILE & TABLET
-@media (max-width: 1199px) {
-  .testimonials_container {
-    margin-top: 5.625em;  //90px;
-  }
-  .what_is_it{
-    .section_title{
-      margin-bottom: 0;
-    }
-  }
-  .donations_subline .link{
-    font-size: 1em; //18px
-  }
-  .testimonials_container {
-    .section_title {
-      margin-bottom: 0.888888888888889em;  //32px
-    }
-  }
-
-}
-
-.donations_container {
-  background-color: var(--light-blue);
-  padding: 5.625em 0;  //90px 0
-}
-section.donations_container{
-  margin-bottom: 0;
-}
 section {
   margin-top: 5.625em; //90px;
   margin-bottom: 5.625em;  //90px;
@@ -77,28 +9,107 @@ section {
   font-size: 1.125em;  //18px;
   font-weight: 600;
 }
-
-
-.donations_container h2 {
+.image_accueil{
   text-align: center;
+  img{
+    width: 100%;
+    max-height: 572px;
+    object-fit: cover;
+    object-position: 0 20%;
+    max-width: 2560px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3.75em;  //60px
+    height: auto;
+    margin-bottom: 5.3125em;  //85px
+  }
 }
 
-//    MOBILE & TABLET
-@media (max-width: 1199px) {
-  .subtitle {
-    margin: 1.333333333333333em 1em 0.666666666666667em 1em;  //32px 24px 16px
-  }
-  .donations_container h2 {
-    margin-bottom: 0.888888888888889em;  //32px
-  }
+
+/* what is it  */
+.what_is_it .link {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.666666666666667em;  //48px
+  text-align: center;
+}
+.what_is_it {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+
+/* famille  */
+.family_container.title_middle, .title_middle {
+  text-align: center;
+}
+.family_container .link {
+  margin-top: 1.777777777777778em;  //32px
+}
+.image_f_accueil img {
+  object-fit: cover;
+  object-position: center 80%;
+  max-width: 594px;
+}
+.image_f_accueil h3 {
+  display: inline;
+  text-align: start;
+}
+
+
+ /* testimonials  */
+.testimonials_container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1275px;
+}
+.single_textimonial {
+  border: 1px solid var(--pink);
+  border-radius: 8px;
+  padding: 2.5em 1em;  //40px 16px;
+  min-height: 297px;
+}
+.single_textimonial p {
+  margin-left: 0;
+  margin-right: 0;
+}
+.single_textimonial span {
+  color: var(--pink);
+  font-size: 3em;  //48px
+  font-family: "Happy Monkey", sans-serif;
+}
+.end_quote {
+  display: block;
+  text-align: end;
+}
+.single_textimonial:last-of-type {
+  margin-bottom: 0;
+}
+.name_age {
+  font-family: Avenir, sans-serif;
+  margin-top: 1.6em;  //24px
+  font-size: 0.9375em;  // 15px;
+  font-weight: 700;
+}
+
+
+/* donations  */
+.donations_container {
+  background-color: var(--light-blue);
+  padding: 5.625em 0;  //90px 0
+}
+section.donations_container{
+  margin-bottom: 0;
+}
+.donations_container h2 {
+  text-align: center;
 }
 .subtitle {
   font-size: 1.5em;  //24px;
   font-weight: 600;
   font-family: Sulphur Point, sans-serif;
 }
-
-
 .qr_image img {
   display: block;
   max-width: 151px; //151px;
@@ -107,77 +118,52 @@ section {
   margin-right: auto;
 }
 
-.single_textimonial {
-  border: 1px solid var(--pink);
-  border-radius: 8px;
-  padding: 2.5em 1em;  //40px 16px;
-  min-height: 297px;
-}
-
-.single_textimonial p {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.single_textimonial span {
-  color: var(--pink);
-  font-size: 3em;  //48px
-  font-family: "Happy Monkey", sans-serif;
-}
-
-.end_quote {
-  display: block;
-  text-align: end;
-}
-
-.single_textimonial:last-of-type {
-  margin-bottom: 0;
-}
-
-.name_age {
-  font-family: Avenir, sans-serif;
-  margin-top: 1.6em;  //24px
-  font-size: 0.9375em;  // 15px;
-  font-weight: 700;
-}
-.image_f_accueil img {
-  object-fit: cover;
-  object-position: center 80%;
-  max-width: 594px;
-}
 
 
-
-.image_f_accueil h3 {
-  display: inline;
-  text-align: start;
-}
 
 //    MOBILE
 @media (max-width: 749px) {
+  .single_textimonial {
+    margin-bottom: 0;
+  }
   body {
-/*    background-image: url("/wp-content/themes/vm/resources/img/background_image.webp");
-    !*    background-position-x: -487px;*!
-    background-position-y: 686px;
-    background-size: 100% auto;
-    background-repeat: no-repeat;*/
     .image_f_accueil img {
       width: 100vw;
       max-height: 282px;
       object-fit: cover;
-     /* height: 282px;*/
     }
   }
 }
 
+
+//    MOBILE & TABLET
+@media (max-width: 1199px) {
+  .testimonials_container {
+    margin-top: 5.625em;  //90px;
+    .section_title {
+      margin-bottom: 0.888888888888889em;  //32px
+    }
+  }
+  .what_is_it{
+    .section_title{
+      margin-bottom: 0;
+    }
+  }
+  .donations_subline .link{
+    font-size: 1em; //18px
+  }
+  .subtitle {
+    margin: 1.333333333333333em 1em 0.666666666666667em 1em;  //32px 24px 16px
+  }
+  .donations_container h2 {
+    margin-bottom: 0.888888888888889em;  //32px
+  }
+}
+
+
 //     TABLET
 @media (min-width: 750px) and (max-width: 1199px) {
   body {
-   /* background-image: url("/wp-content/themes/vm/resources/img/background_image.webp");
-    !*    background-position-x: -487px;*!
-    background-position-y: 1050px;
-    background-size: 100% auto;
-    background-repeat: no-repeat;*/
     .subtitle, .extern_link.link{
       margin-left: 0;
     }
@@ -195,6 +181,8 @@ section {
     }
   }
 }
+
+
 //    DESKTOP & TABLET
 @media (min-width: 750px) {
   .single_textimonial {
@@ -206,11 +194,6 @@ section {
 //    DESKTOP
 @media (min-width: 1200px) {
   body {
-    /*background-image: url("/wp-content/themes/vm/resources/img/background_image.webp");
-    !*    background-position-x: -487px;*!
-    background-position-y: 1350px;
-    background-size: 100% auto;
-    background-repeat: no-repeat;*/
     .image_f_accueil img {
       min-width: 594px;
       max-height: 442px;
@@ -248,18 +231,5 @@ section {
     .section_title {
       margin-bottom: 0.666666666666667em;  //32px
     }
-  }
-}
-
-.image_accueil{
-  text-align: center;
-  img{
-    width: 100%;
-    max-height: 572px;
-    object-fit: cover;
-    object-position: 0 20%;
-    max-width: 2560px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }

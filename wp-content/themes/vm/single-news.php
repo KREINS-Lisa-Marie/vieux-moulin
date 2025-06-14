@@ -12,9 +12,7 @@ if (have_posts()): while (have_posts()): the_post(); ?>
             <div class="single_news_image">
                 <?php
                 $single_news_image = get_field('news_image');
-                //$size = 'medium'; // (thumbnail, medium, large, full or custom size)
                 if ($single_news_image) {
-                    //echo wp_get_attachment_image($single_news_image, $size);
                     echo responsive_image($single_news_image, ['classes' => 'attachment-large size-large']);
                 }
                 ?>
@@ -119,9 +117,5 @@ else: ?>
             <?php endif; ?>
         </div>
     </section>
-
-
-
-
 
 <?php get_footer(); ?>

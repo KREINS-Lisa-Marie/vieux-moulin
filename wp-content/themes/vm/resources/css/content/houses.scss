@@ -81,35 +81,13 @@ strong {
   .houses_e_gallery_container .section_title:last-of-type, .houses_vm_gallery_container .section_title:last-of-type {
     margin-bottom: 0.888888888888889em;  //32px;
   }
-}
 
-
-
-/*    TABLET    */
-@media (min-width: 750px) and (max-width: 1199px) {
-  /*section de dons*/
-  .img_title_text {
-    .text_content {
-      margin-left: 1.5em;  //24px;
-      margin-right: 1.5em;  //24px;
-      max-width: 50em;
-
-      .section_title {
-        margin-left: 0;
-      }
-    }
-  }
-}
-
-
-/*    MOBILE & TABLET    */
-@media (max-width: 1199px) {
+  /*    projets   */
   .houses_project_container {
     p {
       margin-bottom: 5.625em;  //90px
     }
   }
-
   .project_title {
     margin-left: 1.2em;  //24px;
     font-size: 1.25em;  //20px
@@ -167,6 +145,22 @@ strong {
 }
 
 
+/*    TABLET    */
+@media (min-width: 750px) and (max-width: 1199px) {
+  /*section de dons*/
+  .img_title_text {
+    .text_content {
+      margin-left: 1.5em;  //24px;
+      margin-right: 1.5em;  //24px;
+      max-width: 50em;
+
+      .section_title {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
 
 
 /*    DESKTOP    */
@@ -219,7 +213,6 @@ strong {
       margin-bottom: 1em;  //24px;
     }
   }
-
   .projects_container {
     margin-bottom: 7.5em;  //120px;
     margin-top: 7.5em;  //120px;
@@ -247,7 +240,6 @@ strong {
   .houses_links {
     margin-top: 10.375em;  //166px;
   }
-
 
   .title_gallery.houses_e_gallery_container, .title_gallery.houses_vm_gallery_container {
     padding-top: 5.625em;  //90px

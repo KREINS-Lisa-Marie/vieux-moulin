@@ -1,3 +1,33 @@
+/*    MOBILE    */
+@media (max-width: 749px) {
+  .donations_container {
+    align-items: start;
+
+    .qr_code {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section_title {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+
+/*    TABLET    */
+@media (min-width: 750px) and (max-width: 1199px) {
+  .donations_container {
+    align-items: center;
+  }
+  .link_to_donation_contact.link {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
 //    DESKTOP
 
 @media (min-width: 1200px) {
@@ -11,7 +41,6 @@
                           "qr text"
                           ". info"
                           ". link";
-    /*max-width: 1000px;*/
     width: 100%;
     justify-content: center;
     grid-gap: 1em;  //16px
@@ -45,22 +74,17 @@
 
     .donations_text, .donations_subline, .link_to_page, .donations_subtitle, .section_title, .link_to_donation_contact.link_to_page.link {
       max-width: 794px;
-/*      margin-left: 16px;  //16px*/
       text-align: start;
     }
-   .section_title{
+    .section_title{
       margin-left: 0.333333333333333em;  //16px
     }
-.donations_subline, .donations_subtitle,{
+    .donations_subline, .donations_subtitle,{
       margin-left: 0.666666666666667em;  //16px
     }
     .donations_text, .link_to_page,  .link_to_donation_contact.link_to_page.link {
       margin-left: 0.888888888888889em;  //16px
     }
-
-
-
-
     .donations_subtitle {
       margin-top: 0;
       margin-bottom: 0;
@@ -70,34 +94,6 @@
       margin-bottom: 0.333333333333333em;  //8px;
       margin-top: 0.666666666666667em;  //16px
       font-size: 1.5em;  //24px;
-    }
-  }
-}
-
-/*    TABLET    */
-@media (min-width: 750px) and (max-width: 1199px) {
-  .donations_container {
-    align-items: center;
-  }
-  .link_to_donation_contact.link {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-/*    MOBILE    */
-@media (max-width: 749px) {
-  .donations_container {
-    align-items: start;
-
-    .qr_code {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .section_title {
-      margin-right: auto;
-      margin-left: auto;
     }
   }
 }

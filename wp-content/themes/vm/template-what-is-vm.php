@@ -15,15 +15,11 @@
     <div class="what_introduction_image" itemprop="image">
         <?php
         $what_introduction_image = get_field('introduction_image');
-        //$size = 'full'; // (thumbnail, medium, large, full or custom size)
         if ($what_introduction_image) {
-            //echo wp_get_attachment_image($what_introduction_image, $size);
             echo responsive_image($what_introduction_image, ['classes' => 'attachment-large size-large']);
         }
         ?>
     </div>
-
-
 </section>
 
 
@@ -41,9 +37,7 @@
         <div class="what_mission_image">
             <?php
             $what_mission_image = get_field('image_mission');
-            //$size = 'full'; // (thumbnail, medium, large, full or custom size)
             if ($what_mission_image) {
-                //echo wp_get_attachment_image($what_mission_image, $size);
                 echo responsive_image($what_mission_image, ['classes' => 'attachment-large size-large']);
             }
             ?>
@@ -65,9 +59,7 @@
         <div class="what_values_image">
             <?php
             $what_values_image = get_field('image_values');
-            //$size = 'full'; // (thumbnail, medium, large, full or custom size)
             if ($what_values_image) {
-                //echo wp_get_attachment_image($what_values_image, $size);
                 echo responsive_image($what_values_image, ['classes' => 'attachment-large size-large']);
             }
             ?>

@@ -90,19 +90,3 @@ endwhile; else: ?>
 <?php endif; ?>
 
 <?php get_footer(); ?>
-
-
-
-
-<?php /*= get_field('faq_general_title');*/?><!--
-<?php /*= get_field('faq_family_title');*/?>
-
-<?php /*= get_field('answer_family')*/?>
-
-<?php /*$answers = get_field('faq_family');*/?>
-<?php /*$questions = get_field('faq_general');*/?>
-<?php /*foreach ($questions as $question)*/?>
-        <?php /*= get_field($question);*/?>
-<?php /*foreach ($answers as $answer)*/?>
-
---><?php /*= get_field($answer);*/?>
