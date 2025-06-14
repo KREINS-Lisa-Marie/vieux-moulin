@@ -5,9 +5,9 @@
         <div class="footer_adress">
             <div class="name_logo_footer">
                 <h3 class="footer_adress_title" itemprop="legalName" aria-level="3" role="heading">
-                    Le Vieux moulin
+                    Le Vieux Moulin
                 </h3>
-                <img src="/wp-content/themes/vm/resources/img/Logo.webp" alt="Logo Vieux Moulin" width="30" height="24"
+                <img src="/wp-content/themes/vm/resources/img/Logo.svg" alt="Logo Vieux Moulin" width="30" height="24"
                      class="logo_image" itemprop="logo">
             </div>
 
@@ -111,7 +111,7 @@
             © 2025 Le Vieux Moulin. Tous droits réservés. Crée par <span itemprop="familyName">Kreins</span> <span itemprop="givenName">Lisa-Marie</span>.
         </p>
         <p>
-            <a href="http://vieux-moulin-site.test/mentions-legales/">Mentions légales</a>
+            <a href="http://vieux-moulin-site.test/mentions-legales/" title="Aller vers la page 'Mentions légales'">Mentions légales</a>
         </p>
     </div>
 </footer>

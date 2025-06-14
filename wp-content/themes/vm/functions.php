@@ -140,8 +140,8 @@ register_post_type('contact_message', [
 ]);
 
 // Ajouter la fonctionnalité "POST" pour un formulaire de contact personnalisé :
-add_action('admin_post_vm_submit_contact_form', 'vm_handle_contact_form');
-add_action('admin_post_nopriv_vm_submit_contact_form', 'vm_handle_contact_form');
+add_action('admin_post_dw_submit_contact_form', 'dw_handle_contact_form');
+add_action('admin_post_nopriv_dw_submit_contact_form', 'dw_handle_contact_form');
 
 // Chargement de notre classe qui va gérer ce formulaire
 require_once(__DIR__.'/forms/ContactForm.php');
@@ -207,7 +207,7 @@ function dw_asset(string $file)
 
 //IMAGES
 
-
+add_image_size('section_image', 594, 396, true);
 /**
  * Génère une image responsive au format <picture> avec les attributs srcset et sizes.
  *

@@ -1,6 +1,6 @@
 {
   "wp-content/themes/vm/resources/css/styles.scss": {
-    "file": "assets/css-Cu6UkA7P.css",
+    "file": "assets/css-CSEhUpf8.css",
     "src": "wp-content/themes/vm/resources/css/styles.scss",
     "isEntry": true
   },
@@ -28,9 +28,9 @@
     "file": "assets/SulphurPoint-Regular-BZDzFO0h.ttf",
     "src": "wp-content/themes/vm/resources/fonts/SulphurPoint-Regular.ttf"
   },
-  "wp-content/themes/vm/resources/img/background_image.webp": {
-    "file": "assets/background_image-CIt4QLzV.webp",
-    "src": "wp-content/themes/vm/resources/img/background_image.webp"
+  "wp-content/themes/vm/resources/img/background_boules.svg": {
+    "file": "assets/background_boules-BzLXi7Qo.svg",
+    "src": "wp-content/themes/vm/resources/img/background_boules.svg"
   },
   "wp-content/themes/vm/resources/js/main.js": {
     "file": "assets/js-Bzsld0tX.js",
