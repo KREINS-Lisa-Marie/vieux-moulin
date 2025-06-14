@@ -4,7 +4,8 @@ Bienvenue à mon projet : Le Vieux Moulin !
 
 - Lien vers le projet : https://vieux-moulin.lisa-marie-kreins.com/
 - Lien vers le fichier Figma : https://www.figma.com/design/BI8MPDs4dFqzGVIWudm1w7/Wireframe-papier-et-test-utilisateur?node-id=17-12&t=iplX5dxUNbKIcWXj-1
-
+- Lien vers les Personnas : https://www.figma.com/design/aYYiEoJyFORAP6fwy6nAiv/Personnas-Projet-client?node-id=0-1&t=m8Rik2wIXx07jNjj-1
+- Lien vers cahier de charges et le Benchmark : https://hepl-my.sharepoint.com/:f:/g/personal/lisa-marie_kreins_student_hepl_be/EtoSPQOPzopFrjvSFzXTHnQBZSMBWF8LvhA4Wwn44I1JRQ?e=0ELeJO
 
 ## Description du projet
 
