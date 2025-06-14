@@ -1,8 +1,9 @@
+//    GENERAL
 .image_accueil img {
-  margin-top: 60px;
+  margin-top: 3.75em;  //60px
   width: 100%;
   height: auto;
-  margin-bottom: 85px;
+  margin-bottom: 5.3125em;  //85px
 }
 
 .family_container.title_middle, .title_middle {
@@ -12,12 +13,12 @@
 .what_is_it .link {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 48px;
+  margin-top: 2.666666666666667em;  //48px
   text-align: center;
 }
 
 .family_container .link {
-  margin-top: 32px;
+  margin-top: 1.777777777777778em;  //32px
 }
 
 .what_is_it {
@@ -30,65 +31,69 @@
   margin-right: auto;
   margin-left: auto;
   max-width: 1275px;
-
-  .section_title {
-    margin-bottom: 32px;
-  }
 }
 
+//    MOBILE
 @media (max-width: 749px) {
   .single_textimonial {
     margin-bottom: 0;
   }
 }
 
+//    MOBILE & TABLET
 @media (max-width: 1199px) {
   .testimonials_container {
-    margin-top: 90px;
+    margin-top: 5.625em;  //90px;
   }
   .what_is_it{
     .section_title{
       margin-bottom: 0;
     }
   }
+  .donations_subline .link{
+    font-size: 1em; //18px
+  }
+  .testimonials_container {
+    .section_title {
+      margin-bottom: 0.888888888888889em;  //32px
+    }
+  }
+
 }
 
 .donations_container {
   background-color: var(--light-blue);
-  padding: 90px 0;
+  padding: 5.625em 0;  //90px 0
 }
 section.donations_container{
   margin-bottom: 0;
 }
 section {
-  margin-top: 90px;
-  margin-bottom: 90px;
+  margin-top: 5.625em; //90px;
+  margin-bottom: 5.625em;  //90px;
 }
 
 .link {
-  font-size: 18px;
+  font-size: 1.125em;  //18px;
   font-weight: 600;
 }
 
-.link_to_projects {
-  margin-top: 24px;
-}
-
-.link_to_donations {
-  margin-top: 32px;
-}
 
 .donations_container h2 {
-  margin-bottom: 32px;
   text-align: center;
 }
+
+//    MOBILE & TABLET
 @media (max-width: 1199px) {
   .subtitle {
-    margin: 32px 24px 16px;
+    margin: 1.333333333333333em 1em 0.666666666666667em 1em;  //32px 24px 16px
+  }
+  .donations_container h2 {
+    margin-bottom: 0.888888888888889em;  //32px
   }
 }
 .subtitle {
-  font-size: 24px;
+  font-size: 1.5em;  //24px;
   font-weight: 600;
   font-family: Sulphur Point, sans-serif;
 }
@@ -96,8 +101,8 @@ section {
 
 .qr_image img {
   display: block;
-  width: 151px;
-  height: 151px;
+  max-width: 151px; //151px;
+  min-height: 151px;//151px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -105,7 +110,7 @@ section {
 .single_textimonial {
   border: 1px solid var(--pink);
   border-radius: 8px;
-  padding: 40px 16px;
+  padding: 2.5em 1em;  //40px 16px;
   min-height: 297px;
 }
 
@@ -116,7 +121,7 @@ section {
 
 .single_textimonial span {
   color: var(--pink);
-  font-size: 48px;
+  font-size: 3em;  //48px
   font-family: "Happy Monkey", sans-serif;
 }
 
@@ -131,8 +136,8 @@ section {
 
 .name_age {
   font-family: Avenir, sans-serif;
-  margin-top: 24px;
-  font-size: 15px;
+  margin-top: 1.6em;  //24px
+  font-size: 0.9375em;  // 15px;
   font-weight: 700;
 }
 .image_f_accueil img {
@@ -148,14 +153,14 @@ section {
   text-align: start;
 }
 
-
+//    MOBILE
 @media (max-width: 749px) {
   body {
-    background-image: url("/wp-content/themes/vm/resources/img/background_image.webp");
-    /*    background-position-x: -487px;*/
+/*    background-image: url("/wp-content/themes/vm/resources/img/background_image.webp");
+    !*    background-position-x: -487px;*!
     background-position-y: 686px;
     background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
     .image_f_accueil img {
       width: 100vw;
       max-height: 282px;
@@ -165,63 +170,57 @@ section {
   }
 }
 
-
+//     TABLET
 @media (min-width: 750px) and (max-width: 1199px) {
   body {
-    background-image: url("/wp-content/themes/vm/resources/img/background_image.webp");
-    /*    background-position-x: -487px;*/
+   /* background-image: url("/wp-content/themes/vm/resources/img/background_image.webp");
+    !*    background-position-x: -487px;*!
     background-position-y: 1050px;
     background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
     .subtitle, .extern_link.link{
       margin-left: 0;
     }
     .image_f_accueil img{
-      max-width: 594px;
+      min-width: 594px;
       max-height: 350px;
       object-fit: cover;
+      border-radius: 8px;
     }
     .what_is_it{
-      padding-left: 24px;
-      padding-right: 24px;
+      padding-left: 1.5em;  //24px
+      padding-right: 1.5em;  //24px
       margin-left: auto;
       margin-right: auto;
     }
   }
 }
-
+//    DESKTOP & TABLET
 @media (min-width: 750px) {
-  .testimonials {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 75px;
-    justify-content: center;
-    max-width: 1275px;
-  }
-
   .single_textimonial {
     margin: 0 0;
   }
 }
 
+
+//    DESKTOP
 @media (min-width: 1200px) {
   body {
-    background-image: url("/wp-content/themes/vm/resources/img/background_image.webp");
-    /*    background-position-x: -487px;*/
+    /*background-image: url("/wp-content/themes/vm/resources/img/background_image.webp");
+    !*    background-position-x: -487px;*!
     background-position-y: 1350px;
     background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
     .image_f_accueil img {
-      width: 594px;
-      height: 442px;
+      min-width: 594px;
+      max-height: 442px;
       object-fit: cover;
       object-position: center 80%;
       border-radius: 8px;
     }
     .family_container{
       max-width: 1326px;
-      gap: 48px;
+      gap: 3em;  //48px;
       margin-left: auto;
       margin-right: auto;
       .section_title{
@@ -233,13 +232,21 @@ section {
     }
   }
   .what_is_it{
-    max-width: 1234px;
-    padding-left: 24px;
-    padding-right: 24px;
+    max-width: 982px;
+    padding-left: 1.5em;  //24px
+    padding-right: 1.5em;  //24px
     margin-right: auto;
     margin-left: auto;
     p{
-      font-size: 18px;
+      font-size: 1.125em;  // 18px
+    }
+  }
+  .donations_subline .link{
+    font-size: 0.75em; //18px
+  }
+  .testimonials_container {
+    .section_title {
+      margin-bottom: 0.666666666666667em;  //32px
     }
   }
 }
@@ -256,70 +263,3 @@ section {
     margin-right: auto;
   }
 }
-
-
-
-/*
-!*  TITLES  *!
-.main_title {
-  font-size: 40px;
-  color: var(--dark-violet);
-  font-weight: 600;
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 20px;
-
-}
-
-.main_subtitle {
-  font-size: 32px;
-  font-family: "STIXGeneral", serif;
-  text-align: center;
-}
-
-!*SECTION DISCOVER ME *!
-
-.discover-me-container h2 {
-  color: var(--dark-violet);
-  margin-top: 88px;
-  margin-bottom: 20px;
-}
-
-.discover-me-container h2, .link_discover_me {
-  margin-left: 24px;
-}
-
-.link_discover_me {
-  display: block;
-  font-size: 20px; !*    AJOUTER flèche -->      *!
-  font-weight: 600;
-  color: var(--dark-violet);
-  margin-top: 40px;
-  margin-bottom: 56px;
-}
-
-
-!*SECTION Projets récents *!
-
-
-.project_section h2 {
-  display: block;
-  color: var(--main-lavender);
-  font-size: 24px;
-  font-weight: 500;
-  font-family: "STIXGeneral", serif;
-  padding-top: 40px;
-  text-align: center;
-}
-
-.project_section{
-  padding-bottom: 56px;
-}
-
-
-
-!*.project__card{
-  min-width: calc(100% - 48px);
-  background-color: var(--main-lavender);
-}*!
-*/

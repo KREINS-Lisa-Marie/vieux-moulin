@@ -1,19 +1,18 @@
+//    GENERAL
 
 /*  introduction bénévolat et autres formes de don*/
 .introduction_donations {
   display: flex;
   flex-direction: column;
-  margin-top: 155px;
 
   h2 {
-    margin-bottom: 32px;
     text-align: center;
   }
 
   a {
     text-align: center;
     display: block;
-    margin-top: 40px;
+    margin-top: 2.222222222222222em;  //40px
   }
 }
 .types_of_donations_img img {
@@ -22,27 +21,6 @@
   max-width: 495px;
   border-radius: 8px;
 }
-
-
-//  von ??
-.image_donations img {
-  width: 100%;
-  height: auto;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  border-radius: 8px;
-}
-
-.dontation_types_text ul {
-  list-style-type: disc;
-  margin-left: 40px;
-  font-size: 16px;
-  line-height: 28px;
-}
-
-  //   bis ??
-
-
 
 
 /*    Partenaires galerie */
@@ -60,7 +38,7 @@
   margin-left: auto;
   align-items: center;
   max-width: 1234px;
-  margin-top: 32px;
+  margin-top: 2em;  //32px
 }
 
 .donations_partner_gallery__img {
@@ -77,8 +55,6 @@
 }
 
 .donations_subline {
-  margin-top: 32px;
-  margin-bottom: 24px;
   font-family: "Sulphur Point", sans-serif;
 }
 
@@ -90,7 +66,7 @@
 /*    MOBILE    */
 @media (max-width: 749px) {
   .donations_subline {
-    margin-left: 24px;
+    margin-left: 1.333333333333333em;  //24px
   }
 }
 /*    TABLET & DESKTOP    */
@@ -99,8 +75,8 @@
     max-width: 1234px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 1.5em;  //24px
+    padding-right: 1.5em;  //24px
   }
 }
 
@@ -110,8 +86,8 @@
     max-width: 50em;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1.5em;  //24px
+    padding-left: 1.5em;  //24px
   }
 }
 
@@ -128,79 +104,94 @@
     }
     .types_of_donations_img {
       order: 2;
-      margin-bottom: 48px;
+      margin-bottom: 3em;  //48px
       text-align: center;
     }
 
-   /*   TEST
-   h3 {
-      order: 3;
-    }*/
-
     .donations_text {
       order: 4;
-      margin-top: 32px;
+      margin-top: 2em;  //32px
       ul li {
-        line-height: 28px;
+        line-height: 1.75em;  //28px
       }
     }
     .section_title {
-      margin-bottom: 32px;
+      margin-bottom: 0.888888888888889em;  //32px
     }
     li {
       list-style-type: disc;
-      margin-left: 36px;
+      margin-left: 2.25em;  //36px;
+    }
+  }
+  .introduction_donations {
+    margin-top: 9.6875em; //155px
+    h2 {
+      margin-bottom: 0.888888888888889em; //32px
     }
   }
 
-
   .link_to_page, .donations_subline {
-    font-size: 18px;
+    font-size: 1.125em;  //18px;
   }
   .partners_gallery_container {
-    gap: 24px;
+    gap: 1.5em;  //24px
   }
   .donations_container {
     flex-direction: column-reverse;
+  }
+  .donations_subline {
+    margin-top: 1.777777777777778em;  //32px
+    margin-bottom: 1.333333333333333em;  //24px
   }
 }
 
 /*    DESKTOP   */
 @media (min-width: 1200px) {
   .introduction_donations {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.125em;  //18px
+    line-height: 1.555555555555556em;  //28px
+    max-width: 982px;
   }
   .donations_flex_container {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 32px;
+    margin-top: 2em;  //32px
     max-width: 1234px;
     display: flex;
     flex-direction: row;
-    gap: 48px;
+    gap: 3em;  //48px;
     align-items: center;
     justify-content: center;
 
     .donations_text {
       max-width: 592px;
-      font-size: 18px;
-      line-height: 28px;
+      font-size: 1.125em;  //18px
+      line-height: 1.555555555555556em;  //28px
 
       li {
         list-style-type: disc;
-        margin-left: 36px;
+        margin-left: 2em;  //36px
       }
     }
   }
   .types_of_donations_container {
-    margin-bottom: 120px;
+    margin-bottom: 7.5em;  //120px
   }
   .partners_gallery_container {
-    gap: 48px;
+    gap: 3em;  //48px
   }
 
   .donations_container~.partners_container{
-  margin-top: 120px;
+  margin-top: 7.5em;  // 120px
   }
-}
+  .introduction_donations {
+    margin-top: 8.611111111111111em; //155px
+    h2 {
+      font-size: 2.666666666666667em; //48px
+      margin-bottom: 0.666666666666667em; //32px
+    }
+    a{
+      font-size: 1em; //18px
+    }
+  }
+  }

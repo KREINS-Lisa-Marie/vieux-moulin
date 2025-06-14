@@ -1,46 +1,61 @@
 /*Single news page*/
 
 /*CARDS*/
-
+//    GENERAL
 .news_section {
   background-color: var(--light-blue);
-  padding: 90px 0;
+  padding: 5.625em 0;  //90px 0
 }
 .show_all_news{
   text-align: end;
 }
+.news__link{
+  border-radius: 8px;
+  &:hover,
+  &:focus{
+    transition: 1s;
+    box-shadow: 20px 20px 0 var(--pink);
+  }
+}
+
+
+
+//    MOBILE
 @media (max-width: 749px) {
   .news{
-  flex-direction: column;
-  gap: 32px;
-  max-width: 343px;
+    flex-direction: column;
+    gap: 2em;  //32px
+    max-width: 343px;
     align-items: center;
   }
 }
+
+
+//    DESKTOP & TABLET
 @media (min-width: 749px) {
   .news{
-  flex-direction: row;
-  gap: 40px;
-  max-width: 1234px;
+    flex-direction: row;
+    gap: 2.5em;  //40px
+    max-width: 1234px;
     flex-wrap: wrap;
-margin-top: 0;
+    margin-top: 0;
   }
   .news__card{
-    width: 343px;
+    max-width: 343px;
   }
   .news_section{
 /*    padding-bottom: 0;*/
-    margin-bottom: 120px;
+    margin-bottom: 7.5em;  //120px
   }
-
+/*frontpage */
   .news_header{
     display: flex;
     flex-direction: row;
     align-items: baseline;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 1.5em;  //24px
+    padding-right: 1.5em;  //24px
     max-width: 1108px;
     justify-content: space-between;
     .section_title{
@@ -55,6 +70,9 @@ margin-top: 0;
     }
   }
 }
+
+
+/* news cards */
 .news {
   margin-left: auto;
   margin-right: auto;
@@ -78,29 +96,20 @@ align-items: flex-end;
   position: absolute;
   z-index: 2;
 }
-  .single_news {
-/*    margin-left: auto;
-    margin-right: auto;
-    position: relative;*/
-  }
-
-/*  .single_news p {
-    margin-left: 0;
-  }*/
 
   .news__title {
-    margin-left: 16px;
+    margin-left: 0.666666666666667em;  //16px
     position: absolute;
-    bottom: 16px;
-    font-size: 24px;
+    bottom: 0.666666666666667em;  //16px
+    font-size: 1.5em;  //24px
     z-index: 3;
     max-width: 60%;
-    line-height: 33px;
+    line-height: 1.375em;  //33px
   }
 
   .single_news_date time {
     position: absolute;
-    padding: 12px 12px 8px;
+    padding: 0.75em 0.75em 0.5em;  //12px 12px 8px
     background-color: var(--pink);
     border-radius: 8px 0;
     left: 0;
@@ -112,15 +121,17 @@ align-items: flex-end;
   }
 
 
-  /*    IDK ist richtig???    */
+
   .news__fig img {
-    box-sizing: border-box; /*    IDK ist richtig???    */
+    box-sizing: border-box;
     width: 100%;
     height: 265px;
     object-fit: cover;
     border-radius: 8px;
   }
 
+
+  /* border and gradient*/
   .news__fig::before {
     border-radius: 8px;
     content: '';
@@ -140,26 +151,26 @@ align-items: flex-end;
 
 
   .news_button_circle {
-    bottom: 16px;
-    right: 16px;
+    bottom: 1em;  //16px
+    right: 1em;  //16px
     z-index: 4;
   }
 
   .news_button_arrow {
-    bottom: 30px;
-    right: 30px;
+    bottom: 1.875em;  //30px
+    right: 1.875em;  //30px
     z-index: 5;
   }
 
 
-  .single_news_article img {
+/*  .single_news_article img {
     width: 100%;
     height: auto;
-    margin-bottom: 32px;
-  }
+    margin-bottom: 2em;  //32px                  !*      !!!     *!
+  }*/
 
   .single_news:first-of-type {
-    margin-top: 40px;
+    margin-top: 2.5em;  //40px
   }
 }
 .card_content_relative, .news__fig{
@@ -169,30 +180,24 @@ align-items: flex-end;
 .section_title, .single_news__title {
   font-family: "Sulphur Point", sans-serif;
   font-weight: 600;
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
 @media (max-width: 1199px) {
   .donations_container .subtitle {
-    margin-bottom: 16px;
+    margin-bottom: 0.666666666666667em;  //16px
+  }
+  .section_title, .single_news__title {
+    margin-left: 0.666666666666667em;  //24px
+    margin-right: 0.666666666666667em;  //24px
   }
 }
 
 
-.news_donations{
-  margin-bottom: 0;
-  padding-bottom: 120px;
-  padding-top: 120px;
-}
-/*news_cards*/
-
-
 .pagination {
-  margin-top: 8px;
+  margin-top: 0.5em;  //8px
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 1em;  // 16px
   justify-content: center;
   font-weight: 600;
 }
@@ -205,44 +210,29 @@ align-items: flex-end;
 /*general*/
 
 
-/* souslignement rose des titres */
-.underline {
-  position: relative;
-  display: inline;
-}
 
-.underline::after {
-  content: '';
-  position: absolute;
-  left: -5px;
-  bottom: 0.05em; /* déplacer un peu vers le haut */
-  width: 105%;
-  height: 12px; /* height du souslignement rose */
-  background-color: var(--pink); /* couleur du souslignement */
-  z-index: -1; /* mettre derrière le texte */
-}
 
 .date_of_single_news time {
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 0.888888888888889em;  //16px
 }
 
-
+//    MOBILE & TABLET
 @media (max-width: 1199px) {
   .section_title, .single_news__title {
-    font-size: 36px;
-    line-height: 46px;
+    font-size: 2.25em;  //36px
+    line-height: 1.277777777777778em;  //46px
   }
   .single_news_article {
-    margin-top: 155px;
-    margin-bottom: 90px;
+    margin-top: 9.6875em;  //155px
+    margin-bottom: 5.625em;  //90px
   }
   .single_news_article {
     display: flex;
     flex-direction: column;
   }
   .single_news__title {
-    margin-bottom: 32px;
+    margin-bottom: 0.888888888888889em;  //32px
   }
   .single_news_main_content {
     display: flex;
@@ -260,7 +250,7 @@ align-items: flex-end;
     }
   }
   .date_of_single_news {
-    margin-top: 40px;
+    margin-top: 2.5em;  //40px
   }
   .news{
     margin-top: 0;
@@ -270,16 +260,18 @@ align-items: flex-end;
     flex-direction: column;
     align-items: center;
     .section_title{
-      margin-bottom: 32px;
+      margin-bottom: 0.888888888888889em;  //32px
     }
   }
 }
 
+//    TABLET
+
 @media (min-width: 750px) and (max-width: 1199px) {
   .single_news_main_content {
     .text_content {
-      padding-right: 24px;
-      padding-left: 24px;
+      padding-right: 1.5em;  //24px
+      padding-left: 1.5em;  //24px
       max-width: 50em;
       margin-right: auto;
       margin-left: auto;
@@ -292,15 +284,17 @@ align-items: flex-end;
 
 @media (min-width: 1200px) {
   .section_title, .single_news__title {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 3em;  //48px
+    line-height: 1em;  //48px
+    margin-left: 0.5em;  //24px
+    margin-right: 0.5em;  //24px
   }
   .single_news__title {
-    margin-bottom: 40px;
+    margin-bottom: 0.833333333333333em;  //40px
   }
   .single_news_article {
-    margin-top: 206px;
-    margin-bottom: 120px;
+    margin-top: 12.875em;  //206px
+    margin-bottom: 7.5em;  //120px
   }
   .single_news_main_content {
     display: flex;
@@ -309,7 +303,7 @@ align-items: flex-end;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    gap: 48px;
+    gap: 3em;  //48px
     .single_news_image img {
       width: 592px;
       height: auto;
@@ -317,366 +311,3 @@ align-items: flex-end;
     }
   }
 }
-
-
-/*
-//Single news page
-
-.news_section .h2{
-  margin-top: 150px;
-}
-.single_news__title{
-  margin-bottom: 32px;
-}
-.single_news_article img{
-  width: 100%;
-  height: auto;
-  margin-bottom: 32px;
-}
-.single_news_date{
-  font-weight: 700;
-}
-.donations_container .subtitle{
-  margin-bottom: 16px;
-}
-
-
-
-// news_cards
-
-
-
-.single_news:first-of-type {
-  margin-top: 40px;
-}
-
-
-.news {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-
-  &__card {
-    position: relative;
-  }
-
-  .single_news {
-    max-width: 335px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-  }
-  .single_news p{
-    margin-left: 0;
-  }
-
-  .news__title {
-    margin-left: 16px;
-    position: absolute;
-    top: 200px;
-  }
-
-  .single_news_date time {
-    position: absolute;
-    padding: 12px 12px 8px;
-    background-color: var(--pink);
-    border-radius: 8px 0 ;
-    left: 0;
-  }
-
-  .news__title, .single_news_date time{
-    color: var(--white);
-    font-weight: 600;
-  }
-  .news__title{
-    font-size: 24px;
-    z-index: 3;
-  }
-
-
-  !*    IDK ist richtig???    *!
-  .news__fig img{
-    box-sizing: border-box;     !*    IDK ist richtig???    *!
-    width: 100%;
-    height: auto;
-    max-height: 265px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-
-  .news__fig::before{
-    border-radius: 8px;
-    content: '';
-    top: 0;
-    left: 0;
-    z-index: 2;
-    height:calc(100% - 8px);
-    width: calc(100% - 8px);
-    background: linear-gradient(var(--gradient) 0%, var(--black) 100%);
-    position: absolute;
-    border: 4px solid var(--pink);
-  }
-
-}
-
-.news_div.news{
-  max-width: 343px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-
-}
-.news__card{
-  min-height: 265px;
-}
-.news__title{
-  max-width: 60%;
-  line-height: 33px;
-}
-.news_button_arrow, .news_button_circle{
-  position: absolute;
-}
-.news_button_circle{
-  top: 202px;
-  left: 279px;
-  z-index: 4;
-}
-.news_button_arrow{
-  top: 216px;
-  left: 299px;
-  z-index: 5;
-}
-.pagination{
-  margin-top: 8px;
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  justify-content: center;
-  font-weight: 600;
-}
-
-
-
-
-
-//general
-
-
-section.news{
-  background-color: var(--light-blue);
-  padding: 90px 0;
-}
-
-.section_title, .single_news__title {
-  font-family: "Sulphur Point", sans-serif;
-  font-weight: 600;
-  margin-left: 24px;
-  margin-right: 24px;
-}
-
-
-
-!* souslignement rose des titres *!
-.underline, .single_news__title {
-  position: relative;
-  display: inline;
-}
-.underline::after, .single_news__title::after {
-  content: '';
-  position: absolute;
-  left: -5px;
-  bottom: 0.05em; !* déplacer un peu vers le haut *!
-  width: 105%;
-  height: 12px; !* height du souslignement rose *!
-  background-color: var(--pink); !* couleur du souslignement *!
-  z-index: -1; !* mettre derrière le texte *!
-}
-
-@media (max-width: 1199px) {
-  .section_title, .single_news__title {
-    font-size: 36px;
-    line-height: 46px;
-  }
-}
-
-//  DESKTOP
-
-@media (min-width: 1200px) {
-  .section_title, .single_news__title {
-    font-size: 48px;
-    line-height: 48px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//html
-
-//front-page
-
-
-<section class="news">
-<h2 class="section_title title_middle back">
-                                           Nos <span class="underline">actualités</span>
-</h2>
-<a href="<?= get_field('link_homepage_to_news'); ?>" title="Aller vers la page 'Actualités'" class="link">Voir
-                                                                                                         toutes les actualités
-<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.1638 4.35355C12.3591 4.15829 12.3591 3.84171 12.1638 3.64645L8.98185 0.464467C8.78659 0.269204 8.47001 0.269204 8.27475 0.464467C8.07948 0.659729 8.07948 0.976311 8.27475 1.17157L11.1032 4L8.27475 6.82843C8.07948 7.02369 8.07948 7.34027 8.27475 7.53553C8.47001 7.7308 8.78659 7.7308 8.98185 7.53553L12.1638 4.35355ZM0.853516 4L0.853516 4.5L11.8103 4.5L11.8103 4L11.8103 3.5L0.853516 3.5L0.853516 4Z"
-fill="#F19595"/>
-</svg>
-</a>
-<div class="news">
-<?php
-$news = new WP_Query([
-'post_type' => 'news',
-'order' => 'DESC',
-'orderby' => 'date',
-'posts_per_page' => 3,
-]);
-
-// On ajoute les actualités sur la page
-// On ouvre "la boucle" (The Loop), la structure de contrôle
-// de contenu propre à Wordpress:
-
-
-if ($news->have_posts()): while ($news->have_posts()): $news->the_post(); ?>
-<article class="single_news">
-<h3 class="news__title">
-<?= get_the_title(); ?>
-</h3>
-<a href="<?= get_the_permalink(); ?>" class="news__link">
-<span class="sro">Découvrir l'actualité <?= get_the_title(); ?></span>
-</a>
-<div class="news__card">
-
-<?php
-$date = get_field('news_date');
-if ($date):
-?>
-<p class="single_news_date">
-<time datetime="<?= $date; ?>">
-<?= $date; ?>
-</time>
-</p>
-<?php else: ?>
-<p> Sans date </p>
-<?php endif; ?>
-<figure class="news__fig">
-<span class="gradient">
-<?= responsive_image(get_field('news_image'), ['classes' => 'news__img']); ?>
-</span>
-</figure>
-<!--<figure class="news__fig">
-<?php !*= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'news__img']); *! ?>
-</figure>-->
-</div>
-</article>
-<?php
-wp_reset_postdata();
-endwhile;
-else: ?>
-<p>Je n'ai pas d'actualités récentes à montrer pour le moment...</p>
-<?php endif; ?>
-</div>
-</section>
-
-
-
-  //la vie au vm
-
-
-
-<section class="news_section news">
-<h2 class="section_title title_middle">
-<span class="underline"><?= get_field('title_news');?></span>
-</h2>
-<a href="<?= get_field('link_vie_to_news');?>" title="Aller vers la page 'Actualités'" class="link_to_page. link">Voir toutes les actualités
-<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.1638 4.35355C12.3591 4.15829 12.3591 3.84171 12.1638 3.64645L8.98185 0.464467C8.78659 0.269204 8.47001 0.269204 8.27475 0.464467C8.07948 0.659729 8.07948 0.976311 8.27475 1.17157L11.1032 4L8.27475 6.82843C8.07948 7.02369 8.07948 7.34027 8.27475 7.53553C8.47001 7.7308 8.78659 7.7308 8.98185 7.53553L12.1638 4.35355ZM0.853516 4L0.853516 4.5L11.8103 4.5L11.8103 4L11.8103 3.5L0.853516 3.5L0.853516 4Z" fill="#F19595"/>
-</svg>
-</a>
-
-<div class="news">
-<?php
-$news = new WP_Query([
-'post_type' => 'news',
-'order' => 'DESC',
-'orderby' => 'date',
-'posts_per_page' => 3,
-]);
-
-if($news->have_posts()): while($news->have_posts()): $news->the_post(); ?>
-<article class="news">
-<a href="<?= get_the_permalink(); ?>" class="news__link link">
-<span class="sro">Découvrir l'actualité<?= get_the_title(); ?></span>
-</a>
-
-
-<!--                 <div class="project__card">
-<div class="project__head">
-<h3 class="project__title"><?php !*= get_the_title(); *!?></h3>
-</div>
-
-
-
-<figure class="project__fig">
-<?php !*= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'project__img']);
-                        *!?>
-</figure>
-</div>-->
-
-<div class="news__card">
-<div class="news__head">
-<h3 class="news__title"><?= get_the_title(); ?></h3>
-</div>
-<figure class="news__fig">
-<?= responsive_image(get_field('news_image'), ['classes' => 'news__img']);?>
-
-<!--        --><?php !*= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'news__img']); *!?>
-</figure>
-<?php
-$date = get_field('news_date');
-?>
-<p class="single_news_date">
-<time datetime="<?= $date; ?>">
-<?= $date; ?>
-</time>
-</p>
-</div>
-
-
-</article>
-<?php
-wp_reset_postdata();
-endwhile; else: ?>
-<p>Je n'ai pas d'actualités récentes à montrer...</p>
-<?php endif; ?>
-</div>
-</section>
-
-
-
-
-
-
-
-
-
-*/

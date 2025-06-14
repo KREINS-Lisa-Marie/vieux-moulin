@@ -1,3 +1,5 @@
+//    DESKTOP
+
 @media (min-width: 1200px) {
   section.donations_container {
     margin-bottom: 0;
@@ -12,7 +14,7 @@
     /*max-width: 1000px;*/
     width: 100%;
     justify-content: center;
-    grid-gap: 16px;
+    grid-gap: 1em;  //16px
     align-items: center;
 
     .section_title {
@@ -26,7 +28,7 @@
     .donations_text {
       grid-area: text;
       max-width: 794px;
-      font-size: 18px;
+      font-size: 1.125em;  //18px
     }
 
     .donations_subline {
@@ -43,9 +45,21 @@
 
     .donations_text, .donations_subline, .link_to_page, .donations_subtitle, .section_title, .link_to_donation_contact.link_to_page.link {
       max-width: 794px;
-      margin-left: 16px;
+/*      margin-left: 16px;  //16px*/
       text-align: start;
     }
+   .section_title{
+      margin-left: 0.333333333333333em;  //16px
+    }
+.donations_subline, .donations_subtitle,{
+      margin-left: 0.666666666666667em;  //16px
+    }
+    .donations_text, .link_to_page,  .link_to_donation_contact.link_to_page.link {
+      margin-left: 0.888888888888889em;  //16px
+    }
+
+
+
 
     .donations_subtitle {
       margin-top: 0;
@@ -53,9 +67,9 @@
     }
 
     .donations_subline {
-      margin-bottom: 8px;
-      margin-top: 16px;
-      font-size: 24px;
+      margin-bottom: 0.333333333333333em;  //8px;
+      margin-top: 0.666666666666667em;  //16px
+      font-size: 1.5em;  //24px;
     }
   }
 }
@@ -87,44 +101,3 @@
     }
   }
 }
-
-
-
-/*
-
-// houses
-<section class="donations_container img_title_text">
-    <h2 class="section_title">
-        <span class="underline back"> <?= get_field('donations_title'); ?></span>
-    </h2>
-    <h3 class="donations_subtitle subtitle">
-        <?= get_field('subtitle_donations'); ?>
-    </h3>
-    <div class="donations_text">
-        <?= get_field('donations_text'); ?>
-    </div>
-    <div class="donations_subline">
-        <?= get_field('subline'); ?>
-    </div>
-    <a href="<?= get_field('link_houses_to_contact');?>" title="Aller vers la page 'Contact'" class="link_to_page link link_to_donation_contact">Dites nous comment
-        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.1638 4.35355C12.3591 4.15829 12.3591 3.84171 12.1638 3.64645L8.98185 0.464467C8.78659 0.269204 8.47001 0.269204 8.27475 0.464467C8.07948 0.659729 8.07948 0.976311 8.27475 1.17157L11.1032 4L8.27475 6.82843C8.07948 7.02369 8.07948 7.34027 8.27475 7.53553C8.47001 7.7308 8.78659 7.7308 8.98185 7.53553L12.1638 4.35355ZM0.853516 4L0.853516 4.5L11.8103 4.5L11.8103 4L11.8103 3.5L0.853516 3.5L0.853516 4Z"
-                  fill="#F19595"/>
-        </svg>
-    </a>
-
-    <div class="qr_code qr_image">
-        <?php
-        $qr_code_image = get_field('image_qr_code');
-        $size = 'full'; // (thumbnail, medium, large, full or custom size)
-        if ($qr_code_image) {
-            echo wp_get_attachment_image($qr_code_image, $size);
-        }
-        ?>
-    </div>
-</section>
-
-
-*/
-
-

@@ -1,31 +1,35 @@
 // GENERAL
 .resources_list {
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-left: 1.5em; //24px
+  margin-right: 1.5em; //24px
 
   li {
-    margin-top: 12px;
-    line-height: 28px;
+    margin-top: 0.75em;  //12px
+    line-height: 1.75em;  //28px
   }
 
   li:first-of-type {
-    margin-top: 32px;
+    //margin-top: 2em;  //32px
   }
 }
 
-.introduction_resources h2 {
-  margin-bottom: 32px;
-}
-
 .image_resources img {
-  margin-top: 150px;
+  margin-top: 9.375em;  //150px
   width: 100%;
   height: auto;
 }
 
-.file_project_link {
-  margin-top: 32px;
+ .resources_list a {
+  &:hover,
+  &:focus{
+    transition: 0.5s;
+    box-shadow: 0 4px 0 var(--pink);
+  }
 }
+
+/*.file_project_link {
+  margin-top: 2em;  //32px
+}*/
 
 .flex_container_first_section {
   display: flex;
@@ -45,19 +49,19 @@
 
 .single_file {
   display: block;
-  margin-top: 32px;
+  margin-top: 2em;  //32px
 }
 
 @media (max-width: 749px) {
   .download_resources_container .section_title {
-      margin-bottom: 32px;
+      margin-bottom: 0.888888888888889em;  //32px
     }
 }
 
 // TABLET
 @media (min-width: 750px) {
   .introduction_resources p {
-    line-height: 28px;
+    line-height: 1.75em; //28px
   }
 }
 
@@ -79,8 +83,8 @@
     max-width: 50em;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 1.5em; //24px
+    padding-right: 1.5em;  //24px
   }
   .single_file {
     text-align: center;
@@ -88,18 +92,21 @@
   .download_resources_container{
     margin-top: 0;
   }
+  .introduction_resources h2 {
+    margin-bottom: 0.888888888888889em;  //32px
+  }
 }
 
 
 //DESKTOP
 @media (min-width: 1200px) {
   .flex_container_first_section {
-    margin-top: 206px;
+    margin-top: 12.875em;  //206px
     justify-content: center;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 1.5em; //24px
+    padding-right: 1.5em; //24px
     flex-direction: row;
-    gap: 48px;
+    gap: 3em; //48px
     align-items: center;
   }
   .image_resources img {
@@ -115,10 +122,14 @@
     .section_title {
       margin-left: 0;
       text-align: start;
+      margin-bottom: 0.666666666666667em;  //32px;
+    }
+    p{
+      font-size: 1.125em; //18px
     }
   }
   .download_resources_container {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    margin-top: 7.5em;  //120px
+    margin-bottom: 7.5em;  //120px
   }
 }
