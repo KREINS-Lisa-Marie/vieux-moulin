@@ -4,8 +4,10 @@
     <div class="image_accueil" itemprop="image">
         <?php
         $image_accueil = get_field('head_image');
+        $size = 'large'; // (thumbnail, medium, large, full or custom size)
+
         if ($image_accueil) {
-            echo responsive_image($image_accueil, ['classes' => 'attachment-large size-large']);
+            echo wp_get_attachment_image($image_accueil, $size);
         }
         ?>
     </div>
