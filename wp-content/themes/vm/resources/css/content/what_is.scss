@@ -1,25 +1,19 @@
+//    GENERAL
+
 .history_container {
   display: flex;
   flex-direction: column;
   background-color: var(--light-blue);
-  padding-top: 65px;
-  padding-bottom: 90px;
+  padding-top: 4.0625em;  // 65px
+  padding-bottom: 5.625em;  //90px
   align-content: center;
 
-  .section_title {
-    margin-bottom: 32px;
-  }
-
   .history_gallery__img:first-of-type {
-    margin-bottom: 16px;
-  }
-
-  p {
-    margin-top: 16px;
+    margin-bottom: 1em;  //16px
   }
 
   .link_to_page {
-    margin-top: 32px;
+    margin-top: 1.777777777777778em;  //32px
   }
 
   .history_images_container {
@@ -32,39 +26,31 @@
   height: auto;
 }
 
-
-
 .what_introduction_container {
   margin-top: 0;
   img {
-    margin-top: 150px;
+    margin-top: 9.375em;  //150px
   }
 }
 
 .what_introduction_container, .missions_container, .values_container {
   .section_title, .activities_container.section_title {
-    margin-bottom: 32px;
+    margin-bottom: 0.888888888888889em;  //32px
   }
 }
 
 .missions_container, .values_container {
   background-color: var(--light-blue);
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 5.625em;  //90px
+  padding-bottom: 5.625em;  //90px
   img {
     border-radius: 8px;
   }
 }
 
-.partners_container {
-  .section_title {
-    margin-bottom: 48px;
-  }
-}
-
 .values_container {
   margin-top: 0;
-  padding-bottom: 90px;
+  padding-bottom: 5.625em;  //90px
 }
 
 .missions_container {
@@ -88,7 +74,7 @@
   margin-right: auto;
   margin-left: auto;
   align-items: center;
-  gap: 48px;
+  gap: 3em;  //48px
 
   .partners_gallery__img {
     max-width: 241px;
@@ -100,6 +86,7 @@
   height: auto;
 }
 
+//    MOBILE & TABLET
 
 @media (max-width: 1199px) {
   .what_introduction_image {
@@ -114,8 +101,8 @@
       margin-right: auto;
     }
     p {
-      padding-right: 24px;
-      padding-left: 24px;
+      padding-right: 1.5em;  //24px
+      padding-left: 1.5em;  //24px
       margin-right: auto;
       margin-left: auto;
       max-width: 50em;
@@ -134,68 +121,103 @@
   .partners_images_container {
     max-width: calc(100% - 48px);
   }
+  .history_container {
+    .section_title {
+      margin-bottom: 0.888888888888889em; //32px
+    }
+      p {
+        margin-top: 1em;  //16px
+      }
+  }
+  .partners_container {
+    .section_title {
+      margin-bottom: 1.333333333333333em;  //48px
+    }
+  }
 }
+
+//    TABLET
 
 @media (min-width: 750px) and (max-width: 1199px) {
   .history_gallery__img {
     max-height: 310px;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 0.5em;  //8px
+    margin-right: 0.5em;  //8px
   }
   .what_introduction_container {
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 1.5em;  // 24px
+    margin-right: 1.5em;  // 24px
   }
   h2.section_title{
     margin-left: 0;
     margin-right: 0;
   }
+  .missions_container.img_title_text, .values_container.img_title_text, .activities_container.img_title_text {
+    .section_title {
+      padding-left: 0.666666666666667em;  //24px
+    }
+  }
+  .what_activities_container p {
+    padding-left: 1.5em;  // 24px
+    padding-right: 1.5em;  // 24px
+  }
 }
+
+//    TABLET & DESKTOP
 
 @media (min-width: 750px) {
-  .what_activities_container p {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
   .history_container {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 1.5em;  // 24px
+    padding-right: 1.5em;  // 24px
   }
+
 }
 
+
+//    DESKTOP
+
 @media (min-width: 1200px) {
+  .what_activities_container p {
+    padding-left: 1.333333333333333em;  // 24px
+    padding-right: 1.333333333333333em;  // 24px
+  }
   .history_container .link_to_page {
-    margin-top: 56px;
+    margin-top: 3.111111111111111em;  //56px
   }
   .history_container p {
     max-width: 1234px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 18px;
+    font-size: 1.125em;  //18px
+    margin-top: 0.888888888888889em;  //16px
   }
   .history_gallery__img {
     max-width: 500px;
     height: 360px;
-    width: 500px;
     object-fit: cover;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 1.25em;  // 20px
+    margin-left: 1.25em;  // 20px
   }
   .history_images_container {
     padding-left: 0;
     padding-right: 0;
   }
   .history_images_container {
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1.5em;  //24px
+    padding-left: 1.5em;  //24px
+  }
+  .history_container {
+    .section_title {
+      margin-bottom: 0.666666666666667em; //32px
+    }
   }
   .what_activities_container, .text_content {
-    max-width: 1234px;
+    max-width: 982px;
     margin-left: auto;
     margin-right: auto;
 
     p {
-      font-size: 18px;
+      font-size: 1.125em;  //18px
     }
   }
   .partners_images_container {
@@ -209,20 +231,17 @@
     max-width: 1234px;
   }
   .what_introduction_container {
-    margin-top: 206px;
+    margin-bottom: 7.5em;  //120px
+    margin-top: 12.875em;  //206px
     max-width: 1234px;
     margin-right: auto;
     margin-left: auto;
 
     p {
-      padding-left: 24px;
-      padding-right: 24px;
-      font-size: 18px;
+  /*    padding-left: 24px;  //24px*/
+      padding-right: 1.333333333333333em;  //24px
+      font-size: 1.125em;  //18px
     }
-  }
-  .what_introduction_container {
-    margin-bottom: 120px;
-
     .img_title_text {
       margin-left: auto;
       margin-right: auto;
@@ -245,25 +264,28 @@
 
   }
   .values_container {
-    margin-bottom: 120px;
+    margin-bottom: 7.5em;  //120px
   }
   .history_container {
-    margin-top: 120px;
-    margin-bottom: 120px;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    margin-top: 7.5em;  //120px
+    margin-bottom: 7.5em;  //120px
+    padding-top: 5.625em;  //90px
+    padding-bottom: 5.625em;  //90px
+    p{
+     max-width: 982px;
+    }
   }
   .partners_container {
-    margin-bottom: 120px;
+    margin-bottom: 7.5em;  //120px
     margin-top: 0;
   }
   .img_title_text {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding-left: 24px;
-    padding-right: 24px;
-    gap: 56px;
+    padding-left: 1.5em;  //24px;
+    padding-right: 1.5em;  //24px;
+    gap: 3.5em;  // 56px;
 
     .text_content {
       max-width: 678px;
@@ -276,6 +298,16 @@
     }
     .text_content p {
       padding-left: 0;
+    }
+  }
+  .partners_container {
+    .section_title {
+      margin-bottom: 1em;  //48px
+    }
+  }
+  .what_introduction_container, .missions_container, .values_container {
+    .section_title, .activities_container.section_title {
+      margin-bottom: 0.666666666666667em;  //32px
     }
   }
 }

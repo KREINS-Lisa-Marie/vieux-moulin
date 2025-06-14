@@ -1,33 +1,17 @@
+//    GENERAL
+
 /* galeries du vm et edelweiss */
 .houses_vm_gallery_container, .houses_e_gallery_container {
-  .section_title {
-    margin-bottom: 32px;
-  }
   .houses_vm_gallery, .houses_e_gallery {
-    margin-bottom: 56px;
+    margin-bottom: 3.5em;  //56px;
   }
-}
-.houses_e_gallery_container .section_title:last-of-type, .houses_vm_gallery_container .section_title:last-of-type {
-  margin-bottom: 32px;
 }
 
-.vm_adress p {
-  margin-bottom: 8px;
-}
 
 .vm_adress p:last-of-type {
   margin-bottom: 0;
 }
 
-
-
-/* Team et introduction */
-.houses_vm_team_container, .houses_vm_introduction_container, .houses_e_introduction_container, .houses_e_team_container {
-  h3 {
-    margin-bottom: 32px;
-    margin-left: 24px;
-  }
-}
 .image_vm img, .image_e img, .project_image img {
   border-radius: 8px;
   max-width: 594px;
@@ -42,18 +26,11 @@
 }
 
 .project_title {
-  margin-left: 24px;
-  font-size: 20px;
   font-weight: 700;
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 .houses_project_container {
   margin-bottom: 0;
-  p {
-    margin-bottom: 90px;
-  }
 }
 
 .donations_container {
@@ -68,11 +45,11 @@ strong {
 
 /* liens des 2 maisons */
 .houses_links {
-  margin-top: 150px;
+  margin-top: 9.375em;  //150px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 56px;
+  gap: 3.5em;  //56px
 
   .link {
     margin-left: 0;
@@ -89,6 +66,21 @@ strong {
     width: 100%;
     height: auto;
   }
+  /* Team et introduction */
+  .houses_vm_team_container, .houses_vm_introduction_container, .houses_e_introduction_container, .houses_e_team_container {
+    h3 {
+      margin-bottom: 0.888888888888889em;  //32px
+      margin-left: 0.666666666666667em;  //24px;
+    }
+  }
+  .houses_vm_gallery_container, .houses_e_gallery_container {
+    .section_title {
+      margin-bottom: 0.888888888888889em; //32px;
+    }
+  }
+  .houses_e_gallery_container .section_title:last-of-type, .houses_vm_gallery_container .section_title:last-of-type {
+    margin-bottom: 0.888888888888889em;  //32px;
+  }
 }
 
 
@@ -98,8 +90,8 @@ strong {
   /*section de dons*/
   .img_title_text {
     .text_content {
-      margin-left: 24px;
-      margin-right: 24px;
+      margin-left: 1.5em;  //24px;
+      margin-right: 1.5em;  //24px;
       max-width: 50em;
 
       .section_title {
@@ -109,10 +101,27 @@ strong {
   }
 }
 
-//    verwirrt???
+
 /*    MOBILE & TABLET    */
 @media (max-width: 1199px) {
-  /*section de dons*/
+  .houses_project_container {
+    p {
+      margin-bottom: 5.625em;  //90px
+    }
+  }
+
+  .project_title {
+    margin-left: 1.2em;  //24px;
+    font-size: 1.25em;  //20px
+    margin-top: 1.6em;  //32px
+    margin-bottom: 1.6em;  //32px
+  }
+
+  .vm_adress p {
+    margin-bottom: 0.5em;  //8px;
+  }
+
+  /*section de dons    et    section img_title_text*/
   .img_title_text {
     display: flex;
     flex-direction: column;
@@ -132,7 +141,7 @@ strong {
 
     img {
       order: 1;
-      margin-bottom: 48px;
+      margin-bottom: 3em;  //48px;
     }
 
     h2 {
@@ -156,25 +165,42 @@ strong {
     }
   }
 }
-//    verwirrt bis???
 
 
 
 
 /*    DESKTOP    */
 @media (min-width: 1200px) {
+  .houses_vm_gallery_container, .houses_e_gallery_container {
+    .section_title {
+      margin-bottom: 0.666666666666667em;  //32px;
+    }
+  }
+  .houses_e_gallery_container .section_title:last-of-type, .houses_vm_gallery_container .section_title:last-of-type {
+    margin-bottom: 0.666666666666667em;  //32px;
+  }
+
   .vm_adress {
-    font-size: 18px;
+    font-size: 1.125em;  //18px
+    p {
+      margin-bottom: 0.444444444444444em;  //8px;
+    }
+  }
+  /* Team et introduction */
+  .houses_vm_team_container, .houses_vm_introduction_container, .houses_e_introduction_container, .houses_e_team_container {
+    h3 {
+      margin-bottom: 0.666666666666667em;  //32px
+    }
   }
   .houses_vm_introduction_container, .houses_vm_team_container, .houses_e_introduction_container, .houses_e_team_container, .single_project {
-    gap: 48px;
+    gap: 3em;  //48px;
     max-width: 1234px;
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
 
     p {
-      font-size: 18px;
+      font-size: 1.125em;  //18px
       margin-bottom: 0;
     }
 
@@ -189,17 +215,17 @@ strong {
 
     .project_title {
       margin-top: 0;
-      font-size: 24px;
-      margin-bottom: 24px;
+      font-size: 1.5em;  //24px;
+      margin-bottom: 1em;  //24px;
     }
   }
 
   .projects_container {
-    margin-bottom: 120px;
-    margin-top: 120px;
+    margin-bottom: 7.5em;  //120px;
+    margin-top: 7.5em;  //120px;
 
     .single_project {
-      margin-bottom: 90px;
+      margin-bottom: 5.625em;  //90px
     }
 
     .single_project:last-of-type {
@@ -211,103 +237,19 @@ strong {
     }
   }
   .houses_e_team_container, .houses_vm_team_container {
-    margin-bottom: 120px;
+    margin-bottom: 7.5em;  //120px;
     margin-top: 0;
   }
   .houses_e_introduction_container, .houses_vm_introduction_container {
-    margin-bottom: 150px;
-    margin-top: 120px;
+    margin-bottom: 9.375em;  //150px
+    margin-top: 7.5em;  //120px;
   }
   .houses_links {
-    margin-top: 166px;
+    margin-top: 10.375em;  //166px;
   }
 
-/*  section.donations_container {
-    margin-bottom: 0;
-  }
-  .donations_container {
-    display: grid;
-    grid-template-areas: ". title"
-                          "qr subtitle"
-                          "qr text"
-                          ". info"
-                          ". link";
-    !*max-width: 1000px;*!
-    width: 100%;
-    justify-content: center;
-    grid-gap: 16px;
-    align-items: center;
 
-    .section_title {
-      grid-area: title;
-    }
-
-    .donations_subtitle {
-      grid-area: subtitle;
-    }
-
-    .donations_text {
-      grid-area: text;
-      max-width: 794px;
-      font-size: 18px;
-    }
-
-    .donations_subline {
-      grid-area: info;
-    }
-
-    .link_to_page {
-      grid-area: link;
-    }
-
-    .qr_code {
-      grid-area: qr;
-    }
-
-    .donations_text, .donations_subline, .link_to_page, .donations_subtitle, .section_title, .link_to_donation_contact.link_to_page.link {
-      max-width: 794px;
-      margin-left: 16px;
-      text-align: start;
-    }
-
-    .donations_subtitle {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    .donations_subline {
-      margin-bottom: 8px;
-      margin-top: 16px;
-      font-size: 24px;
-    }
-  }*/
-}
-/*
-
-!*    TABLET    *!
-@media (min-width: 750px) and (max-width: 1199px) {
-  .donations_container {
-    align-items: center;
-  }
-  .link_to_donation_contact.link {
-    margin-left: 0;
-    margin-right: 0;
+  .title_gallery.houses_e_gallery_container, .title_gallery.houses_vm_gallery_container {
+    padding-top: 5.625em;  //90px
   }
 }
-
-!*    MOBILE    *!
-@media (max-width: 749px) {
-  .donations_container {
-    align-items: start;
-
-    .qr_code {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .section_title {
-      margin-right: auto;
-      margin-left: auto;
-    }
-  }
-}*/
