@@ -1,11 +1,6 @@
 <?php /* Template Name: Page "Contact" */ ?>
 
 <?php get_header(); ?>
-<?php
-// On ouvre "la boucle" (The Loop), la structure de contrôle
-// de contenu propre à Wordpress:
-if(have_posts()): while(have_posts()): the_post(); ?>
-
     <section class="contact">
         <h2 class="form_title section_title" aria-level="2" role="heading">
             <?php $form_title = get_field('title_form'); ?>
@@ -76,22 +71,6 @@ Jenny Drion
         <?php endif; ?>
     </section>
 
-    <!-- Façon qui marche aussi, mais ≠ customisable
-   <section class="contact">
-        <div class="contact__left">
-            <?php /*= get_the_content();*/?>
-        </div>
-        <div class="contact__right">
-            <?php /*= do_shortcode('[contact-form-7 id="63e1cf9" title="Formulaire page contact"]');*/?>
-        </div>
-    </section>-->
-
-<?php
-    // On ferme "la boucle" (The Loop):
-endwhile; else: ?>
-    <p>La page est vide.</p>
-<?php endif; ?>
-
 <div class="location_section">
     <div class="adress_container" itemprop="address">
         <h2 class="location_title" aria-level="2" role="heading">
@@ -111,7 +90,6 @@ if( $map_image ) {
     echo responsive_image($map_image, ['classes' => 'attachment-large size-large']);
 }
  ?>
-
 
 </div>
 

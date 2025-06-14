@@ -36,33 +36,12 @@
         <div class="image_vm" itemprop="image">
             <?php
             $vm_image = get_field('image_vm');
-            //$size = 'section_image'; // (thumbnail, medium, large, full or custom size)
             if ($vm_image):?>
                 <figure>
-                   <!-- --><?php /*= wp_get_attachment_image($vm_image, $size);;*/?>
                     <?= responsive_image(get_field('image_vm'), ['lazy' => 'lazy', 'classes' => 'stage__image']) ?>
                 </figure>
 <?php endif;?>
-            
-            <?php
-/* /*                      $vm_image = get_field('image_vm');
-                        $size = 'full'; // (thumbnail, medium, large, full or custom size)
-                        if ($vm_image) {
-                            echo
-                            responsive_image($vm_image, ['classes' => 'gallery__img']);
-                        }
-            var_dump(wp_get_attachment_image_srcset($vm_image, 'large'));*/
-            $vm_image = get_field('image_vm');
-   /*         echo wp_get_attachment_image($vm_image, 'large', false, [
-                'class' => 'responsive-img',
-                'sizes' => '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 594px'
-            ]);*/
-            /*wp_get_attachment_image(get_field('image_vm'), 'news', attr: ['class' => 'actu__img']);
-            */?><!--
-            <figure class="actu__fig-one">
-                <?php /*= wp_get_attachment_image(get_field('image_vm'), 'news', attr: ['class' => 'actu__img']); */?>
-            </figure>
--->
+
         </div>
     </section>
 
@@ -79,9 +58,7 @@
         <div class="image_vm">
             <?php
             $team_vm_image = get_field('image_team_vm');
-            //$size = 'full'; // (thumbnail, medium, large, full or custom size)
             if ($team_vm_image) {
-                //echo wp_get_attachment_image($team_vm_image, $size);
                 echo responsive_image($team_vm_image, ['classes' => 'attachment-large size-large']);
             }
             ?>
@@ -140,9 +117,7 @@
         <div class="image_e">
             <?php
             $e_image = get_field('image_e');
-            //$e_size = 'full'; // (thumbnail, medium, large, full or custom size)
             if ($e_image) {
-                //echo wp_get_attachment_image($e_image, $e_size);
                 echo responsive_image($e_image, ['classes' => 'attachment-large size-large']);
             }
             ?>
@@ -162,9 +137,7 @@
         <div class="image_e">
             <?php
             $team_e_image = get_field('image_team_e');
-            //$size = 'full'; // (thumbnail, medium, large, full or custom size)
             if ($team_e_image) {
-                //echo wp_get_attachment_image($team_e_image, $size);
                 echo responsive_image($team_e_image, ['classes' => 'attachment-large size-large']);
             }
             ?>
@@ -236,20 +209,12 @@
                     </div>
                     <div class="project_image">
                         <?php
-                        //$size = 'full'; // (thumbnail, medium, large, full or custom size)
                         if ($p_image) {
-                            //echo wp_get_attachment_image($p_image, $size);
                             echo responsive_image($p_image, ['classes' => 'attachment-large size-large']);
                         }
                         ?>
                     </div>
                 </div>
-                    <!--<li>
-                    <p class="family_question"><?php /*echo esc_html($question); */ ?></p>
-                </li>
-                <li>
-                    <p class="family_answer"><?php /*echo esc_html($answer); */ ?></p>
-                </li>-->
                 <?php endif;
             endwhile; ?>
         </section>
@@ -286,19 +251,12 @@
     <div class="qr_code qr_image">
         <?php
         $qr_code_image = get_field('image_qr_code');
-        //$size = 'full'; // (thumbnail, medium, large, full or custom size)
         if ($qr_code_image) {
-            //echo wp_get_attachment_image($qr_code_image, $size);
             echo responsive_image($qr_code_image, ['classes' => 'attachment-large size-large']);
         }
         ?>
     </div>
 </section>
-
-
-
-
-
 
 
 <?php get_footer(); ?>

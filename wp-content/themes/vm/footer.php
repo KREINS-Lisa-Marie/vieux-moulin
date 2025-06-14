@@ -92,10 +92,6 @@
                     </clipPath>
                 </defs>
             </svg>
-
-
-            <!--        <img src="" alt="Logo de la fédération Wallonie-Bruxelles">
-                    <img src="" alt="Logo de l’aide à la jeunesse">-->
         </div>
 
         <a href="http://vieux-moulin-site.test/contact/" title="Aller vers la page contact"
@@ -103,8 +99,6 @@
             Contactez-nous
         </a>
     </div>
-
-
 
     <div class="legal_infos" itemscope itemtype="https://schema.org/Person">
         <p>

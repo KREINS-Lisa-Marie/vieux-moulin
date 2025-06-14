@@ -2,13 +2,6 @@
 
 <?php get_header(); ?>
 
-
-<?php
-// On ouvre "la boucle" (The Loop), la structure de contrôle
-// de contenu propre à Wordpress:
-if (have_posts()): while (have_posts()): the_post(); ?>
-
-
     <section class="introduction_donations">
         <h2 class="section_title" aria-level="2" role="heading">
             <?php $donations_introduction_title = get_field('title_introduction'); ?>
@@ -59,44 +52,6 @@ if (have_posts()): while (have_posts()): the_post(); ?>
         </div>
     </section>
 
-<!--    <section class="donations_container img_title_text">
-        <h2 class="section_title">
-            <span class="underline back"><?php /*= get_field('donations_title'); */?></span>
-        </h2>
-        <div class="qr_code qr_image">
-            <?php
-/*            $qr_code_image = get_field('image_qr_code');
-            $size = 'full'; // (thumbnail, medium, large, full or custom size)
-            if ($qr_code_image) {
-                echo wp_get_attachment_image($qr_code_image, $size);
-            }
-            */?>
-        </div>
-        <div class="direct_donation_textinformation">
-            <h3 class="donations_subtitle subtitle">
-                <?php /*= get_field('subtitle_donations'); */?>
-            </h3>
-            <div class="donations_text">
-                <?php /*= get_field('donations_text'); */?>
-            </div>
-            <div class="donations_subline">
-                <?php /*= get_field('subline'); */?>
-            </div>
-            <a href="<?php /*= get_field('link_houses_to_contact'); */?>" title="Aller vers la page 'Contact'"
-               class="link_to_page link">Dites nous comment</a>
-
-
-<!-            <div class="qr_code qr_image">
-                <?php
-/*/*                $qr_code_image2 = get_field('image_qr_code');
-                responsive_image($qr_code_image2, ['classes' => 'image'])
-                */?>
-            </div>->
-        </div>
-    </section>-->
-
-
-
     <section class="donations_container img_title_text">
         <h2 class="section_title" aria-level="2" role="heading">
             <?php $donations_donation_section_title = get_field('donations_title'); ?>
@@ -123,17 +78,12 @@ if (have_posts()): while (have_posts()): the_post(); ?>
         <div class="qr_code qr_image">
             <?php
             $qr_code_image = get_field('image_qr_code');
-            //$size = 'full'; // (thumbnail, medium, large, full or custom size)
             if ($qr_code_image) {
-                //echo wp_get_attachment_image($qr_code_image, $size);
                 echo responsive_image($qr_code_image, ['classes' => 'attachment-large size-large']);
             }
             ?>
         </div>
     </section>
-
-
-
 
 
     <section class="partners_container">
@@ -153,14 +103,6 @@ if (have_posts()): while (have_posts()): the_post(); ?>
             <?php endif; ?>
         </div>
     </section>
-
-
-<?php
-    // On ferme "la boucle" (The Loop):
-endwhile;
-else: ?>
-    <p>La page est vide.</p>
-<?php endif; ?>
 
 <?php get_footer(); ?>
 

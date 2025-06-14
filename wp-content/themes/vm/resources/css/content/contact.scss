@@ -32,20 +32,7 @@ textarea > .field__error {
 
 }
 
-.field__input::placeholder, #message::placeholder {
-  color: var(--placeholder);
-  font-weight: 400;
-  font-family: Avenir, sans-serif;
-  font-size: 1em;  //14px;
-}
 
-.btn {
-  &:hover,
-  &:focus{
-    transition: 0.5s;
-    background-color: var(--yellow-border);
-  }
-}
 
 
 
@@ -58,6 +45,7 @@ textarea > .field__error {
   box-shadow: 0 1px 7px var(--black); /*25% opacity*/
 }
 
+/*    bouton envoyer    */
 .btn {
   min-width: 100%;
   border: 1px solid var(--yellow-border);
@@ -70,6 +58,23 @@ textarea > .field__error {
   font-family: Sulphur Point, sans-serif;
   margin-top: 3.125em;  //50px;
 }
+/*    animation bouton envoyer    */
+.btn {
+  &:hover,
+  &:focus{
+    transition: 0.5s;
+    background-color: var(--yellow-border);
+  }
+}
+
+/*    placeholder    */
+.field__input::placeholder, #message::placeholder {
+  color: var(--placeholder);
+  font-weight: 400;
+  font-family: Avenir, sans-serif;
+  font-size: 1em;  //14px;
+}
+
 
 h2.form_title.section_title {
   text-align: center;
@@ -98,6 +103,8 @@ h2.form_title.section_title {
   margin-bottom: 1.714285714285714em;  //24px;
 }
 
+
+/*    informations adresse    */
 .location_title {
   font-size: 1.25em;  //20px;
   font-weight: 600;
@@ -118,6 +125,7 @@ h2.form_title.section_title {
   align-items: center;
 }
 
+
 // MOBILE
 
 @media (max-width: 749px) {
@@ -127,7 +135,7 @@ h2.form_title.section_title {
   }
 }
 
-// TABLET
+// TABLET & DESKTOP
 
 @media (min-width: 750px) {
   .contact {

@@ -1,5 +1,6 @@
 //    GENERAL
 
+/*    animation des liens   */
 .nav__link__header_top, .nav__link__header__bottom {
   &:hover,
   &:focus{
@@ -13,26 +14,14 @@
   z-index: 10;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
-
   background-color: var(--white);
-  /*  display: flex;
-  flex-direction: row;
-  justify-content: space-between;*/
   box-shadow: 0 1px 5.1px rgba(0, 0, 0, 0.2);
-
-
-
-  .nav__item__header {
-    /*    padding-left: 24px;
-        position: relative;
-        !*    left: -100%;*!*/
-  }
 }
 
-/*  .nav__item__header{
-    margin-bottom: 8px;  //8px;
-    color: var(--black);
-  }*/
+.le_vieux_moulin_logo_title{
+  font-family: "Sulphur Point", sans-serif;
+  font-size: 1.25em;  //20px
+}
 
 
 //    MOBILE & TABLET
@@ -63,6 +52,7 @@
     grid-area: menu;
   }
   .nav__header{
+    align-items: center;
     display: grid;
     grid-template-areas: "logo burger"
           "menu menu "
@@ -70,24 +60,15 @@
     grid-gap: 1fr;
     justify-content: space-between;
   }
-/*  .nav__container__header{
-    margin-top: 16px;
-  }*/
   .nav__item__header a{
     color: var(--dark-violet);
-
   }
   .header{
     min-height: 28px;  //28px
     padding: 1.3125em 1.5em;  //21px 24px
   }
-  .nav__header{
-  align-items: center;
-  }
   header{
     width: calc(100% - 37px); /* Full width */
-    /*padding: 13px 24px;  //13px 24px*/
-
   }
   .nav__header > input:not(:checked) ~ .nav__container__header__top, input[type="checkbox"], .nav__header > input:not(:checked) ~ .nav__container__header__bottom {
     position: absolute;
@@ -99,13 +80,10 @@
     padding: 0;
     border: 0;
   }
+
   /* BURGER Menu*/
   input[type="checkbox"]:checked ~ .nav__header {
     left: 0
-  }
-  input[type="checkbox"] ~ .nav__header {
-    /*  right: 200%;*/
-    /*left: -100%;*/
   }
 
   /*Animation du X dans le Burger */
@@ -133,29 +111,15 @@
   }
 }
 
+
 //    DESKTOP
 
 @media (min-width: 1200px) {
   #burger_menu, .burger_menu {
     display: none;
   }
-
   .header {
     width: 100%;
-  }
-
-  .nav__header {
-    margin-top: 0.75em;  //12px;
-    margin-bottom: 0.75em;  //12px;
-    max-width: 1415px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-.nav__container__header__bottom{
-  padding-right: 1.2em;  //24px;
-}
-  .nav__container__header__top{
-    padding-right: 1.5em;  //24px;
   }
   .logo_link{
     margin-left: 1.5em;  //24px;
@@ -164,16 +128,19 @@
     align-items: center;
     margin-top: 0.8125em;  //13px;
   }
-
   .nav__header{
+    margin-top: 0.75em;  //12px;
+    margin-bottom: 0.75em;  //12px;
+    max-width: 1415px;
+    margin-left: auto;
+    margin-right: auto;
+
     display: grid;
     grid-template-areas: "burger menu"
                           "logo secondmenu";
     grid-gap: 1fr;
     justify-content: space-between;
-
   }
-
 
   #burger_menu, .burger_menu{
     grid-area: burger;
@@ -184,15 +151,13 @@
   }
   .nav__container__header__top {
     grid-area: menu;
+    padding-right: 1.5em;  //24px;
   }
   .nav__container__header__bottom {
     grid-area: secondmenu;
+    padding-right: 1.2em;  //24px;
   }
-
-  /*  .nav__container__header{
-      margin-top: 16px;
-    }*/
-.nav__container__header__bottom, .nav__container__header__top{
+  .nav__container__header__bottom, .nav__container__header__top{
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -204,20 +169,10 @@
     grid-column: 1/3;
     border-bottom: 1px solid var(--grey);
     gap: 1.875em; //30px
-/*    margin-bottom: 13px;*/
   }
   .nav__container__header__bottom{
     font-size: 1.25em;  //20px;
     margin-top: 0.65em;  //13px;
     gap: 1.5em;  //30px
   }
-/*.nav__header h2, .logo_link, .skip, .nav__container__header__bottom{
-    border-inline: 1px solid var(--grey);
-    box-shadow: 0 1px 5.1px rgba(0, 0, 0, 0.2);
-  }*/
-}
-
-.le_vieux_moulin_logo_title{
-  font-family: "Sulphur Point", sans-serif;
-  font-size: 1.25em;  //20px
 }

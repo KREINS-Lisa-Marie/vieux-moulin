@@ -1,4 +1,4 @@
-
+/*    Animation de la flèche    */
 .arrow{
   transition: transform 0.3s ease;
 }
@@ -6,5 +6,5 @@
   transition: transform 0.3s ease;
 }
 a:hover .arrow{
-  transform: translateX(3px); /* Pfeil bewegt sich beim Hover nach rechts */
+  transform: translateX(3px); /* flèche bouge vers la droite au hover */
 }

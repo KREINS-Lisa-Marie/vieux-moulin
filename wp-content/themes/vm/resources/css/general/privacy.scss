@@ -1,3 +1,5 @@
+/*    GENERAL    */
+
 .big{
   font-weight: 600;
 }
@@ -14,11 +16,11 @@
   max-width: 1200px;
   color: var(--dark-violet);
 }
+
 .privacy_extern_links, .personal_data, .intellectual_property, .hosting, .identity {
   max-width: 50em;
   margin-left: auto;
   margin-right: auto;
-
   p, a {
     line-height: 170%;
   }
@@ -52,8 +54,6 @@
   .identity__title, .hosting__title, .intellectual_property__title, .privacy_extern_links__title, .personal_data__title{
     font-size: 1.5em;  // 24px
     margin: 1.666666666666667em 1em 0.666666666666667em;  //40px auto 16px
-/*    margin-left: 1em;  //24px
-    margin-right: 1em;  //24px*/
   }
   .privacy_extern_links, .personal_data, .intellectual_property, .hosting, .identity{
     p, a{
@@ -67,6 +67,7 @@
     margin-left: 1.5em;  //24px
   }
 }
+
 
 // TABLET
 @media (min-width: 750px) and (max-width: 1199px){
