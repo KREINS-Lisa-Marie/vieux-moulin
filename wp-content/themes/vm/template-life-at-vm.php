@@ -173,8 +173,8 @@
                         if ($date):
                             ?>
                             <p class="single_news_date">
-                                <time datetime="<?= $date; ?>">
-                                    <?= $date; ?>
+                                <time datetime="<?= date('c', $date); ?>">
+                                    <?=  date_i18n('d/m/Y', $date); ?>
                                 </time>
                             </p>
                         <?php else: ?>

@@ -4,9 +4,12 @@
     <div class="image_accueil" itemprop="image">
         <?php
         $image_accueil = get_field('head_image');
-        $e_size = 'full'; // (thumbnail, medium, large, full or custom size)
+        //$e_size = 'full'; // (thumbnail, medium, large, full or custom size)
         if ($image_accueil) {
-            echo wp_get_attachment_image($image_accueil, $e_size);
+            //echo wp_get_attachment_image($image_accueil, $e_size);
+            echo responsive_image($image_accueil, ['classes' => 'attachment-large size-large']);
+
+
         }
         ?>
     </div>
@@ -83,8 +86,8 @@
                         if ($date):
                             ?>
                             <p class="single_news_date">
-                                <time datetime="<?= $date; ?>">
-                                    <?= $date; ?>
+                                <time datetime="<?= date('c', $date); ?>">
+                                    <?=  date_i18n('d/m/Y', $date); ?>
                                 </time>
                             </p>
                         <?php else: ?>
@@ -204,7 +207,6 @@
             $home_donations_title = str_replace('<strong>', '<strong class="underline back">', $home_donations_title) //ajoute la classe "underline à la balise ?>
             <?= $home_donations_title ?>
 
-
         </h2>
         <h3 class="donations_subtitle subtitle" aria-level="3">
             <?= get_field('secondary_title'); ?>
@@ -232,9 +234,10 @@
         <div class="qr_code qr_image">
             <?php
             $qr_code_image = get_field('qr_code');
-            $size = 'full'; // (thumbnail, medium, large, full or custom size)
+            //$size = 'full'; // (thumbnail, medium, large, full or custom size)
             if ($qr_code_image) {
-                echo wp_get_attachment_image($qr_code_image, $size);
+                //echo wp_get_attachment_image($qr_code_image, $size);
+                echo responsive_image($qr_code_image, ['classes' => 'attachment-large size-large']);
             }
             ?>
         </div>
@@ -280,9 +283,10 @@
         <div class="image_f_accueil">
             <?php
             $image_f_accueil = get_field('fifth_image');
-            $e_size = 'full'; // (thumbnail, medium, large, full or custom size)
+            //$e_size = 'full'; // (thumbnail, medium, large, full or custom size)
             if ($image_f_accueil) {
-                echo wp_get_attachment_image($image_f_accueil, $e_size);
+                //echo wp_get_attachment_image($image_f_accueil, $e_size);
+                echo responsive_image($image_f_accueil, ['classes' => 'attachment-large size-large']);
             }
             ?>
         </div>

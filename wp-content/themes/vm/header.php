@@ -39,7 +39,7 @@
     <nav class="nav__header">
         <h2 class="sro" aria-level="2" role="heading">Navigation pricinpale</h2>
         <a href="http://vieux-moulin-site.test/" title="Aller vers la page d'accueil" class="logo_link" aria-label="Aller vers la page d'accueil">
-            <img src="/wp-content/themes/vm/resources/img/Logo.webp" alt="Logo Vieux Moulin" width="30" height="24" class="logo_image" itemprop="logo">
+            <img src="/wp-content/themes/vm/resources/img/Logo.svg" alt="Logo Vieux Moulin" width="30" height="24" class="logo_image" itemprop="logo">
             <span class="le_vieux_moulin_logo_title" itemprop="legalName">Le Vieux Moulin</span>
         </a>
         <a href="#content" class="sro skip" title="Aller au contenu principal" aria-label="Aller au contenu principal">Aller au contenu principal</a>

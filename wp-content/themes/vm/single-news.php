@@ -23,8 +23,8 @@ if (have_posts()): while (have_posts()): the_post(); ?>
                 ?></div>
             <div class="text_content">
                 <p class="date_of_single_news">
-                    <time datetime="<?= $date; ?>">
-                        <?= $date; ?>
+                    <time datetime="<?= date('c', $date); ?>">
+                        <?=  date_i18n('d/m/Y', $date); ?>
                     </time>
                 </p>
                 <div class="news_text">
@@ -84,8 +84,8 @@ else: ?>
                         if ($date):
                             ?>
                             <p class="single_news_date">
-                                <time datetime="<?= $date; ?>">
-                                    <?= $date; ?>
+                                <time datetime="<?= date('c', $date); ?>">
+                                    <?=  date_i18n('d/m/Y', $date); ?>
                                 </time>
                             </p>
                         <?php else: ?>
