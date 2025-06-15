@@ -102,7 +102,7 @@
 
     <div class="legal_infos" itemscope itemtype="https://schema.org/Person">
         <p>
-            © 2025 Le Vieux Moulin. Tous droits réservés. Crée par <span itemprop="familyName">Kreins</span> <span itemprop="givenName">Lisa-Marie</span>.
+            © 2025 Le Vieux Moulin. Tous droits réservés. Créé par <span itemprop="familyName">Kreins</span> <span itemprop="givenName">Lisa-Marie</span>.
         </p>
         <p>
             <a href="https://vieux-moulin.lisa-marie-kreins.com/mentions-legales/" title="Aller vers la page 'Mentions légales'">Mentions légales</a>
