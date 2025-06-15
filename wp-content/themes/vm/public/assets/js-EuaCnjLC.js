@@ -1,0 +1,1 @@
+console.log("Starting script");(function(){({titleElements:document.querySelectorAll(".section_title"),windowHeight:window.innerHeight,init(){window.addEventListener("scrollend",()=>{this.addAnimation()})},addAnimation(){for(const t of this.titleElements)t.getBoundingClientRect().bottom<=this.windowHeight-50&&t.classList.add("animate")}}).init()})();console.log("End of script");
