@@ -136,6 +136,21 @@ main{
 }
 
 
+/*      Animation au scroll     */
+.animate{
+  animation: 2s scaling;
+}
+@keyframes scaling {
+  0%{
+    scale: 0.9;
+  }
+  100%{
+    scale: 1;
+  }
+}
+
+
+
 
 // MOBILE
 @media (max-width: 750px) {
