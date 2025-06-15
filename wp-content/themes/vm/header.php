@@ -28,7 +28,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" type="text/css" href="<?= dw_asset('css'); ?>">
-    <!--<script src="<?php /*= dw_asset('js') */?>" defer></script>-->
+    <script src="<?= dw_asset('js') ?>" defer type="module"></script>
     <title><?= wp_title('·', false, 'right') . get_bloginfo('name') ?></title>
 </head>
 <body>
@@ -36,7 +36,7 @@
     <h1 class="sro" role="heading" aria-level="1">Le Vieux Moulin - <?= get_the_title() ?></h1>
     <nav class="nav__header" itemscope itemtype="https://schema.org/Organization">
         <h2 class="sro" aria-level="2" role="heading">Navigation pricinpale</h2>
-        <a href="http://vieux-moulin-site.test/" title="Aller vers la page d'accueil" class="logo_link" aria-label="Aller vers la page d'accueil">
+        <a href="https://vieux-moulin.lisa-marie-kreins.com/" title="Aller vers la page d'accueil" class="logo_link" aria-label="Aller vers la page d'accueil">
             <img src="/wp-content/themes/vm/resources/img/Logo.svg" alt="Logo Vieux Moulin" width="30" height="24" class="logo_image" itemprop="logo">
             <span class="le_vieux_moulin_logo_title" itemprop="legalName">Le Vieux Moulin</span>
         </a>
@@ -62,7 +62,7 @@
 
         <ul class="nav__container__header__top">
             <li class="nav__item__header_top">
-                <a href="http://vieux-moulin-site.test/nos-actualites/" class="nav__link__header_top" title="Aller vers la page 'Actualités'" aria-label="Aller vers la page 'Actualités'">
+                <a href="https://vieux-moulin.lisa-marie-kreins.com/nos-actualites/" class="nav__link__header_top" title="Aller vers la page 'Actualités'" aria-label="Aller vers la page 'Actualités'">
                     Actualités
                 </a>
             </li>

@@ -94,7 +94,7 @@
             </svg>
         </div>
 
-        <a href="http://vieux-moulin-site.test/contact/" title="Aller vers la page contact"
+        <a href="https://vieux-moulin.lisa-marie-kreins.com/contact/" title="Aller vers la page contact"
            class="footer_contact_button">
             Contactez-nous
         </a>
@@ -105,7 +105,7 @@
             © 2025 Le Vieux Moulin. Tous droits réservés. Crée par <span itemprop="familyName">Kreins</span> <span itemprop="givenName">Lisa-Marie</span>.
         </p>
         <p>
-            <a href="http://vieux-moulin-site.test/mentions-legales/" title="Aller vers la page 'Mentions légales'">Mentions légales</a>
+            <a href="https://vieux-moulin.lisa-marie-kreins.com/mentions-legales/" title="Aller vers la page 'Mentions légales'">Mentions légales</a>
         </p>
     </div>
 </footer>
